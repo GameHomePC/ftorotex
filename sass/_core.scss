@@ -1,0 +1,26 @@
+/* fonts */
+@import "fonts/fonts";
+
+/* core */
+@import "core/reset";
+@import "core/global";
+@import "core/form";
+
+/* layout */
+@import "layout/header";
+@import "layout/footer";
+
+/* slider */
+@import "slider/owl.carousel";
+@import "slider/owl.theme";
+@import "slider/owl.transitions";
+
+/* modules */
+@import "modules/bunner";
+@import "modules/bunner__information";
+@import "modules/sectionBox";
+@import "modules/purchases";
+@import "modules/client";
+@import "modules/aboutUs";
+@import "modules/order";
+@import "modules/bottomMenu";

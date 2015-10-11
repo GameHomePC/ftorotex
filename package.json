@@ -1,0 +1,21 @@
+{
+  "name": "planetblue-design",
+  "version": "1.0.0",
+  "description": "Planetblue styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vladimir.kraykovsky@neklo.com",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "browser-sync": ">=2.7.12",
+    "gulp": ">=3.9.0",
+    "gulp-google-webfonts": "0.0.6",
+    "gulp-postcss": "^6.0.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": ">=1.5.2",
+    "gulp.spritesmith": "^4.1.0"
+  }
+}

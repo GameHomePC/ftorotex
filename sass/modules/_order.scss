@@ -1,0 +1,121 @@
+.order {
+    background: #fff;
+    .sectionBox__title {
+        color: #205c9d;
+    }
+
+    .sectionBox__content {
+        @include clearfix;
+        margin-top: 63px;
+    }
+
+    .wrapper { position: static; }
+
+    .blockInfo {
+        float: left;
+        width: 100%;
+        margin-left: -304px;
+        padding-left: 304px;
+        box-sizing: border-box;
+    }
+}
+
+.order__icon {
+    position: absolute;
+    bottom: 0;
+    left: -22px;
+    right: 0;
+    margin: auto;
+    @include sprite($user-icon-2);
+}
+
+/* blockInfo */
+.blockInfo {
+    position: relative;
+}
+
+.blockInfo__item {
+    @include clearfix;
+    margin-bottom: 20px;
+
+    &:last-of-type { margin-bottom: 0; }
+}
+
+.blockInfo__item__middle {
+    margin-bottom: 48px;
+}
+
+.blockInfo__icon {
+    float: left;
+    width: 65px;
+
+    &:before {
+        display: block;
+        content: "";
+    }
+}
+
+.blockInfo__icon_one:before { @include sprite($phone-icon); }
+
+.blockInfo__content {
+    float: left;
+    margin-left: -65px;
+    padding-left: 65px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.blockInfo__title {
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 14px;
+    letter-spacing: -0.6px;
+    line-height: 24px;
+}
+
+.blockInfo__description {
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;
+    line-height: 18px;
+}
+
+.blockInfo__link {
+    display: block;
+    font-size: 20px;
+    color: #5489c3;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.blockInfo__phone {
+    margin-top: 20px;
+    p {
+        @include clearfix;
+        margin-bottom: 10px;
+    }
+}
+
+.blockInfo__small {
+    float: left;
+    width: 80px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.blockInfo__big {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    width: 100%;
+    margin-left: -80px;
+    padding-left: 80px;
+    box-sizing: border-box;
+}
+
+.blockInfo__big_normal {
+    font-size: 12px;
+    color: #959595;
+}
