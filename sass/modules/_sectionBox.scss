@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.sectionBoxMin {
+    padding: 42px 0;
+}
+
 .sectionBox__title {
     font-size: 31px;
     font-weight: bold;
@@ -11,7 +15,15 @@
     text-transform: uppercase;
     letter-spacing: -1px;
 }
+.sectionBox__title35 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #115694;
+    letter-spacing: -0.8px;
+}
+
 
 .sectionBox__content {
     margin-top: 53px;
+    @include clearfix;
 }

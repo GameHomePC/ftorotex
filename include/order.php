@@ -19,25 +19,25 @@
 
                         <div class="blockInfo__phone">
                             <p>
-                                <span class="blockInfo__small">+375 17</span>
+                                <span class="blockInfo__small blockInfo__80">+375 17</span>
                                 <span class="blockInfo__big">286 36 41, 286 36 42,</span>
                             </p>
 
                             <p>
-                                <span class="blockInfo__small">&nbsp;</span>
+                                <span class="blockInfo__small blockInfo__80">&nbsp;</span>
                                 <span class="blockInfo__big">286 36 43, 286 36 44</span>
                             </p>
 
                             <p>
-                                <span class="blockInfo__small">&nbsp;</span>
-                                <span class="blockInfo__big blockInfo__big_normal">Телефон / Факс</span>
+                                <span class="blockInfo__small blockInfo__80">&nbsp;</span>
+                                <span class="blockInfo__normal">Телефон / Факс</span>
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="blockInfo__item blockInfo__item__middle">
-                    <div class="blockInfo__icon blockInfo__icon_one"></div>
+                    <div class="blockInfo__icon blockInfo__icon_email"></div>
 
                     <div class="blockInfo__content">
                         <div class="blockInfo__title">Или напишите нам на почту</div>
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="blockInfo__item">
-                    <div class="blockInfo__icon blockInfo__icon_one"></div>
+                    <div class="blockInfo__icon blockInfo__icon_world"></div>
 
                     <div class="blockInfo__content">
                         <div class="blockInfo__title">

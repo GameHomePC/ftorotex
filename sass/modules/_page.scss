@@ -1,0 +1,39 @@
+.page {
+    padding: 35px 0;
+}
+
+.page__content {
+
+}
+
+.page__title {
+    font-size: 30px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+/* 404 */
+.page404 {
+    @include clearfix;
+    padding: 180px 0;
+}
+
+.page404__images {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.page404__content {
+    float: left;
+    width: 50%;
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 40px;
+
+    a {
+        color: #115694;
+        font-weight: 500;
+    }
+}

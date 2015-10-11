@@ -1,0 +1,82 @@
+.userInfo {
+    background: url("../images/bunner-images-fiwe.jpg") center center;
+    background-size: cover;
+
+    .sectionBox__content {
+        margin-top: 40px;
+    }
+
+    p.blockInfo__big {
+        margin-top: 7px;
+    }
+
+    .blockInfo__65 + * {
+        padding-top: 10px;
+    }
+}
+
+.userInfo__images {
+    width: 180px;
+
+    & + * {
+        margin-left: -180px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+.userInfo__content {
+
+}
+
+.userInfo__info {
+    margin-top: 35px;
+}
+
+.userInfo__item {
+    @include clearfix;
+    margin-bottom: 20px;
+}
+
+
+/* seeAlso */
+.seeAlso {
+    background: url("../images/bg-1.jpg") center center repeat;
+    box-shadow: inset 0 0 15px 2px rgba(0, 0, 0, 0.1);
+
+    .sectionBox__content {
+        margin-top: 35px;
+    }
+}
+
+.seeAlso__item {
+    margin-top: 25px;
+
+    &:first-child { margin-top: 0; }
+}
+
+.seeAlso__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+
+    a {
+        color: #115694;
+    }
+}
+
+.seeAlso__description {
+    font-size: 15px;
+    color: #333333;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+
+    a {
+        color: #115694;
+    }
+}
+

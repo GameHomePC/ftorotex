@@ -1,8 +1,13 @@
 .wrapper {
     position: relative;
-    max-width: 960px;
+    width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
+
+    @include breakpointmedia(960, 'max-width') {
+        max-width: 960px;
+        width: 100%;
+    }
 }
 
 body {
@@ -16,6 +21,8 @@ a {
 
     &:hover { text-decoration: none; }
 }
+
+.clear { @include clearfix(); }
 
 .group {
     @include clearfix();
@@ -35,3 +42,60 @@ a {
     .coll-11 { width: 91.66666666666667%!important; }
     .coll-12 { width: 100%!important; }
 }
+
+.pt-5 { padding-top: 5px; }
+.pl-5 { padding-left: 5px; }
+.pl-10 { padding-left: 10px; }
+.pl-12 { padding-left: 12px; }
+
+/* textStyle */
+.textStyle {
+    font-size: 15px;
+    line-height: 23px;
+    color: #333333;
+    vertical-align: top;
+
+    p {
+        margin-bottom: 5px;
+    }
+
+    ul.typeOne {
+        padding-left: 22px;
+
+        li {
+            position: relative;
+
+            &:before {
+                position: absolute;
+                top: 5px;
+                left: -22px;
+                width: 5px;
+                height: 5px;
+                background: #c00202;
+                border-radius: 50%;
+                content: "";
+            }
+        }
+    }
+
+    a {
+        font-size: 15px;
+        color: #333333;
+    }
+
+    span {
+        font-size: 15px;
+        color: #9f9f9f;
+
+    }
+}
+
+/* icon */
+.icon {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.icon__word { @include sprite($icon-word); }
+.icon__exel { @include sprite($icon-exel); }
+.icon__reader { @include sprite($icon-reader); }
