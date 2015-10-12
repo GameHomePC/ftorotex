@@ -258,7 +258,7 @@
     padding: 0 25px;
     box-sizing: border-box;
     line-height: 57px;
-    transition: all 0.2s ease;
+    transition: color 0.2s ease, background 0.2s ease;
     font-size: 20px;
     font-weight: bold;
     color: #ffffff;
@@ -268,8 +268,8 @@
 
     @include breakpointmedia(960, 'max-width') { font-size: 18px; }
     @include breakpointmedia(910, 'max-width') { font-size: 16px; }
-    @include breakpointmedia(830, 'max-width') { font-size: 14px; padding: 0 10px; }
-    @include breakpointmedia(768, "max-width") { border: none; }
+    @include breakpointmedia(830, 'max-width') { font-size: 14px;  }
+    @include breakpointmedia(768, "max-width") { border: none; padding: 0 10px; }
     @include breakpointmedia(640, "max-width") { font-size: 17px; border-right: 1px solid #5f8cbc; }
 }
 
@@ -322,7 +322,7 @@
     }
 
     @include breakpointmedia(640, "max-width") { width: 33%; }
-    @include breakpointmedia(640, "max-width") { width: 20%; }
+    @include breakpointmedia(480, "max-width") { width: 20%; }
 }
 
 .headerSearch__input {

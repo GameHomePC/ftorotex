@@ -672,8 +672,8 @@ input, textarea, select {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   line-height: 57px;
-  -webkit-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+  -webkit-transition: color 0.2s ease, background 0.2s ease;
+          transition: color 0.2s ease, background 0.2s ease;
   font-size: 20px;
   font-weight: bold;
   color: #ffffff;
@@ -688,11 +688,11 @@ input, textarea, select {
       font-size: 16px; } }
   @media screen and (max-width: 51.875em) {
     .headerMenu__link {
-      font-size: 14px;
-      padding: 0 10px; } }
+      font-size: 14px; } }
   @media screen and (max-width: 48em) {
     .headerMenu__link {
-      border: none; } }
+      border: none;
+      padding: 0 10px; } }
   @media screen and (max-width: 40em) {
     .headerMenu__link {
       font-size: 17px;
@@ -747,7 +747,7 @@ input, textarea, select {
   @media screen and (max-width: 40em) {
     .headerSearch {
       width: 33%; } }
-  @media screen and (max-width: 40em) {
+  @media screen and (max-width: 30em) {
     .headerSearch {
       width: 20%; } }
 
