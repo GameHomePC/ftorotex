@@ -12,17 +12,111 @@
     .blockInfo {
         float: left;
         width: 65%;
+
+        @include breakpointmedia(768, "max-width") {
+            width: 40%;
+            margin-top: -10px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            width: 46.4%;
+            margin-top: 0;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            width: 100%;
+            padding: 15px 25px;
+            box-sizing: border-box;
+        }
+
     }
 
     .blockInfo__item {
+        float: left;
+        width: 50%;
+
         &:first-of-type { width: 59%; }
         &:last-of-type { width: 41%; }
 
-        float: left;
-        width: 50%;
+        @include breakpointmedia(768, "max-width") {
+            &:first-of-type, &:last-of-type { width: 100%; }
+
+            &:first-of-type { margin-bottom: 17px; }
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            &:first-of-type { margin-bottom: 15px; }
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            &:last-of-type { display: none; }
+            &:first-of-type {
+                margin-bottom: 0;
+
+                .blockInfo__normal { font-size: 0; }
+
+                .media480 .blockInfo__normal { font-size: 13px; }
+            }
+        }
+
+        @include breakpointmedia(320, "max-width") {
+            &:first-of-type {
+                .media480 .blockInfo__normal { font-size: 12px; }
+            }
+        }
+    }
+
+    .blockInfo__icon {
+        @include breakpointmedia(768, "max-width") { width: 45px; }
+        @include breakpointmedia(640, "max-width") { width: 15%; }
+        @include breakpointmedia(480, "max-width") { width: 20%; }
+    }
+
+    .blockInfo__content {
+        @include breakpointmedia(768, "max-width") {
+            padding-left: 45px;
+            margin-left: -45px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            padding-left: 15%;
+            margin-left: -15%;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            padding-left: 20%;
+            margin-left: -20%;
+        }
     }
 
 
+    .blockInfo__100 {
+        @include breakpointmedia(768, "max-width") {
+            width: 88px;
+            & + * {
+                margin-left: -88px;
+                padding-left: 88px;
+            }
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            width: 84px;
+            & + * {
+                margin-left: -84px;
+                padding-left: 84px;
+            }
+        }
+    }
+
+    .blockInfo__big_size18 {
+        @include breakpointmedia(768, "max-width") {
+            font-size: 16px;
+        }
+
+        @include breakpointmedia(320, "max-width") {
+            font-size: 14px;
+        }
+    }
 }
 
 /* headerLogo */
@@ -40,6 +134,26 @@
     }
     
     img { width: 100%; }
+
+    @include breakpointmedia(768, "max-width") {
+        width: 60%;
+
+        a { width: 90px; }
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        width: 53.6%;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        width: 100%;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e1e1e1;
+
+        a { width: 63px; }
+    }
 }
 
 .headerLogo__info {
@@ -49,6 +163,20 @@
     padding-top: 6px;
     width: 100%;
     box-sizing: border-box;
+
+    @include breakpointmedia(768, "max-width") {
+        margin-left: -90px;
+        padding-left: 102px;
+        padding-top: 3px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        padding-top: 0;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding-left: 98px;
+    }
 }
 
 .headerLogo__big {
@@ -58,12 +186,23 @@
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: -0.9px;
+
+    @include breakpointmedia(640, "max-width") { font-size: 18px; }
+    @include breakpointmedia(480, "max-width") { font-size: 22px; letter-spacing: -1.5px; margin-bottom: 5px; }
 }
 
 .headerLogo__small {
     font-size: 14px;
     font-weight: 500;
     color: #333333;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 18px;
+        letter-spacing: 0.3px;
+    }
+
+    @include breakpointmedia(640, "max-width") { font-size: 16px; }
+    @include breakpointmedia(480, "max-width") { font-size: 16px; letter-spacing: -1.5px; }
 }
 
 .header__bottom {
@@ -71,6 +210,8 @@
 
     .wrapper {
         display: table;
+
+        @include breakpointmedia(960, "max-width") { display: block; }
     }
 }
 
@@ -81,7 +222,15 @@
     box-sizing: border-box;
     @include core-justify;
     z-index: 10;
-    
+
+    @include breakpointmedia(960, "max-width") {
+        float: left;
+        width: 100%;
+        padding-right: 70px;
+        margin-right: -70px;
+    }
+    @include breakpointmedia(640, "max-width") { display: none; }
+
     li {
         display: inline-block;
         vertical-align: top;
@@ -117,17 +266,43 @@
     border-right: 1px solid #5f8cbc;
     letter-spacing: -0.6px;
 
-    @include breakpointmedia(960, 'max-width') {
-        font-size: 18px;
+    @include breakpointmedia(960, 'max-width') { font-size: 18px; }
+    @include breakpointmedia(910, 'max-width') { font-size: 16px; }
+    @include breakpointmedia(830, 'max-width') { font-size: 14px; padding: 0 10px; }
+    @include breakpointmedia(768, "max-width") { border: none; }
+    @include breakpointmedia(640, "max-width") { font-size: 17px; border-right: 1px solid #5f8cbc; }
+}
+
+.headerMenu__mobile {
+    display: none;
+    float: left;
+    height: 59px;
+    width: 66%;
+    @include clearfix;
+
+    @include breakpointmedia(480, "max-width") {
+        width: 80%;
     }
 
-    @include breakpointmedia(910, 'max-width') {
-        font-size: 16px;
+    li {
+        float: left;
+        width: 50%;
+
+        @include breakpointmedia(480, "max-width") {
+            width: 75%;
+            & + li { width: 25%; }
+        }
     }
 
-    @include breakpointmedia(830, 'max-width') {
-        font-size: 14px;
+    .headerMenu__link {
+        text-align: center;
+        padding: 0;
+
+        i { margin-top: 22px; }
     }
+
+    @include breakpointmedia(640, "max-width") { display: block; }
+
 }
 
 /* headerSearch */
@@ -140,10 +315,14 @@
     padding-left: 10px;
 
     @include breakpointmedia(960, 'max-width') {
-        border-right: 1px solid #5f8cbc;
-        width: 8%;
+        float: left;
+        border-right: none;
+        width: 70px;
         padding-left: 0;
     }
+
+    @include breakpointmedia(640, "max-width") { width: 33%; }
+    @include breakpointmedia(640, "max-width") { width: 20%; }
 }
 
 .headerSearch__input {

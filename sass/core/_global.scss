@@ -99,3 +99,28 @@ a {
 .icon__word { @include sprite($icon-word); }
 .icon__exel { @include sprite($icon-exel); }
 .icon__reader { @include sprite($icon-reader); }
+.icon__menu { @include sprite($icon-menu); }
+
+.media768 {
+    display: none;
+
+    @include breakpointmedia(768, "max-width") {
+        display: inline-block;
+    }
+}
+
+.media480 {
+    display: none;
+
+    @include breakpointmedia(480, "max-width") {
+        display: block;
+    }
+}
+
+.media1200 {
+    display: none;
+
+    @include breakpointmedia(769) {
+        display: inline-block;
+    }
+}

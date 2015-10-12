@@ -8,6 +8,16 @@
     margin-bottom: 20px;
 
     &:last-of-type { margin-bottom: 0; }
+
+    .media768 { padding-left: 12px }
+
+    @include breakpointmedia(768, "max-width") {
+        margin-bottom: 13px;
+
+        &:last-of-type {
+            p:first-child { margin-bottom: 0; }
+        }
+    }
 }
 
 .blockInfo__item__middle {
@@ -24,8 +34,18 @@
     }
 }
 
-.blockInfo__icon_one:before { @include sprite($phone-icon); }
-.blockInfo__icon_two:before { @include sprite($time-icon); }
+.blockInfo__icon_one:before {
+    @include sprite($phone-icon);
+
+    @include breakpointmedia(768, "max-width") { @include sprite($phone-icon-768); }
+    @include breakpointmedia(640, "max-width") { @include sprite($phone-icon-640); }
+}
+.blockInfo__icon_two:before {
+    @include sprite($time-icon);
+
+    @include breakpointmedia(768, "max-width") { @include sprite($time-icon-768); }
+    @include breakpointmedia(640, "max-width") { @include sprite($time-icon-640); }
+}
 .blockInfo__icon_email:before { @include sprite($email-icon); }
 .blockInfo__icon_world:before { @include sprite($world-icon); }
 
@@ -75,6 +95,10 @@
         margin-bottom: 10px;
 
         &:last-of-type { margin-bottom: 0; }
+
+        @include breakpointmedia(768, "max-width") {
+            margin-bottom: 6px;
+        }
     }
 }
 
@@ -88,13 +112,17 @@
     font-weight: bold;
     color: #333333;
 }
-.blockInfo__big_size18 { font-size: 18px; }
-.blockInfo__big_size18 { font-size: 22px; }
+.blockInfo__big_size18 { font-size: 18px; letter-spacing: -0.5px }
+.blockInfo__big_size22 { font-size: 22px; }
 
 .blockInfo__normal {
     font-size: 12px;
     font-weight: normal;
     color: #959595;
+
+    @include breakpointmedia(768, "max-width") {
+        letter-spacing: -0.5px;
+    }
 }
 
 .blockInfo__middle {
@@ -175,7 +203,14 @@
         margin-left: -100px;
         padding-left: 100px;
         box-sizing: border-box;
+
+        @include breakpointmedia(768, "max-width") {
+            margin-left: -88px;
+            padding-left: 88px;
+        }
     }
+
+
 }
 
 /* 230 */

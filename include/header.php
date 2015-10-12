@@ -22,6 +22,10 @@
                                 <span class="blockInfo__normal blockInfo__100 pt-5">Телефон/Факс</span>
                                 <span class="blockInfo__big blockInfo__big_size18">286 36 41, 286 36 42,</span>
                             </p>
+
+                            <p class="media480">
+                                <span class="blockInfo__normal">Телефон/Факс. Работаем: с 8:30 до 17:00 </span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -32,11 +36,12 @@
                         <div class="blockInfo__wrapper">
                             <p>
                                 <span class="blockInfo__middle">Работаем:</span>
+                                <span class="blockInfo__big blockInfo__big_size18 media768">с 8:30 до 17:00</span>
                             </p>
 
                             <p>
                                 <span class="blockInfo__normal blockInfo__60 pt-5">Пн - Птн</span>
-                                <span class="blockInfo__big blockInfo__big_size18">с 8:30 до 17:00</span>
+                                <span class="blockInfo__big blockInfo__big_size18 media1200">с 8:30 до 17:00</span>
                             </p>
                         </div>
                     </div>
@@ -44,6 +49,8 @@
             </div>
         </div>
     </div>
+
+
     <div class="header__bottom">
         <div class="wrapper">
             <ul class="headerMenu">
@@ -164,6 +171,18 @@
                 <li><a class="headerMenu__link" href="#">Статьи и материалы</a></li>
                 <li><a class="headerMenu__link" href="#">Контакты</a></li>
             </ul>
+
+            <ul class="headerMenu__mobile">
+                <li>
+                    <a class="headerMenu__link" href="#">Наша продукция</a>
+                </li>
+                <li>
+                    <a class="headerMenu__link" href="#">
+                        <i class="icon icon__menu"></i>
+                    </a>
+                </li>
+            </ul>
+
             <div class="headerSearch">
                 <input type="text" class="headerSearch__input" placeholder="Поиск">
                 <button class="headerSearch__icon button"></button>
