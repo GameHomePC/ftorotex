@@ -1,14 +1,26 @@
 .bunner {
-    .wrapper { padding: 55px 0 26px; }
+    .wrapper {
+        padding: 55px 0 26px;
+
+        @include breakpointmedia(768, "max-width") { padding: 36px 0 26px; }
+
+        @include breakpointmedia(640, "max-width") {
+            padding: 0;
+        }
+    }
 }
 
 .bunner_images {
     background: url("../images/bunner-images-one.jpg") center center no-repeat;
     background-size: cover;
 
+    @include breakpointmedia(640, "max-width") {
+        background-image: none;
+        background-color: #fff;
+    }
+
     .wrapper {
         @include clearfix;
-        min-height: 535px;
     }
 }
 
@@ -17,15 +29,47 @@
     bottom: 0;
     left: -65px;
     @include sprite($user-icon-1);
+
+    @include breakpointmedia(768, "max-width") {
+        @include sprite($user-icon-1-768);
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        display: none;
+    }
 }
 
 .bunner__content {
+    position: relative;
     float: left;
     box-sizing: border-box;
     width: 100%;
     margin-right: -304px;
     padding-right: 325px;
-    padding-left: 250px;
+    padding-left: 22%;
+
+    @include breakpointmedia(768, "max-width") {
+        margin-right: -265px;
+        padding-right: 265px;
+    }
+
+    @include breakpointmedia(700, "max-width") {
+        margin-right: -265px;
+        padding-right: 265px;
+        padding-left: 8%;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        margin-right: 0;
+        padding: 30px 12% 12px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        float: none;
+        margin-right: 0;
+        padding: 25px 13px 12px;
+    }
 }
 
 .bunner__title {
@@ -35,12 +79,42 @@
     margin-bottom: 17px;
     text-transform: uppercase;
     letter-spacing: -0.7px;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 20px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 }
 
 .bunner__description {
     font-size: 23px;
     color: #333333;
     line-height: 28px;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 .bunner__list {
@@ -48,12 +122,46 @@
     padding-left: 97px;
     box-sizing: border-box;
 
+    @include breakpointmedia(768, "max-width") {
+        margin-top: 20px;
+        padding-left: 112px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-top: 20px;
+    }
+
     li {
         position: relative;
         display: block;
         font-size: 18px;
         color: #333333;
         margin-bottom: 30px;
+
+        @include breakpointmedia(768, "max-width") {
+            margin-bottom: 14px;
+            font-size: 16px;
+            line-height: 18px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 29px;
+            padding-left: 40px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 18px;
+            padding-left: 36px;
+        }
 
         &:last-of-type {
             &:before { display: none; }
@@ -65,10 +173,18 @@
             top: 0;
             @include sprite($star);
             content: "";
+
+            @include breakpointmedia(640, "max-width") {
+                left: 10px;
+            }
         }
 
         &.bunner__indent {
             margin-bottom: 20px;
+
+            @include breakpointmedia(768, "max-width") {
+                margin-bottom: 16px;
+            }
         }
     }
 }
@@ -78,17 +194,45 @@
 .bunner__link {
     font-size: 18px;
     color: #115694;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 16px;
+    }
 }
 
 /* bunner__form */
 .bunner__form {
     position: relative;
     float: left;
-    width: 304px;
+    width: 265px;
     padding: 17px 15px 22px;
     box-sizing: border-box;
     background: #205c9d;
     border-radius: 5px;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 16px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        width: 100%;
+        padding: 24px 12%;
+        border-radius: 0;
+
+        .coll-5 { width: 27%; }
+        .coll-7 { width: 73%; }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        float: none;
+        width: 100%;
+        padding: 18px 13px;
+        border-radius: 0;
+
+        .coll-5 { width: 36%; }
+        .coll-7 { width: 64%; }
+    }
 }
 
 .bunner__formTitle {
@@ -97,4 +241,12 @@
     margin-bottom: 30px;
     padding-top: 8px;
     letter-spacing: 0.4px;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 21px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 18px;
+    }
 }

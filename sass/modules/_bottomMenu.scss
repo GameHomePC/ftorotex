@@ -2,6 +2,14 @@
     background: url("../images/bunner-images-four.jpg") center center no-repeat;
     background-size: cover;
     padding: 34px 0;
+
+    @include breakpointmedia(768, "max-width") {
+        padding: 30px 0;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        display: none;
+    }
 }
 
 .bottomMenu__content {
@@ -20,9 +28,17 @@
     &:nth-of-type(3) { padding-left: 70px; }
     &:nth-of-type(4) { padding-left: 62px; }
 
+    @include breakpointmedia(768, "max-width") {
+        &:nth-of-type(4) { padding-left: 25px; }
+    }
+
     li {
         display: block;
         margin-bottom: 12px;
+
+        @include breakpointmedia(768, "max-width") {
+            margin-bottom: 10px;
+        }
 
         &:last-of-type { margin-bottom: 0; }
     }
@@ -30,6 +46,10 @@
     a {
         font-size: 15px;
         color: #0f2a47;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 14px;
+        }
 
         &:hover { color: #c00202; }
     }

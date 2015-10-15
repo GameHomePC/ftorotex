@@ -1,7 +1,25 @@
 .fieldset {
     margin-bottom: 10px;
+
+    @include breakpointmedia(640, "max-width") {
+        margin-bottom: 14px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-bottom: 12px;
+    }
     
-    &.f_select { margin-bottom: 17px; }
+    &.f_select {
+        margin-bottom: 17px;
+
+        @include breakpointmedia(640, "max-width") {
+            margin-bottom: 25px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            margin-bottom: 20px;
+        }
+    }
     
     &:last-of-type {
         margin-bottom: 0;
@@ -9,15 +27,33 @@
 }
 
 .formText {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     color: #ffffff;
     line-height: 34px;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 15px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 22px;
+        line-height: 38px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 18px;
+        line-height: 32px;
+    }
 }
 
 /* button-set */
 .button-set {
     margin-top: 20px;
+
+    @include breakpointmedia(640, "max-width") {
+        margin-top: 15px;
+    }
 }
 
 /* button */
@@ -37,6 +73,21 @@
         letter-spacing: -0.5px;
         height: 67px;
         border-radius: 3px;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 15px;
+            height: 55px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 20px;
+            height: 65px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 16px;
+            height: 50px;
+        }
     }
 }
 
@@ -58,6 +109,24 @@ input, textarea, select {
     color: #333333;
     letter-spacing: -0.4px;
 
+    @include breakpointmedia(768, "max-width") {
+        height: 35px;
+        padding: 0 8px;
+        font-size: 14px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        height: 48px;
+        padding: 0 14px;
+        font-size: 18px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        height: 38px;
+        padding: 0 10px;
+        font-size: 17px;
+    }
+
     @include placeholder {
         color: #333333;
     }
@@ -75,6 +144,23 @@ input, textarea, select {
     color: #333333;
     resize: none;
     letter-spacing: -0.4px;
+
+    @include breakpointmedia(768, "max-width") {
+        height: 100px;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 14px;
+        font-size: 18px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 8px 10px;
+        font-size: 17px;
+        height: 80px;
+    }
 
     @include placeholder {
         color: #333333;
@@ -96,4 +182,19 @@ input, textarea, select {
     background: #ffffff url("../images/sprite/select-icon.png") top right no-repeat;
     background-size: contain;
     padding-right: 40px;
+
+    @include breakpointmedia(768, "max-width") {
+        height: 32px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        height: 42px;
+        padding: 0 8px;
+        font-size: 14px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        height: 35px;
+        padding: 0 5px;
+    }
 }

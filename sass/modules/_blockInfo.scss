@@ -18,15 +18,31 @@
             p:first-child { margin-bottom: 0; }
         }
     }
+
+    @include breakpointmedia(640, "max-width") {
+        margin-bottom: 35px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-bottom: 20px;
+    }
 }
 
 .blockInfo__item__middle {
     margin-bottom: 48px;
+
+    @include breakpointmedia(480, "max-width") {
+        margin-bottom: 30px;
+    }
 }
 
 .blockInfo__icon {
     float: left;
     width: 65px;
+
+    @include breakpointmedia(768, "max-width") { width: 58px; }
+    @include breakpointmedia(640, "max-width") { width: 75px; }
+    @include breakpointmedia(480, "max-width") { width: 55px; }
 
     &:before {
         display: block;
@@ -46,8 +62,16 @@
     @include breakpointmedia(768, "max-width") { @include sprite($time-icon-768); }
     @include breakpointmedia(640, "max-width") { @include sprite($time-icon-640); }
 }
-.blockInfo__icon_email:before { @include sprite($email-icon); }
-.blockInfo__icon_world:before { @include sprite($world-icon); }
+.blockInfo__icon_email:before {
+    @include sprite($email-icon);
+
+    @include breakpointmedia(768, "max-width") { @include sprite($email-icon-768); }
+}
+.blockInfo__icon_world:before {
+    @include sprite($world-icon);
+
+    @include breakpointmedia(768, "max-width") { @include sprite($world-icon-768); }
+}
 
 .blockInfo__content {
     float: left;
@@ -55,6 +79,21 @@
     padding-left: 65px;
     width: 100%;
     box-sizing: border-box;
+
+    @include breakpointmedia(768, "max-width") {
+        margin-left: -58px;
+        padding-left: 58px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        margin-left: -75px;
+        padding-left: 75px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-left: -55px;
+        padding-left: 55px;
+    }
 }
 
 .blockInfo__title {
@@ -64,6 +103,26 @@
     margin-bottom: 14px;
     letter-spacing: -0.6px;
     line-height: 24px;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 18px;
+        letter-spacing: 0;
+        margin-bottom: 8px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 20px;
+        letter-spacing: 0;
+        margin-bottom: 8px;
+
+        br { display: none; }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 17px;
+        margin-bottom: 8px;
+        line-height: 22px;
+    }
 }
 
 .blockInfo__description {
@@ -71,6 +130,23 @@
     font-weight: 300;
     color: #000000;
     line-height: 18px;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 16px;
+        letter-spacing: 0;
+        margin-bottom: 8px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 14px;
+        margin-bottom: 8px;
+        line-height: 16px;
+    }
 }
 
 .blockInfo__link {
@@ -83,9 +159,26 @@
 
 .blockInfo__phone {
     margin-top: 20px;
+
+    @include breakpointmedia(768, "max-width") {
+        margin-top: 6px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        margin-top: 20px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-top: 12px;
+    }
+
     p {
         @include clearfix;
         margin-bottom: 10px;
+
+        @include breakpointmedia(640, "max-width") {
+            margin-bottom: 6px;
+        }
     }
 }
 
@@ -105,12 +198,36 @@
 .blockInfo__small {
     font-size: 18px;
     color: #333333;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 16px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 24px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 14px;
+    }
 }
 
 .blockInfo__big {
     font-size: 20px;
     font-weight: bold;
     color: #333333;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 18px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 22px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 18px;
+    }
 }
 .blockInfo__big_size18 { font-size: 18px; letter-spacing: -0.5px }
 .blockInfo__big_size22 { font-size: 22px; }
@@ -122,6 +239,11 @@
 
     @include breakpointmedia(768, "max-width") {
         letter-spacing: -0.5px;
+        font-size: 11px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 12px;
     }
 }
 
@@ -189,6 +311,24 @@
         padding-left: 80px;
         box-sizing: border-box;
     }
+
+    @include breakpointmedia(640, "max-width") {
+        width: 100px;
+
+        & + * {
+            margin-left: -100px;
+            padding-left: 100px;
+        }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        width: 60px;
+
+        & + * {
+            margin-left: -60px;
+            padding-left: 60px;
+        }
+    }
 }
 
 /* 100 */
@@ -209,8 +349,6 @@
             padding-left: 88px;
         }
     }
-
-
 }
 
 /* 230 */

@@ -1,5 +1,15 @@
 .client {
-    .sectionBox__title { color: #205c9d; }
+    .sectionBox__title {
+        color: #205c9d;
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 32px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 26px;
+        }
+    }
 }
 
 .sliderClient__item {
@@ -7,6 +17,10 @@
         position: relative;
         display: block;
         height: 90px;
+
+        @include breakpointmedia(640, "max-width") {
+            height: 75px;
+        }
     }
 
     img {
@@ -14,5 +28,9 @@
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
+
+        @include breakpointmedia(640, "max-width") {
+            width: 50%;
+        }
     }
 }

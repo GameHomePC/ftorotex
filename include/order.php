@@ -10,10 +10,10 @@
                     <div class="blockInfo__icon blockInfo__icon_one"></div>
 
                     <div class="blockInfo__content">
-                        <div class="blockInfo__title">Позвоните нам или отправьте запрос</div>
+                        <div class="blockInfo__title">Позвоните нам или отправьте <br class="media768"> запрос</div>
                         <div class="blockInfo__description">
-                            Мы проконсультируем Вас по интересующим<br>
-                            вопросам и подготовим необходимые<br>
+                            Мы проконсультируем Вас по<br class="media768"> интересующим<br class="media1200">
+                            вопросам и подготовим <br class="media768">необходимые<br class="media1200">
                             документы
                         </div>
 

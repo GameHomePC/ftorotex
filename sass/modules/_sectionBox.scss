@@ -2,6 +2,14 @@
     position: relative;
     padding: 52px 0 45px;
     box-sizing: border-box;
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 35px 7% 30px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 25px 13px;
+    }
 }
 
 .sectionBoxMin {
@@ -14,6 +22,16 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: -1px;
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 28px;
+        letter-spacing: -1px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 24px;
+        line-height: 28px;
+    }
 }
 .sectionBox__title35 {
     font-size: 35px;
@@ -26,4 +44,16 @@
 .sectionBox__content {
     margin-top: 53px;
     @include clearfix;
+
+    @include breakpointmedia(768, "max-width") {
+        margin-top: 40px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        margin-top: 30px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-top: 22px;
+    }
 }

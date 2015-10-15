@@ -29,17 +29,17 @@ a {
 
     & > div { float: left; }
 
-    .coll-1 { width: 8.333333333333334%!important; }
-    .coll-2 { width: 16.666666666666668%!important; }
+    .coll-1 { width: 8.333333333333334%; }
+    .coll-2 { width: 16.666666666666668%; }
     .coll-3 { width: 25%!important; }
-    .coll-4 { width: 33.333333333333336%!important; }
-    .coll-5 { width: 41.66666666666667%!important; }
+    .coll-4 { width: 33.333333333333336%; }
+    .coll-5 { width: 41.66666666666667%; }
     .coll-6 { width: 50%!important; }
-    .coll-7 { width: 58.333333333333336%!important; }
-    .coll-8 { width: 66.66666666666667%!important; }
+    .coll-7 { width: 58.333333333333336%; }
+    .coll-8 { width: 66.66666666666667%; }
     .coll-9 { width: 75%!important; }
-    .coll-10 { width: 83.33333333333334%!important; }
-    .coll-11 { width: 91.66666666666667%!important; }
+    .coll-10 { width: 83.33333333333334%; }
+    .coll-11 { width: 91.66666666666667%; }
     .coll-12 { width: 100%!important; }
 }
 
@@ -101,10 +101,27 @@ a {
 .icon__reader { @include sprite($icon-reader); }
 .icon__menu { @include sprite($icon-menu); }
 
+
+.media1200 {
+    display: none;
+
+    @include breakpointmedia(767, 1200) {
+        display: inline-block;
+    }
+}
+
 .media768 {
     display: none;
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmediaMinMax(639, 767) {
+        display: inline-block;
+    }
+}
+
+.media640 {
+    display: none;
+
+    @include breakpointmediaMinMax(479, 639) {
         display: inline-block;
     }
 }
@@ -112,15 +129,8 @@ a {
 .media480 {
     display: none;
 
-    @include breakpointmedia(480, "max-width") {
+    @include breakpointmediaMinMax(319, 479) {
         display: block;
     }
 }
 
-.media1200 {
-    display: none;
-
-    @include breakpointmedia(769) {
-        display: inline-block;
-    }
-}

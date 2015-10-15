@@ -1,12 +1,44 @@
 .order {
     background: #fff;
+
+    &.sectionBox {
+        @include breakpointmedia(640, "max-width") {
+            padding: 35px 0 0;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            padding: 24px 0 0;
+        }
+    }
+
+
     .sectionBox__title {
         color: #205c9d;
+
+        @include breakpointmedia(640, "max-width") {
+            letter-spacing: 0.5px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+
+        }
     }
 
     .sectionBox__content {
         @include clearfix;
         margin-top: 63px;
+
+        @include breakpointmedia(768, "max-width") {
+            margin-top: 52px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            margin-top: 42px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            margin-top: 30px;
+        }
     }
 
     .wrapper { position: static; }
@@ -17,6 +49,23 @@
         margin-left: -304px;
         padding-left: 304px;
         box-sizing: border-box;
+
+        @include breakpointmedia(768, "max-width") {
+            margin-left: -265px;
+            padding-left: 265px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            padding: 0 7% 50px 7%;
+            margin-left: 0;
+            float: none;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            padding: 0 13px 15px 13px;
+            margin-left: 0;
+            float: none;
+        }
     }
 }
 
@@ -27,4 +76,8 @@
     right: 0;
     margin: auto;
     @include sprite($user-icon-2);
+
+    @include breakpointmedia(640, "max-width") {
+        display: none;
+    }
 }

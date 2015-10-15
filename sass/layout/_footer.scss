@@ -7,47 +7,138 @@
     @include clearfix;
 
     .wrapper {
+        @include breakpointmedia(640, "max-width") {
+            padding-bottom: 60px;
+        }
 
+        @include breakpointmedia(480, "max-width") {
+            padding-bottom: 70px;
+        }
     }
 }
 
 .footerItem {
     float: left;
+    box-sizing: border-box;
 }
 
 .footerItem__left {
     width: 25%;
 
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        padding-left: 7%;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        bottom: 42px;
+        padding-right: 13px;
+        padding-left: 13px;
+        left: 0;
+        width: 100%;
+    }
+
     p {
         font-size: 14px;
         color: #c3daea;
         line-height: 56px;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 12px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            line-height: normal;
+        }
     }
 }
-.footerItem__middle { width: 50%; }
+.footerItem__middle {
+    width: 50%;
+    box-sizing: border-box;
+
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0 7%;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 0;
+    }
+}
+
 .footerItem__right {
     width: 25%;
     text-align: right;
+
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        padding-right: 7%;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        bottom: 15px;
+        padding-right: 13px;
+        padding-left: 13px;
+        left: 0;
+        width: 100%;
+        text-align: left;
+    }
 
     p {
         font-size: 14px;
         font-style: italic;
         color: #c3daea;
         line-height: 56px;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 12px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            line-height: normal;
+        }
     }
 
     a {
         font-size: 14px;
         font-style: normal;
         color: #5489c3;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 12px;
+        }
     }
 }
 
 .footerItem__list {
     @include clearfix;
 
+    @include breakpointmedia(640, "max-width") {
+        @include core-justify();
+    }
+
     li {
         float: left;
+
+        @include breakpointmedia(640, "max-width") {
+            display: inline-block;
+            float: none;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            display: block;
+            margin-bottom: 1px;
+        }
     }
 
     a {
@@ -58,5 +149,24 @@
         line-height: 56px;
         padding: 0 10px;
         box-sizing: border-box;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 12px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 18px;
+            line-height: 65px;
+            padding: 0;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            padding: 0 13px;
+            height: 40px;
+            line-height: 41px;
+            font-size: 16px;
+            background: #133356;
+            text-decoration: none;
+        }
     }
 }

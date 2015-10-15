@@ -3,14 +3,60 @@
     background-size: cover;
     padding: 52px 0 143px;
 
+    @include breakpointmedia(640, "max-width") {
+        padding: 52px 7%;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 25px 13px;
+    }
+
     .sectionBox__title {
         color: #fff;
+    }
+
+    .slider .owl-next {
+        @include breakpointmedia(640, "max-width") {
+            right: 10px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            right: 0;
+        }
+    }
+
+    .slider .owl-prev {
+        @include breakpointmedia(640, "max-width") {
+            left: 10px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            left: 0;
+        }
+    }
+
+    .owl-pagination {
+        @include breakpointmedia(640, "max-width") {
+            display: none;
+        }
     }
 }
 
 .sliderAboutUs {
     padding: 0 62px;
     box-sizing: border-box;
+
+    @include breakpointmedia(768, "max-width") {
+        padding: 0 55px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 0 60px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 0;
+    }
 }
 
 .sliderAboutUs__item {
@@ -19,11 +65,31 @@
     padding: 33px 28px;
     box-sizing: border-box;
     border-radius: 5px;
+
+    @include breakpointmedia(768, "max-width") {
+        padding: 30px 24px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 25px 30px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 15px 18px;
+    }
 }
 
 .sliderAboutUs__images {
     float: left;
     width: 164px;
+
+    @include breakpointmedia(768, "max-width") {
+        width: 147px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        display: none;
+    }
 
     img { width: 100%; }
 }
@@ -35,11 +101,38 @@
     padding-left: 196px;
     box-sizing: border-box;
 
+    @include breakpointmedia(768, "max-width") {
+        margin-left: -147px;
+        padding-left: 176px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
     h3 {
         font-size: 20px;
         color: #c00202;
         letter-spacing: 0.8px;
         margin-bottom: 22px;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 14px;
+        }
     }
 
     p {
@@ -49,6 +142,20 @@
         color: #000000;
         margin-bottom: 25px;
         letter-spacing: 0.2px;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            margin-bottom: 18px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 14px;
+            line-height: 16px;
+        }
     }
 
     span {
@@ -57,5 +164,17 @@
         color: #5f5f5f;
         line-height: 18px;
         letter-spacing: -0.5px;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 12px;
+            line-height: 15px;
+
+            br { display: none; }
+        }
     }
 }

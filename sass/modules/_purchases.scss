@@ -10,6 +10,10 @@
 .purchases__box {
     margin-bottom: 15px;
 
+    @include breakpointmedia(640, "max-width") {
+        margin-bottom: 10px;
+    }
+
     &:last-of-type { margin-bottom: 0; }
 
     h4 {
@@ -17,12 +21,33 @@
         font-weight: bold;
         color: #353b40;
         letter-spacing: -0.2px;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 18px;
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 16px;
+        }
     }
 }
 
 .purchases__content {
     margin-top: 17px;
     @include clearfix;
+
+    @include breakpointmedia(768, "max-width") {
+        margin-top: 22px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-top: 10px;
+    }
 
     a {
         float: left;
@@ -32,6 +57,23 @@
         padding-right: 17px;
         padding-bottom: 17px;
         letter-spacing: 0.5px;
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            padding-bottom: 11px;
+        }
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 16px;
+            padding-bottom: 24px;
+            padding-right: 30px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            padding-bottom: 16px;
+            padding-right: 18px;
+        }
 
         &:hover { color: #c00202; }
     }
