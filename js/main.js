@@ -72,5 +72,75 @@ function Constructor() {
             _this.cardNote__mainImages.find('img').attr('src', selfAttr);
             return false;
         });
+    };
+}
+
+/* getMap */
+function getMap() {
+    this.initialize = function(config) {
+        this.mapID = config.map;
+        this.mapInfoLink = $(config.mapInfoLink);
+        this.mapInfoBlock = $(config.mapInfoBlock);
+
+        if(this.mapID) { this.getMapMain(); }
+        if(this.mapInfoLink.length || this.mapInfoBlock.length ) { this.getTab(); }
+    };
+
+    this.getMapMain = function(config) {
+        ymaps.ready(this.getMap.bind(this));
+    };
+
+    this.getMap = function() {
+        var options = {
+            center: [53.946949, 27.682178],
+            zoom: 17,
+            controls: []
+        };
+
+        var map = this.map = new ymaps.Map(this.mapID, options);
+    };
+
+    this.getMapGeo = function(geocode) {
+        var _this = this;
+
+        ymaps.geocode(geocode, {
+            results: 1
+        }).then(function (res) {
+            var firstGeoObject = res.geoObjects.get(0),
+                coords = firstGeoObject.geometry.getCoordinates(),
+                bounds = firstGeoObject.properties.get('boundedBy');
+
+            _this.map.geoObjects.add(firstGeoObject);
+            _this.map.setBounds(bounds, {
+                checkZoomRange: true
+            });
+        });
+    };
+
+    this.getTab = function() {
+        var _this = this;
+
+        console.log(this.mapInfoLink);
+
+        this.mapInfoLink.find('li a').on('click', function() {
+            var self = $(this),
+                selfIndex = self.index(),
+                selfDataRegion = self.attr("data-region");
+
+
+
+            if(!self.parent('li').hasClass('active')) {
+                _this.mapInfoLink.find('li a').parent('li').removeClass('active');
+                _this.mapInfoLink.find('.mapInfo__bottom').removeClass('active');
+                self.parent('li').addClass('active');
+                self.next('.mapInfo__bottom').addClass('active');
+                _this.getMapGeo();
+            } else {
+                _this.mapInfoLink.find('li a').parent('li').removeClass('active');
+                _this.mapInfoLink.find('.mapInfo__bottom').removeClass('active');
+            }
+
+            return false;
+        });
     }
 }

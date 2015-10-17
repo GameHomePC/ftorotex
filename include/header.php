@@ -2,7 +2,7 @@
     <div class="header__top">
         <div class="wrapper">
             <div class="headerLogo">
-                <a href="#"><img src="/images/logo.png" alt=""></a>
+                <a href="#"><img src="images/logo.png" alt=""></a>
                 <div class="headerLogo__info">
                     <p class="headerLogo__big">ОДО «Фторотекс»</p>
                     <p class="headerLogo__small">Технические полимеры и пластики</p>

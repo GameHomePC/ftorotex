@@ -150,6 +150,10 @@
         padding: 0 10px;
         box-sizing: border-box;
 
+        &:hover {
+            color: #c00202;
+        }
+
         @include breakpointmedia(768, "max-width") {
             font-size: 12px;
         }
@@ -167,6 +171,272 @@
             font-size: 16px;
             background: #133356;
             text-decoration: none;
+        }
+    }
+}
+
+
+.footer__bottom {
+    position: relative;
+
+    .wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        @include breakpointmedia(640, "max-width") {
+            width: 85%;
+            max-width: 100%;
+        }
+    }
+}
+/* map */
+.map {
+    width: 100%;
+    height: 535px;
+
+    @include breakpointmedia(960, "max-width") { height: 500px; }
+    @include breakpointmedia(768, "max-width") { height: 435px; }
+}
+
+.footerB__line {
+    height: 17px;
+    box-sizing: border-box;
+    border-top: 4px solid #1c4574;
+    background: #0f2a47;
+    box-shadow: 0 0 0 0 rgba(0,5px,15px,0.5);
+}
+
+/* mapInfo */
+.mapInfo {
+    position: relative;
+    display: inline-block;
+    background: #ffffff;
+    max-width: 485px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    margin-top: 88px;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+
+    @include breakpointmedia(960, "max-width") {
+        margin-top: 80px;
+        max-width: 440px;
+    }
+
+    @include breakpointmedia(768, "max-width") {
+        margin-top: 73px;
+        max-width: 394px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        max-width: 100%;
+        margin: 20px 0 0;
+        border-radius: 5px;
+    }
+}
+
+.mapInfo__top {
+    @include clearfix;
+    padding: 0 14px;
+    border-bottom: 1px solid #dbdbdb;
+    box-sizing: border-box;
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 0;
+        border-bottom: none;
+    }
+
+    & > li {
+        float: left;
+        margin-bottom: -3px;
+        margin-left: 31px;
+
+        &:first-child { margin-left: 0; }
+
+        &:hover, &.active {
+            & > a {
+                border-color: #c00202;
+                color: #000000;
+            }
+        }
+
+        &.active {
+            & > a {
+                &:before {
+                    transform: rotate(180deg);
+                }
+            }
+
+            .mapInfoLink__info:before {
+                @include sprite($info-footer-active);
+            }
+        }
+
+        @include breakpointmedia(640, "max-width") {
+            float: none;
+            display: block;
+            margin: 0;
+            border-bottom: 1px solid #dbdbdb;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            position: relative;
+        }
+    }
+}
+
+/* mapInfoLink__link */
+.mapInfoLink__link {
+    position: relative;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #bbbbbb;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    z-index: 10;
+
+    @include breakpointmedia(960, "max-width") {
+        font-size: 14px;
+    }
+
+    @include breakpointmedia(768, "max-width") {
+        height: 43px;
+        line-height: 43px;
+        padding: 0 3px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 0 20px;
+        border: none;
+        font-weight: bold;
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+
+        &:before {
+            position: absolute;
+            right: 20px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            transform: rotate(0deg);
+            @include sprite($arrow-footer);
+            content: "";
+        }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        &:before {
+            display: none;
+        }
+    }
+}
+
+.mapInfo__bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+
+    display: none;
+
+    &.active { display: block; }
+
+    @include breakpointmedia(640, "max-width") {
+        position: relative;
+        border-top: 1px solid #dbdbdb;
+    }
+}
+
+.mapInfo__content {
+    padding: 34px 19px;
+
+    @include breakpointmedia(960, "max-width") {
+        padding: 28px 19px;
+    }
+
+    @include breakpointmedia(768, "max-width") {
+        padding: 26px 13px;
+    }
+
+    p {
+        margin-top: 15px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+
+        @include breakpointmedia(960, "max-width") {
+            font-size: 14px;
+            margin-top: 11px;
+        }
+
+        @include breakpointmedia(768, "max-width") {
+            font-size: 13px;
+            margin-top: 7px;
+        }
+    }
+
+    a {
+        color: #5489c3;
+        font-weight: bold;
+    }
+}
+
+.mapInfo__title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #c00202;
+
+    @include breakpointmedia(960, "max-width") {
+        font-size: 15px;
+    }
+}
+
+.mapInfoLink__geo {
+    display: none;
+    @include breakpointmedia(480, "max-width") {
+        position: absolute;
+        top: 0;
+        right: 48px;
+        height: 40px;
+        display: block;
+        padding: 0 10px;
+        z-index: 10;
+        &:before {
+            display: block;
+            margin-top: 8px;
+            @include sprite($marker-footer);
+            content: "";
+        }
+    }
+}
+
+.mapInfoLink__info {
+    display: none;
+    @include breakpointmedia(480, "max-width") {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        height: 40px;
+        display: block;
+        padding: 0 10px;
+        z-index: 10;
+        &:before {
+            display: block;
+            margin-top: 9px;
+            @include sprite($info-footer);
+            content: "";
         }
     }
 }

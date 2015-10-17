@@ -287,14 +287,14 @@ a {
 .icon__exel {
   background-image: url("../images/sprite.png");
   background-repeat: no-repeat;
-  background-position: -39px -592px;
+  background-position: -78px -592px;
   width: 34px;
   height: 39px; }
 
 .icon__reader {
   background-image: url("../images/sprite.png");
   background-repeat: no-repeat;
-  background-position: -78px -592px;
+  background-position: -39px -592px;
   width: 34px;
   height: 39px; }
 
@@ -881,7 +881,7 @@ input, textarea, select {
     margin: auto;
     background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
-    background-position: -448px -524px;
+    background-position: -515px -524px;
     width: 16px;
     height: 15px;
     content: ""; }
@@ -889,7 +889,7 @@ input, textarea, select {
       .headerSearch__icon:before {
         background-image: url("../images/sprite.png");
         background-repeat: no-repeat;
-        background-position: -490px -524px;
+        background-position: -494px -524px;
         width: 16px;
         height: 15px; } }
 
@@ -1037,6 +1037,8 @@ input, textarea, select {
   padding: 0 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .footerItem__list a:hover {
+    color: #c00202; }
   @media screen and (max-width: 48em) {
     .footerItem__list a {
       font-size: 12px; } }
@@ -1053,6 +1055,251 @@ input, textarea, select {
       font-size: 16px;
       background: #133356;
       text-decoration: none; } }
+
+.footer__bottom {
+  position: relative; }
+  .footer__bottom .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; }
+    @media screen and (max-width: 40em) {
+      .footer__bottom .wrapper {
+        width: 85%;
+        max-width: 100%; } }
+
+/* map */
+.map {
+  width: 100%;
+  height: 535px; }
+  @media screen and (max-width: 60em) {
+    .map {
+      height: 500px; } }
+  @media screen and (max-width: 48em) {
+    .map {
+      height: 435px; } }
+
+.footerB__line {
+  height: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 4px solid #1c4574;
+  background: #0f2a47;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 5, 15, 0.5);
+          box-shadow: 0 0 0 0 rgba(0, 5, 15, 0.5); }
+
+/* mapInfo */
+.mapInfo {
+  position: relative;
+  display: inline-block;
+  background: #ffffff;
+  max-width: 485px;
+  width: 100%;
+  -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+  margin-top: 88px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1); }
+  @media screen and (max-width: 60em) {
+    .mapInfo {
+      margin-top: 80px;
+      max-width: 440px; } }
+  @media screen and (max-width: 48em) {
+    .mapInfo {
+      margin-top: 73px;
+      max-width: 394px; } }
+  @media screen and (max-width: 40em) {
+    .mapInfo {
+      max-width: 100%;
+      margin: 20px 0 0;
+      -webkit-border-radius: 5px;
+              border-radius: 5px; } }
+
+.mapInfo__top {
+  padding: 0 14px;
+  border-bottom: 1px solid #dbdbdb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .mapInfo__top:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  @media screen and (max-width: 40em) {
+    .mapInfo__top {
+      padding: 0;
+      border-bottom: none; } }
+  .mapInfo__top > li {
+    float: left;
+    margin-bottom: -3px;
+    margin-left: 31px; }
+    .mapInfo__top > li:first-child {
+      margin-left: 0; }
+    .mapInfo__top > li:hover > a, .mapInfo__top > li.active > a {
+      border-color: #c00202;
+      color: #000000; }
+    .mapInfo__top > li.active > a:before {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .mapInfo__top > li.active .mapInfoLink__info:before {
+      background-image: url("../images/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -451px -524px;
+      width: 17px;
+      height: 17px; }
+    @media screen and (max-width: 40em) {
+      .mapInfo__top > li {
+        float: none;
+        display: block;
+        margin: 0;
+        border-bottom: 1px solid #dbdbdb; }
+        .mapInfo__top > li:last-of-type {
+          border-bottom: none; } }
+    @media screen and (max-width: 30em) {
+      .mapInfo__top > li {
+        position: relative; } }
+
+/* mapInfoLink__link */
+.mapInfoLink__link {
+  position: relative;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  color: #bbbbbb;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+  z-index: 10; }
+  @media screen and (max-width: 60em) {
+    .mapInfoLink__link {
+      font-size: 14px; } }
+  @media screen and (max-width: 48em) {
+    .mapInfoLink__link {
+      height: 43px;
+      line-height: 43px;
+      padding: 0 3px; } }
+  @media screen and (max-width: 40em) {
+    .mapInfoLink__link {
+      padding: 0 20px;
+      border: none;
+      font-weight: bold;
+      font-size: 14px;
+      height: 40px;
+      line-height: 40px; }
+      .mapInfoLink__link:before {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        background-image: url("../images/sprite.png");
+        background-repeat: no-repeat;
+        background-position: -824px -493px;
+        width: 17px;
+        height: 10px;
+        content: ""; } }
+  @media screen and (max-width: 30em) {
+    .mapInfoLink__link:before {
+      display: none; } }
+
+.mapInfo__bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
+  background: #fff;
+  display: none; }
+  .mapInfo__bottom.active {
+    display: block; }
+  @media screen and (max-width: 40em) {
+    .mapInfo__bottom {
+      position: relative;
+      border-top: 1px solid #dbdbdb; } }
+
+.mapInfo__content {
+  padding: 34px 19px; }
+  @media screen and (max-width: 60em) {
+    .mapInfo__content {
+      padding: 28px 19px; } }
+  @media screen and (max-width: 48em) {
+    .mapInfo__content {
+      padding: 26px 13px; } }
+  .mapInfo__content p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000; }
+    @media screen and (max-width: 60em) {
+      .mapInfo__content p {
+        font-size: 14px;
+        margin-top: 11px; } }
+    @media screen and (max-width: 48em) {
+      .mapInfo__content p {
+        font-size: 13px;
+        margin-top: 7px; } }
+  .mapInfo__content a {
+    color: #5489c3;
+    font-weight: bold; }
+
+.mapInfo__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c00202; }
+  @media screen and (max-width: 60em) {
+    .mapInfo__title {
+      font-size: 15px; } }
+
+.mapInfoLink__geo {
+  display: none; }
+  @media screen and (max-width: 30em) {
+    .mapInfoLink__geo {
+      position: absolute;
+      top: 0;
+      right: 48px;
+      height: 40px;
+      display: block;
+      padding: 0 10px;
+      z-index: 10; }
+      .mapInfoLink__geo:before {
+        display: block;
+        margin-top: 8px;
+        background-image: url("../images/sprite.png");
+        background-repeat: no-repeat;
+        background-position: -59px -566px;
+        width: 15px;
+        height: 21px;
+        content: ""; } }
+
+.mapInfoLink__info {
+  display: none; }
+  @media screen and (max-width: 30em) {
+    .mapInfoLink__info {
+      position: absolute;
+      top: 0;
+      right: 5px;
+      height: 40px;
+      display: block;
+      padding: 0 10px;
+      z-index: 10; }
+      .mapInfoLink__info:before {
+        display: block;
+        margin-top: 9px;
+        background-image: url("../images/sprite.png");
+        background-repeat: no-repeat;
+        background-position: -427px -524px;
+        width: 19px;
+        height: 19px;
+        content: ""; } }
 
 /* slider */
 /*
@@ -1100,7 +1347,7 @@ input, textarea, select {
     .slider .owl-prev:before {
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
-      background-position: -59px -566px;
+      background-position: -79px -566px;
       width: 11px;
       height: 21px; }
   .slider .owl-next {
@@ -1108,7 +1355,7 @@ input, textarea, select {
     .slider .owl-next:before {
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
-      background-position: -75px -566px;
+      background-position: -95px -566px;
       width: 11px;
       height: 21px; }
   .slider .owl-pagination {
@@ -1543,7 +1790,7 @@ input, textarea, select {
       top: 0;
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
-      background-position: -469px -524px;
+      background-position: -473px -524px;
       width: 16px;
       height: 15px;
       content: ""; }
@@ -1567,7 +1814,7 @@ input, textarea, select {
 .bunner__form {
   position: relative;
   float: left;
-  width: 265px;
+  width: 304px;
   padding: 17px 15px 22px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1576,7 +1823,8 @@ input, textarea, select {
           border-radius: 5px; }
   @media screen and (max-width: 48em) {
     .bunner__form {
-      font-size: 16px; } }
+      font-size: 16px;
+      width: 265px; } }
   @media screen and (max-width: 40em) {
     .bunner__form {
       float: none;
@@ -2244,70 +2492,70 @@ input, textarea, select {
 .blockInfo__icon_one:before {
   background-image: url("../images/sprite.png");
   background-repeat: no-repeat;
-  background-position: -59px -524px;
+  background-position: -102px -524px;
   width: 38px;
   height: 37px; }
   @media screen and (max-width: 48em) {
-    .blockInfo__icon_one:before {
-      background-image: url("../images/sprite.png");
-      background-repeat: no-repeat;
-      background-position: -349px -524px;
-      width: 34px;
-      height: 34px; } }
-  @media screen and (max-width: 40em) {
     .blockInfo__icon_one:before {
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
       background-position: -388px -524px;
       width: 34px;
       height: 34px; } }
+  @media screen and (max-width: 40em) {
+    .blockInfo__icon_one:before {
+      background-image: url("../images/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -349px -524px;
+      width: 34px;
+      height: 34px; } }
 
 .blockInfo__icon_two:before {
   background-image: url("../images/sprite.png");
   background-repeat: no-repeat;
-  background-position: -102px -524px;
+  background-position: -59px -524px;
   width: 38px;
   height: 37px; }
   @media screen and (max-width: 48em) {
     .blockInfo__icon_two:before {
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
-      background-position: -309px -524px;
+      background-position: -269px -524px;
       width: 35px;
       height: 34px; } }
   @media screen and (max-width: 40em) {
     .blockInfo__icon_two:before {
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
-      background-position: -269px -524px;
+      background-position: -309px -524px;
       width: 35px;
       height: 34px; } }
 
 .blockInfo__icon_email:before {
   background-image: url("../images/sprite.png");
   background-repeat: no-repeat;
-  background-position: -1059px -424px;
+  background-position: -1014px -424px;
   width: 40px;
   height: 39px; }
   @media screen and (max-width: 48em) {
     .blockInfo__icon_email:before {
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
-      background-position: -145px -524px;
+      background-position: -186px -524px;
       width: 36px;
       height: 36px; } }
 
 .blockInfo__icon_world:before {
   background-image: url("../images/sprite.png");
   background-repeat: no-repeat;
-  background-position: -1014px -424px;
+  background-position: -1059px -424px;
   width: 40px;
   height: 39px; }
   @media screen and (max-width: 48em) {
     .blockInfo__icon_world:before {
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
-      background-position: -186px -524px;
+      background-position: -145px -524px;
       width: 36px;
       height: 36px; } }
 
@@ -2624,7 +2872,7 @@ input, textarea, select {
     top: 0;
     background-image: url("../images/sprite.png");
     background-repeat: no-repeat;
-    background-position: -427px -524px;
+    background-position: -536px -524px;
     width: 16px;
     height: 15px;
     content: ""; }

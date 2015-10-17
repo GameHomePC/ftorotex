@@ -11,35 +11,39 @@ $icon-home: x y offset_x offset_y width height total_width total_height image_pa
 At the bottom of this section, we provide information about the spritesheet itself
 $spritesheet: width height image $spritesheet-sprites;
 */
-            $email-icon-768: (145px, 524px, -145px, -524px, 36px, 36px, 1105px, 632px, 'sprite.png', 'email-icon-768', );
-            $email-icon: (1059px, 424px, -1059px, -424px, 40px, 39px, 1105px, 632px, 'sprite.png', 'email-icon', );
-            $icon-exel: (39px, 592px, -39px, -592px, 34px, 39px, 1105px, 632px, 'sprite.png', 'icon-exel', );
+            $arrow-footer: (824px, 493px, -824px, -493px, 17px, 10px, 1105px, 632px, 'sprite.png', 'arrow-footer', );
+            $email-icon-768: (186px, 524px, -186px, -524px, 36px, 36px, 1105px, 632px, 'sprite.png', 'email-icon-768', );
+            $email-icon: (1014px, 424px, -1014px, -424px, 40px, 39px, 1105px, 632px, 'sprite.png', 'email-icon', );
+            $icon-exel: (78px, 592px, -78px, -592px, 34px, 39px, 1105px, 632px, 'sprite.png', 'icon-exel', );
             $icon-menu: (789px, 493px, -789px, -493px, 30px, 14px, 1105px, 632px, 'sprite.png', 'icon-menu', );
-            $icon-reader: (78px, 592px, -78px, -592px, 34px, 39px, 1105px, 632px, 'sprite.png', 'icon-reader', );
+            $icon-reader: (39px, 592px, -39px, -592px, 34px, 39px, 1105px, 632px, 'sprite.png', 'icon-reader', );
             $icon-word: (0px, 592px, 0px, -592px, 34px, 40px, 1105px, 632px, 'sprite.png', 'icon-word', );
+            $info-footer-active: (451px, 524px, -451px, -524px, 17px, 17px, 1105px, 632px, 'sprite.png', 'info-footer-active', );
+            $info-footer: (427px, 524px, -427px, -524px, 19px, 19px, 1105px, 632px, 'sprite.png', 'info-footer', );
             $info-icon-1: (945px, 424px, -945px, -424px, 64px, 52px, 1105px, 632px, 'sprite.png', 'info-icon-1', );
             $info-icon-2: (878px, 424px, -878px, -424px, 62px, 62px, 1105px, 632px, 'sprite.png', 'info-icon-2', );
             $info-icon-3: (789px, 424px, -789px, -424px, 84px, 64px, 1105px, 632px, 'sprite.png', 'info-icon-3', );
             $info-icon-4: (0px, 524px, 0px, -524px, 54px, 63px, 1105px, 632px, 'sprite.png', 'info-icon-4', );
-            $list-aroow-icon: (427px, 524px, -427px, -524px, 16px, 15px, 1105px, 632px, 'sprite.png', 'list-aroow-icon', );
-            $phone-icon-640: (388px, 524px, -388px, -524px, 34px, 34px, 1105px, 632px, 'sprite.png', 'phone-icon-640', );
-            $phone-icon-768: (349px, 524px, -349px, -524px, 34px, 34px, 1105px, 632px, 'sprite.png', 'phone-icon-768', );
-            $phone-icon: (59px, 524px, -59px, -524px, 38px, 37px, 1105px, 632px, 'sprite.png', 'phone-icon', );
-            $search-icon-1200: (448px, 524px, -448px, -524px, 16px, 15px, 1105px, 632px, 'sprite.png', 'search-icon-1200', );
-            $search-icon: (490px, 524px, -490px, -524px, 16px, 15px, 1105px, 632px, 'sprite.png', 'search-icon', );
+            $list-aroow-icon: (536px, 524px, -536px, -524px, 16px, 15px, 1105px, 632px, 'sprite.png', 'list-aroow-icon', );
+            $marker-footer: (59px, 566px, -59px, -566px, 15px, 21px, 1105px, 632px, 'sprite.png', 'marker-footer', );
+            $phone-icon-640: (349px, 524px, -349px, -524px, 34px, 34px, 1105px, 632px, 'sprite.png', 'phone-icon-640', );
+            $phone-icon-768: (388px, 524px, -388px, -524px, 34px, 34px, 1105px, 632px, 'sprite.png', 'phone-icon-768', );
+            $phone-icon: (102px, 524px, -102px, -524px, 38px, 37px, 1105px, 632px, 'sprite.png', 'phone-icon', );
+            $search-icon-1200: (515px, 524px, -515px, -524px, 16px, 15px, 1105px, 632px, 'sprite.png', 'search-icon-1200', );
+            $search-icon: (494px, 524px, -494px, -524px, 16px, 15px, 1105px, 632px, 'sprite.png', 'search-icon', );
             $select-icon: (227px, 524px, -227px, -524px, 37px, 35px, 1105px, 632px, 'sprite.png', 'select-icon', );
-            $slider-arrow-left: (59px, 566px, -59px, -566px, 11px, 21px, 1105px, 632px, 'sprite.png', 'slider-arrow-left', );
-            $slider-arrow-right: (75px, 566px, -75px, -566px, 11px, 21px, 1105px, 632px, 'sprite.png', 'slider-arrow-right', );
-            $star: (469px, 524px, -469px, -524px, 16px, 15px, 1105px, 632px, 'sprite.png', 'star', );
-            $time-icon-640: (269px, 524px, -269px, -524px, 35px, 34px, 1105px, 632px, 'sprite.png', 'time-icon-640', );
-            $time-icon-768: (309px, 524px, -309px, -524px, 35px, 34px, 1105px, 632px, 'sprite.png', 'time-icon-768', );
-            $time-icon: (102px, 524px, -102px, -524px, 38px, 37px, 1105px, 632px, 'sprite.png', 'time-icon', );
+            $slider-arrow-left: (79px, 566px, -79px, -566px, 11px, 21px, 1105px, 632px, 'sprite.png', 'slider-arrow-left', );
+            $slider-arrow-right: (95px, 566px, -95px, -566px, 11px, 21px, 1105px, 632px, 'sprite.png', 'slider-arrow-right', );
+            $star: (473px, 524px, -473px, -524px, 16px, 15px, 1105px, 632px, 'sprite.png', 'star', );
+            $time-icon-640: (309px, 524px, -309px, -524px, 35px, 34px, 1105px, 632px, 'sprite.png', 'time-icon-640', );
+            $time-icon-768: (269px, 524px, -269px, -524px, 35px, 34px, 1105px, 632px, 'sprite.png', 'time-icon-768', );
+            $time-icon: (59px, 524px, -59px, -524px, 38px, 37px, 1105px, 632px, 'sprite.png', 'time-icon', );
             $user-icon-1-768: (789px, 0px, -789px, 0px, 316px, 419px, 1105px, 632px, 'sprite.png', 'user-icon-1-768', );
             $user-icon-1: (400px, 0px, -400px, 0px, 384px, 510px, 1105px, 632px, 'sprite.png', 'user-icon-1', );
             $user-icon-2: (0px, 0px, 0px, 0px, 395px, 519px, 1105px, 632px, 'sprite.png', 'user-icon-2', );
-            $world-icon-768: (186px, 524px, -186px, -524px, 36px, 36px, 1105px, 632px, 'sprite.png', 'world-icon-768', );
-            $world-icon: (1014px, 424px, -1014px, -424px, 40px, 39px, 1105px, 632px, 'sprite.png', 'world-icon', );
-        $spritesheet-sprites: ($email-icon-768, $email-icon, $icon-exel, $icon-menu, $icon-reader, $icon-word, $info-icon-1, $info-icon-2, $info-icon-3, $info-icon-4, $list-aroow-icon, $phone-icon-640, $phone-icon-768, $phone-icon, $search-icon-1200, $search-icon, $select-icon, $slider-arrow-left, $slider-arrow-right, $star, $time-icon-640, $time-icon-768, $time-icon, $user-icon-1-768, $user-icon-1, $user-icon-2, $world-icon-768, $world-icon, );
+            $world-icon-768: (145px, 524px, -145px, -524px, 36px, 36px, 1105px, 632px, 'sprite.png', 'world-icon-768', );
+            $world-icon: (1059px, 424px, -1059px, -424px, 40px, 39px, 1105px, 632px, 'sprite.png', 'world-icon', );
+        $spritesheet-sprites: ($arrow-footer, $email-icon-768, $email-icon, $icon-exel, $icon-menu, $icon-reader, $icon-word, $info-footer-active, $info-footer, $info-icon-1, $info-icon-2, $info-icon-3, $info-icon-4, $list-aroow-icon, $marker-footer, $phone-icon-640, $phone-icon-768, $phone-icon, $search-icon-1200, $search-icon, $select-icon, $slider-arrow-left, $slider-arrow-right, $star, $time-icon-640, $time-icon-768, $time-icon, $user-icon-1-768, $user-icon-1, $user-icon-2, $world-icon-768, $world-icon, );
         $spritesheet: (1105px, 632px, 'sprite.png', $spritesheet-sprites, );
 
 

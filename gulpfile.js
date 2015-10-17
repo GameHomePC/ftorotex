@@ -16,6 +16,9 @@ var conf = {
         css: './css',
         map: './'
     },
+    js: {
+        root: './js/**/*.js'
+    },
     templatesPath: './**/**/*.php',
     fonts: {
         dirFonts: './fonts',
@@ -84,6 +87,7 @@ gulp.task('browser-sync', function() {
 // ==============
 gulp.task('watch', function() {
     gulp.watch(conf.templatesPath).on('change', browserSync.reload);
+    gulp.watch(conf.js.root).on('change', browserSync.reload);
     gulp.watch(conf.sass.watch, ['sass']);
     gulp.watch(conf.sprite.rootSprite, ['sprite']);
 });
