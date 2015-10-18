@@ -1,0 +1,153 @@
+.articles {
+
+}
+
+.articles__nav {
+
+}
+
+.articles__new {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.pagination {
+    @include clearfix;
+    padding: 25px 0;
+    border-top: 1px solid #e4e4e4;
+    font-size: 0;
+
+    @include breakpointmedia(640, "max-width") {
+        text-align: center;
+    }
+}
+
+.paginationSelect {
+    float: left;
+
+    @include breakpointmedia(640, "max-width") {
+        display: none;
+    }
+
+    span {
+        line-height: 43px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333333;
+        margin-right: 35px;
+    }
+}
+
+.paginationSelect_form {
+    height: 43px;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    appearance: none;
+    background: #ddebeb url("../images/sprite/select-icon2.png") top right no-repeat;
+    background-size: contain;
+    padding: 0 60px 0 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333333;
+}
+
+/* pag__list */
+.pag__list {
+    float: right;
+    @include clearfix;
+
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        display: inline-block;
+    }
+
+    li {
+        float: left;
+    }
+}
+
+.pag__prev, .pag__next {
+    width: 43px;
+    height: 43px;
+
+    span, a {
+        display: block;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+
+        &:before {
+            display: block;
+            content: "";
+        }
+    }
+
+    span {
+        &:before {
+            @include sprite($nav_noactive);
+        }
+    }
+}
+
+.pag__next {
+    margin-left: 10px;
+
+    a {
+        &:before {
+            @include sprite($nav_active);
+        }
+    }
+
+    span {
+        &:before {
+            @include sprite($nav_noactive);
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.pag__prev {
+    margin-right: 10px;
+
+    a {
+        &:before {
+            @include sprite($nav_active);
+            transform: rotate(180deg);
+        }
+    }
+
+    span {
+        &:before {
+            @include sprite($nav_noactive);
+        }
+    }
+}
+
+.pag__num {
+    a {
+        font-size: 18px;
+        color: #115694;
+        padding: 0 10px;
+        line-height: 43px;
+    }
+
+    span {
+        font-size: 22px;
+        color: #115694;
+        padding: 0 10px;
+        line-height: 40px;
+    }
+}
+
+/* articles__doc */
+.articles__doc {
+    @include breakpointmedia(640, "max-width") {
+        padding: 20px 7%;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 20px 13px;
+    }
+}

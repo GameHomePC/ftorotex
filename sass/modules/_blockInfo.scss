@@ -186,6 +186,14 @@
     font-size: 23px;
     color: #5489c3;
     font-weight: bold;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 19px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 14px;
+    }
 }
 
 .blockInfo__phone {
@@ -271,6 +279,10 @@
     @include breakpointmedia(640, "max-width") {
         font-size: 19px;
     }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 14px;
+    }
 }
 
 .blockInfo__normal {
@@ -295,11 +307,23 @@
     @include breakpointmedia(640, "max-width") {
         font-size: 15px;
     }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 12px;
+    }
 }
 
 .blockInfo__normalThree {
     font-size: 20px;
     color: #333333;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 18px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 16px;
+    }
 }
 
 .blockInfo__middle {

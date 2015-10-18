@@ -75,6 +75,14 @@
     &:last-of-type { margin-bottom: 0; }
 
     .icon { margin-right: 15px; }
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 15px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 14px;
+    }
 }
 
 /* contactMain */

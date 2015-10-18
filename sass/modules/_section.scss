@@ -1,0 +1,130 @@
+.accordion {
+
+}
+
+.accordion__tab {
+    margin-bottom: 10px;
+    &:last-of-type { margin-bottom: 0; }
+
+    & > span {
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        color: #333333;
+        text-decoration: none;
+        cursor: pointer;
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 17px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 16px;
+        }
+
+        &:before {
+            display: inline-block;
+            @include sprite($list-aroow-icon);
+            margin-right: 10px;
+            content: "";
+        }
+    }
+
+    &.active {
+        .accordion__content {
+            display: block;
+        }
+
+        & > span:before {
+            transform: rotate(90deg) translateZ(0);
+        }
+    }
+}
+
+.accordion__content {
+    @include clearfix;
+    padding: 25px 0;
+    display: none;
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 20px 0;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 15px 0;
+    }
+}
+
+.accordion__item {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 0 10px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    a {
+        display: block;
+        font-size: 14px;
+        color: #115694;
+        margin-bottom: 10px;
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 12px;
+        }
+
+        &:last-of-type { margin-bottom: 0; }
+    }
+}
+
+.section {
+    @include breakpointmedia(640, "max-width") {
+        padding:  0 7%;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding:  0 13px;
+    }
+
+    .accordion, .photoBox {
+        margin-bottom: 20px;
+    }
+
+    .card__content {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+
+/* photoBox */
+.photoBox {
+    .photoBox__link {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        color: #115694;
+        margin-bottom: 8px;
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 17px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 16px;
+        }
+
+        &:last-of-type { margin-bottom: 0; }
+    }
+}
+
