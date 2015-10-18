@@ -1,6 +1,11 @@
 .breadcrumbs {
     @include clearfix;
     margin-bottom: 30px;
+
+    @include breakpointmedia(640, "max-width") {
+        display: none;
+    }
+
     li {
         float: left;
         font-size: 14px;

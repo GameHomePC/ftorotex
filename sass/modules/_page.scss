@@ -1,5 +1,13 @@
 .page {
     padding: 35px 0;
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 28px 0 0;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 16px 0 0;
+    }
 }
 
 .page__content {
@@ -11,18 +19,53 @@
     font-weight: 500;
     color: #333333;
     margin-bottom: 25px;
+    box-sizing: border-box;
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 0 7%;
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 22px;
+        padding: 0 13px;
+        margin-bottom: 24px;
+    }
 }
 
 /* 404 */
 .page404 {
     @include clearfix;
     padding: 180px 0;
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 50px 0;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 12px 0;
+    }
 }
 
 .page404__images {
     float: left;
     width: 50%;
     text-align: center;
+
+    @include breakpointmedia(640, "max-width") {
+        padding-top: 10px;
+        width: 39%;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    img {
+        max-width: 100%;
+    }
 }
 
 .page404__content {
@@ -31,6 +74,20 @@
     font-size: 25px;
     font-weight: 300;
     line-height: 40px;
+    box-sizing: border-box;
+
+    @include breakpointmedia(640, "max-width") {
+        width: 61%;
+        padding: 0 0 0 31px;
+        font-size: 18px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        width: 100%;
+        padding: 28px 0 0 0;
+        font-size: 14px;
+        line-height: 28px;
+    }
 
     a {
         color: #115694;

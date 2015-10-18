@@ -4,10 +4,15 @@
 }
 
 .toggle__list {
+    position: relative;
     border-bottom: 1px solid #dbdbdb;
     @include clearfix;
 
-    li {
+    @include breakpointmedia(640, "max-width") {
+        display: none;
+    }
+
+    & > li {
         float: left;
         box-sizing: border-box;
         border-bottom: 5px solid transparent;
@@ -25,27 +30,74 @@
             }
         }
     }
+}
 
-    a {
-        display: block;
-        height: 41px;
-        line-height: 45px;
-        font-size: 20px;
-        color: #115694;
-        text-decoration: none;
-        padding: 0 3px;
-        transition: all 0.2s ease;
-    }
+.toggle__link {
+    display: block;
+    height: 41px;
+    line-height: 45px;
+    font-size: 20px;
+    color: #115694;
+    text-decoration: none;
+    padding: 0 3px;
+    transition: all 0.2s ease;
 }
 
 .toggle__content {
     margin-top: 35px;
+
+    @include breakpointmedia(640, "max-width") {
+        margin-top: 30px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-top: 0;
+    }
+}
+
+.mobile__dropDown {
+    display: none;
+    height: 45px;
+    line-height: 45px;
+    background: #c00202;
+    padding: 0 7%;
+    color: #fff;
+    font-size: 18px;
+    @include clearfix;
+
+    &:before {
+        float: left;
+        margin-top: 15px;
+        @include sprite($arrow-cart);
+        margin-right: 10px;
+        content: "";
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        display: block;
+
+        & + div {
+            padding: 35px 7%;
+        }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 0 13px;
+
+        & + div {
+            padding: 13px;
+        }
+    }
 }
 
 .toggle__item {
     display: none;
 
     &.active { display: block; }
+
+    @include breakpointmedia(640, "max-width") {
+        display: block;
+    }
 }
 
 /* card */
@@ -58,6 +110,21 @@
     padding-bottom: 35px;
     border-bottom: 1px solid #dbdbdb;
     box-sizing: border-box;
+
+    @include breakpointmedia(640, "max-width") {
+        padding-bottom: 20px;
+
+        .textStyle {
+            float: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding-bottom: 15px;
+    }
 }
 
 .card__doc {
@@ -67,24 +134,77 @@
 .card__images {
     height: 302px;
 
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-bottom: 18px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding-bottom: 12px;
+    }
+
     img {
         width: 100%;
         height: 100%;
     }
 }
 
-.card__content {
-
-}
-
 /* card__list */
 .card__list {
     padding-top: 30px;
+
+    @include breakpointmedia(480, "max-width") {
+        padding-top: 20px;
+    }
 }
 
 .card__item {
     margin-bottom: 20px;
     @include clearfix;
+
+    @include breakpointmedia(640, "max-width") {
+        margin-bottom: 8px;
+
+        .card__doc {
+            width: 50%;
+
+            & + * {
+                margin-left: -50%;
+                padding-left: 50%;
+            }
+        }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-bottom: 22px;
+
+        .card__doc {
+            float: none;
+            width: 100%;
+
+            & + * {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                padding-left: 0;
+                margin-top: 10px;
+            }
+        }
+
+        .textStyle {
+            font-size: 12px;
+
+            p {
+                line-height: 16px;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 /* card__specifications */
@@ -93,6 +213,17 @@
 }
 
 /* table */
+.scrollTable {
+    position: relative;
+    overflow-x: auto;
+}
+
+.table-desktop {
+    @include breakpointmedia(640, "max-width") {
+        display: none;
+    }
+}
+
 .table {
     thead {
         background: #115694;
@@ -109,6 +240,11 @@
             text-align: left;
 
             &:last-of-type { border-right: none; }
+
+            @include breakpointmedia(640, "max-width") {
+                font-size: 12px;
+                padding: 12px;
+            }
         }
     }
 
@@ -127,6 +263,11 @@
             border-bottom: 1px solid #d4d4d4;
 
             &:last-of-type { border-right: none; }
+
+            @include breakpointmedia(640, "max-width") {
+                font-size: 12px;
+                padding: 5px 12px;
+            }
         }
 
         tr {
@@ -141,6 +282,13 @@
 .cardNote {
     .blockInfo__380 + * {
         padding-left: 380px;
+
+        @include breakpointmedia(640, "max-width") {
+            float: none;
+            padding: 5% 0 0;
+            margin: 0;
+            width: 100%;
+        }
     }
 }
 
@@ -150,6 +298,13 @@
 
 .cardNote__mainImages {
     height: 302px;
+    font-size: 0;
+
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
 
     img {
         width: 100%;
@@ -159,6 +314,10 @@
 
 .cardNote__blockImage {
     @include clearfix;
+
+    @include breakpointmedia(640, "max-width") {
+        @include core-justify;
+    }
 }
 
 .cardNote__item {
@@ -170,6 +329,15 @@
     box-sizing: border-box;
     font-size: 0;
     cursor: pointer;
+
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 0;
+        margin-bottom: 5%;
+        width: 21%;
+    }
 
     &:hover {
         &:before {
@@ -205,12 +373,30 @@
 .cardServices__item {
     margin-top: 30px;
 
+    @include breakpointmedia(640, "max-width") {
+        margin-top: 20px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-top: 26px;
+    }
+
     &:first-child { margin-top: 0; }
 }
 
 .cardServices__title {
     font-size: 23px;
     margin-bottom: 10px;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 
     a {
         font-weight: bold;
@@ -222,6 +408,15 @@
     font-size: 15px;
     color: #333333;
     line-height: 23px;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 13px;
+    }
 
     a {
         color: #115694;

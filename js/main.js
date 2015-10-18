@@ -103,6 +103,8 @@ function getMap() {
     this.getMapGeo = function(geocode) {
         var _this = this;
 
+        console.log(geocode);
+
         ymaps.geocode(geocode, {
             results: 1
         }).then(function (res) {
@@ -114,27 +116,25 @@ function getMap() {
             _this.map.setBounds(bounds, {
                 checkZoomRange: true
             });
+
+            console.log(_this.map);
         });
     };
 
     this.getTab = function() {
         var _this = this;
 
-        console.log(this.mapInfoLink);
-
         this.mapInfoLink.find('li a').on('click', function() {
             var self = $(this),
                 selfIndex = self.index(),
-                selfDataRegion = self.attr("data-region");
-
-
+                selfDataRegion = self.parent('li').attr("data-region");
 
             if(!self.parent('li').hasClass('active')) {
                 _this.mapInfoLink.find('li a').parent('li').removeClass('active');
                 _this.mapInfoLink.find('.mapInfo__bottom').removeClass('active');
                 self.parent('li').addClass('active');
                 self.next('.mapInfo__bottom').addClass('active');
-                _this.getMapGeo();
+                _this.getMapGeo(selfDataRegion);
             } else {
                 _this.mapInfoLink.find('li a').parent('li').removeClass('active');
                 _this.mapInfoLink.find('.mapInfo__bottom').removeClass('active');

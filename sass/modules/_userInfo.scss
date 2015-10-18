@@ -4,10 +4,23 @@
 
     .sectionBox__content {
         margin-top: 40px;
+
+        @include breakpointmedia(640, "max-width") {
+            margin-top: 30px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            margin-top: 20px;
+        }
     }
 
     p.blockInfo__big {
         margin-top: 7px;
+
+        @include breakpointmedia(480, "max-width") {
+            margin-top: 12px;
+            line-height: 18px;
+        }
     }
 
     .blockInfo__65 + * {
@@ -22,6 +35,22 @@
         margin-left: -180px;
     }
 
+    @include breakpointmedia(640, "max-width") {
+        width: 25%;
+
+        & + * {
+            margin-left: -25%;
+            padding-left: 31%;
+        }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        & + * {
+            padding-left: 34%;
+
+        }
+    }
+
     img {
         width: 100%;
         border-radius: 5px;
@@ -29,31 +58,124 @@
 }
 
 .userInfo__content {
+    @include breakpointmedia(640, "max-width") {
+        .blockInfo__small { font-size: 13px; }
+        .blockInfo__big { font-size: 16px; letter-spacing: .5px; }
+    }
 
+    @include breakpointmedia(480, "max-width") {
+        .blockInfo__small { font-size: 12px; }
+        .blockInfo__big { font-size: 15px; letter-spacing: .5px; }
+    }
 }
 
 .userInfo__info {
     margin-top: 35px;
+
+    @include breakpointmedia(640, "max-width") {
+        margin-top: 25px;
+    }
 }
 
 .userInfo__item {
     @include clearfix;
     margin-bottom: 20px;
+
+    @include breakpointmedia(640, "max-width") {
+        margin-bottom: 5px;
+        .blockInfo__65 {
+            width: 13%;
+
+            & + * {
+                margin-left: -13%;
+                padding-left: 13%;
+                padding-top: 8px;
+            }
+        }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        .blockInfo__65 {
+            width: 17%;
+
+            & + * {
+                margin-left: -17%;
+                padding-left: 17%;
+                padding-top: 8px;
+            }
+        }
+    }
 }
 
+.userInfo_desktop {
+    @include breakpointmedia(480, "max-width") {
+        display: none;
+    }
+}
+
+.userInfo_mobile {
+    display: none;
+
+    @include breakpointmedia(480, "max-width") {
+        display: block;
+        margin-top: 20px;
+
+        .userInfo__item {
+            margin-bottom: 10px;
+        }
+
+        .blockInfo__big_size18 { font-size: 17px; }
+    }
+}
+
+.userInfo__phone {
+    @include breakpointmedia(480, "max-width") {
+        display: inline-block;
+        vertical-align: top;
+
+        span {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .pl-12 { padding-left: 5px; }
+    }
+}
 
 /* seeAlso */
 .seeAlso {
     background: url("../images/bg-1.jpg") center center repeat;
     box-shadow: inset 0 0 15px 2px rgba(0, 0, 0, 0.1);
 
+    @include breakpointmedia(640, "max-width") {
+        .sectionBox__title35 {
+            text-align: left;
+        }
+    }
+
     .sectionBox__content {
         margin-top: 35px;
+
+        @include breakpointmedia(640, "max-width") {
+            margin-top: 24px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            margin-top: 22px;
+        }
     }
 }
 
 .seeAlso__item {
     margin-top: 25px;
+
+    @include breakpointmedia(640, "max-width") {
+        margin-top: 40px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        margin-top: 32px;
+    }
 
     &:first-child { margin-top: 0; }
 }
@@ -63,6 +185,15 @@
     font-weight: 500;
     margin-bottom: 18px;
     letter-spacing: 0.5px;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 16px;
+    }
 
     a {
         color: #115694;
@@ -74,6 +205,16 @@
     color: #333333;
     line-height: 23px;
     letter-spacing: 0.5px;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 13px;
+        line-height: 21px;
+    }
 
     a {
         color: #115694;

@@ -296,6 +296,15 @@
         padding-left: 75px;
         box-sizing: border-box;
     }
+
+    @include breakpointmedia(640, "max-width") {
+        width: 55px;
+
+        & + * {
+            margin-left: -55px;
+            padding-left: 55px;
+        }
+    }
 }
 
 /* 80 */
@@ -347,6 +356,25 @@
         @include breakpointmedia(768, "max-width") {
             margin-left: -88px;
             padding-left: 88px;
+        }
+    }
+
+
+    @include breakpointmedia(640, "max-width") {
+        width: 24%;
+
+        & + * {
+            margin-left: -24%;
+            padding-left: 24%;
+        }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        width: 30%;
+
+        & + * {
+            margin-left: -30%;
+            padding-left: 30%;
         }
     }
 }

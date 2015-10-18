@@ -51,19 +51,49 @@ a {
 /* textStyle */
 .textStyle {
     font-size: 15px;
-    line-height: 23px;
     color: #333333;
     vertical-align: top;
 
+    @include breakpointmedia(640, "max-width") {
+        font-size: 12px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 14px;
+    }
+
     p {
         margin-bottom: 5px;
+        line-height: 23px;
+
+        @include breakpointmedia(640, "max-width") {
+            margin-bottom: 2px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            line-height: 20px;
+            margin-bottom: 8px;
+        }
     }
 
     ul.typeOne {
         padding-left: 22px;
 
+        @include breakpointmedia(640, "max-width") {
+            padding-left: 20px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            margin-bottom: 8px;
+        }
+
         li {
             position: relative;
+            line-height: 23px;
+
+            @include breakpointmedia(640, "max-width") {
+                line-height: 18px;
+            }
 
             &:before {
                 position: absolute;
@@ -74,6 +104,12 @@ a {
                 background: #c00202;
                 border-radius: 50%;
                 content: "";
+
+                @include breakpointmedia(640, "max-width") {
+                    left: -18px;
+                    width: 3px;
+                    height: 3px;
+                }
             }
         }
     }
@@ -81,13 +117,24 @@ a {
     a {
         font-size: 15px;
         color: #333333;
+
+        @include breakpointmedia(640, "max-width") {
+            font-size: 12px;
+        }
     }
 
     span {
         font-size: 15px;
         color: #9f9f9f;
 
+        @include breakpointmedia(640, "max-width") {
+            font-size: 12px;
+        }
     }
+}
+
+.tl {
+    text-align: right;
 }
 
 /* icon */
@@ -105,7 +152,7 @@ a {
 .media1200 {
     display: none;
 
-    @include breakpointmedia(767, 1200) {
+    @include breakpointmedia(1200) {
         display: inline-block;
     }
 }

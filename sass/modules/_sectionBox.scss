@@ -14,6 +14,14 @@
 
 .sectionBoxMin {
     padding: 42px 0;
+
+    @include breakpointmedia(640, "max-width") {
+        padding: 32px 7%;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        padding: 15px 13px;
+    }
 }
 
 .sectionBox__title {
@@ -38,6 +46,17 @@
     font-weight: bold;
     color: #115694;
     letter-spacing: -0.8px;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 26px;
+        text-align: center;
+        line-height: 32px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 
 
