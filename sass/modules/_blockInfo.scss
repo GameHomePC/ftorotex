@@ -73,6 +73,30 @@
     @include breakpointmedia(768, "max-width") { @include sprite($world-icon-768); }
 }
 
+.blockInfo__icon_marker:before {
+    @include sprite($marker-icon);
+}
+
+.blockInfo__icon_phoneContact:before {
+    @include sprite($phoneContact-icon);
+}
+
+.blockInfo__icon_phone2Contact:before {
+    @include sprite($phone2Contact-icon);
+}
+
+.blockInfo__icon_emailContact:before {
+    @include sprite($emailContact-icon);
+}
+
+.blockInfo__icon_timeContact:before {
+    @include sprite($time-iconContact);
+}
+
+.blockInfo__icon_penContact:before {
+    @include sprite($pen-icon);
+}
+
 .blockInfo__content {
     float: left;
     margin-left: -65px;
@@ -157,6 +181,13 @@
     margin-top: 8px;
 }
 
+.blockInfo__linkBig {
+    display: block;
+    font-size: 23px;
+    color: #5489c3;
+    font-weight: bold;
+}
+
 .blockInfo__phone {
     margin-top: 20px;
 
@@ -232,6 +263,16 @@
 .blockInfo__big_size18 { font-size: 18px; letter-spacing: -0.5px }
 .blockInfo__big_size22 { font-size: 22px; }
 
+.blockInfo__bigTwo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #333333;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 19px;
+    }
+}
+
 .blockInfo__normal {
     font-size: 12px;
     font-weight: normal;
@@ -245,6 +286,20 @@
     @include breakpointmedia(640, "max-width") {
         font-size: 12px;
     }
+}
+
+.blockInfo__normalTwo {
+    font-size: 18px;
+    color: #000000;
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 15px;
+    }
+}
+
+.blockInfo__normalThree {
+    font-size: 20px;
+    color: #333333;
 }
 
 .blockInfo__middle {

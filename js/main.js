@@ -103,8 +103,6 @@ function getMap() {
     this.getMapGeo = function(geocode) {
         var _this = this;
 
-        console.log(geocode);
-
         ymaps.geocode(geocode, {
             results: 1
         }).then(function (res) {
@@ -116,8 +114,6 @@ function getMap() {
             _this.map.setBounds(bounds, {
                 checkZoomRange: true
             });
-
-            console.log(_this.map);
         });
     };
 
@@ -142,5 +138,5 @@ function getMap() {
 
             return false;
         });
-    }
+    };
 }

@@ -1,0 +1,91 @@
+.contact {
+    @include clearfix;
+}
+
+.contact__left {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 15px;
+
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.contact__right {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 15px;
+
+    @include breakpointmedia(640, "max-width") {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* contactInfo */
+.contactInfo {
+    @include clearfix;
+    margin-bottom: 25px;
+
+    &:last-of-type { margin-bottom: 0; }
+
+    @include breakpointmedia(640, "max-width") {
+        &:last-of-type { margin-bottom: 25px; }
+    }
+}
+
+.contactInfo__item {
+    p {
+        margin-bottom: 5px;
+        line-height: 30px;
+        &:last-of-type { margin-bottom: 0; }
+
+        @include breakpointmedia(640, "max-width") {
+            line-height: 20px;
+        }
+    }
+}
+
+/* contactMap */
+.contactMap {
+
+}
+
+.contactMap__map {
+    height: 320px;
+    margin-bottom: 25px
+}
+
+.contactMap__content {
+
+}
+
+.contactMap__link {
+    display: block;
+    font-size: 16px;
+    color: #115694;
+    margin-bottom: 40px;
+
+    &:last-of-type { margin-bottom: 0; }
+
+    .icon { margin-right: 15px; }
+}
+
+/* contactMain */
+.contactMain {
+    @include breakpointmedia(640, "max-width") {
+        .contact {
+            padding: 35px 0;
+        }
+
+        .contact__left, .contactMap__content, .contact__big {
+            padding: 0 7%;
+        }
+    }
+}

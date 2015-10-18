@@ -11,11 +11,11 @@
     <!-- contact -->
     <?php include "./include/contact.php"; ?>
 
-    <!-- order -->
-    <?php include "./include/order.php"; ?>
-
     <!-- bottomMenu -->
     <?php include "./include/bottomMenu.php"; ?>
+
+    <!-- order -->
+    <?php include "./include/order.php"; ?>
 </div>
 
 <!-- footer -->

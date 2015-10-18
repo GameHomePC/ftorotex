@@ -3,36 +3,29 @@
         <div class="contactInfo">
             <div class="blockInfo__75 blockInfo__icon blockInfo__icon_marker"></div>
             <div class="contactInfo__item">
-                <p class="blockInfo__normalTwo">Офис - консультации и прием  заказов:</p>
-                <p class="blockInfo__bigTwo">220215, г. Минск, ул. Шафарнянская, 11, офис 47</p>
-                <p class="blockInfo__normalTwo">(Бизнес-центр “Порт”, правое крыло, 1-й этаж, вход с торца)</p>
+                <p class="blockInfo__normalTwo">Склад - оформление накладных и получение продукции:</p>
+                <p class="blockInfo__bigTwo">пос. Ждановичи, пер. Горный, 1 (100 метров от МКАД)</p>
+            </div>
+        </div>
+
+        <div class="contactInfo">
+            <div class="blockInfo__75 blockInfo__icon blockInfo__icon_phone2Contact"></div>
+            <div class="contactInfo__item">
+                <p class="blockInfo__normalTwo">Телефоны/факсы:</p>
+                <p>
+                    <span class="blockInfo__normalThree blockInfo__100">+375 17</span>
+                    <span class="blockInfo__bigTwo">509 68 71</span>
+                </p>
             </div>
         </div>
 
         <div class="contactInfo">
             <div class="blockInfo__75 blockInfo__icon blockInfo__icon_phoneContact"></div>
             <div class="contactInfo__item">
-                <p class="blockInfo__normalTwo">Телефоны/факсы:</p>
-                <div>
-                    <p>
-                        <span class="blockInfo__normalThree blockInfo__100">+375 17</span>
-                        <span class="blockInfo__bigTwo">286 36 41, 286 36 42, 286 36 43,</span>
-                    </p>
-
-                    <p>
-                        <span class="blockInfo__normalTwo blockInfo__100">&nbsp;</span>
-                        <span class="blockInfo__bigTwo">286 36 44</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="contactInfo">
-            <div class="blockInfo__75 blockInfo__icon blockInfo__icon_emailContact"></div>
-            <div class="contactInfo__item">
-                <p class="blockInfo__normalTwo">E-mail:</p>
-                <p class="blockInfo__bigTwo">
-                    <a class="blockInfo__linkBig" href="#">info@ftorotex.by</a>
+                <p class="blockInfo__normalTwo">Телефоны мобильный:</p>
+                <p>
+                    <span class="blockInfo__normalThree blockInfo__100">+375 44</span>
+                    <span class="blockInfo__bigTwo">797 09 43</span>
                 </p>
             </div>
         </div>
@@ -47,7 +40,7 @@
     </div>
     <div class="contact__right">
         <div class="contactMap">
-            <div class="contactMap__map" id="mapOne"></div>
+            <div class="contactMap__map" id="mapTwo"></div>
             <div class="contactMap__content">
                 <a class="contactMap__link" href="#">
                     <i class="icon icon__main"></i>
@@ -64,7 +57,7 @@
                     var map = new getMap();
 
                     map.initialize({
-                        map: 'mapOne'
+                        map: 'mapTwo'
                     });
                 });
             </script>

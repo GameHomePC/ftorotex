@@ -147,6 +147,8 @@ a {
 .icon__exel { @include sprite($icon-exel); }
 .icon__reader { @include sprite($icon-reader); }
 .icon__menu { @include sprite($icon-menu); }
+.icon__main { @include sprite($main-icon); }
+.icon__download { @include sprite($download-icon); }
 
 
 .media1200 {

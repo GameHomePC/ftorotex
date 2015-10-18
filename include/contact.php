@@ -7,7 +7,7 @@
 
         <h1 class="page__title">Контакты</h1>
 
-        <div class="page__content card">
+        <div class="page__content contactMain">
             <div class="toggle">
                 <ul class="toggle__list" id="toggle">
                     <li class="active"><a class="toggle__link" href="#">Адрес и контакты офиса</a></li>
@@ -23,12 +23,12 @@
 
                     <div class="toggle__item">
                         <div class="mobile__dropDown">Адрес и контакты склада</div>
-                        <?php include "./include/contact/contact-.php"; ?>
+                        <?php include "./include/contact/contact-two.php"; ?>
                     </div>
 
                     <div class="toggle__item">
                         <div class="mobile__dropDown">Наши реквизиты</div>
-                        <?php include "./include/contact/contact-one.php"; ?>
+                        <?php include "./include/contact/contact-three.php"; ?>
                     </div>
                 </div>
             </div>
