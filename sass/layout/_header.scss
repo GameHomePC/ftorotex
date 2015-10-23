@@ -1,13 +1,11 @@
 .header {
-    .wrapper {
-        @include clearfix;
-    }
+
 }
 
 .header__top {
     background: #fff;
-    padding-top: 15px;
-    padding-bottom: 20px;
+
+    .wrapper { @include clearfix; }
 
     .blockInfo {
         float: left;
@@ -124,13 +122,15 @@
     float: left;
     width: 35%;
     box-sizing: border-box;
+    padding-top: 21px;
     @include clearfix;
 
     a {
         position: relative;
         display: block;
         float: left;
-        width: 86px;
+        padding-left: 9px;
+        box-sizing: border-box;
     }
     
     img { width: 100%; }
@@ -158,9 +158,9 @@
 
 .headerLogo__info {
     float: left;
-    margin-left: -86px;
-    padding-left: 93px;
-    padding-top: 6px;
+    margin-left: -102px;
+    padding-left: 121px;
+    padding-top: 10px;
     width: 100%;
     box-sizing: border-box;
 
@@ -180,10 +180,10 @@
 }
 
 .headerLogo__big {
-    font-size: 21px;
+    font-size: 23px;
     font-weight: bold;
     color: #115694;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     text-transform: uppercase;
     letter-spacing: -0.9px;
 
@@ -192,9 +192,10 @@
 }
 
 .headerLogo__small {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     color: #333333;
+    letter-spacing: 0.3px;
 
     @include breakpointmedia(768, "max-width") {
         font-size: 18px;
@@ -210,30 +211,22 @@
 
     .wrapper {
         display: table;
-
-        @include breakpointmedia(960, "max-width") { display: block; }
+        width: 100%;
     }
 }
 
 /* headerMenu */
 .headerMenu {
-    display: table-cell;
+    display: table;
     vertical-align: top;
+    width: 100%;
     box-sizing: border-box;
-    @include core-justify;
     z-index: 10;
 
-    @include breakpointmedia(960, "max-width") {
-        float: left;
-        width: 100%;
-        padding-right: 70px;
-        margin-right: -70px;
-    }
     @include breakpointmedia(640, "max-width") { display: none; }
 
     li {
-        display: inline-block;
-        vertical-align: top;
+        display: table-cell;
 
         &:hover {
             .headerMenu__link {
@@ -255,7 +248,7 @@
 .headerMenu__link {
     display: block;
     height: 57px;
-    padding: 0 25px;
+    text-align: center;
     box-sizing: border-box;
     line-height: 57px;
     transition: color 0.2s ease, background 0.2s ease;
@@ -266,23 +259,17 @@
     border-right: 1px solid #5f8cbc;
     letter-spacing: -0.6px;
 
-    @include breakpointmedia(960, 'max-width') { font-size: 18px; }
-    @include breakpointmedia(910, 'max-width') { font-size: 16px; }
-    @include breakpointmedia(830, 'max-width') { font-size: 14px;  }
+    @include breakpointmedia(830, 'max-width') { font-size: 16px;  }
+    @include breakpointmedia(700, 'max-width') { font-size: 15px;  }
     @include breakpointmedia(768, "max-width") { border: none; padding: 0 10px; }
     @include breakpointmedia(640, "max-width") { font-size: 17px; border-right: 1px solid #5f8cbc; }
 }
 
 .headerMenu__mobile {
     display: none;
-    float: left;
-    height: 59px;
-    width: 66%;
-    @include clearfix;
+    width: 100%;
 
-    @include breakpointmedia(480, "max-width") {
-        width: 80%;
-    }
+    @include breakpointmedia(640, "max-width") { display: table; }
 
     li {
         float: left;
@@ -300,24 +287,19 @@
 
         i { margin-top: 22px; }
     }
-
-    @include breakpointmedia(640, "max-width") { display: block; }
-
 }
 
 /* headerSearch */
 .headerSearch {
     display: table-cell;
-    width: 25.5%;
     vertical-align: middle;
+    width: 29%;
     position: relative;
     box-sizing: border-box;
-    padding-left: 10px;
+    padding-left: 40px;
 
     @include breakpointmedia(960, 'max-width') {
-        float: left;
-        border-right: none;
-        width: 70px;
+        width: 74px;
         padding-left: 0;
     }
 
