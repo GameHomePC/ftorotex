@@ -154,17 +154,14 @@ a {
 .media1200 {
     display: none;
 
-    @include breakpointmedia(1200) {
-        display: inline-block;
-    }
+    @include breakpointmedia(1200) { display: inline-block; }
 }
 
-.media768 {
-    display: none;
+.media768-display { display: none; }
 
-    @include breakpointmediaMinMax(639, 767) {
-        display: inline-block;
-    }
+@include breakpointmedia(768, 'max-width') {
+    .media768-display { display: inline; }
+    .media768-no-display { display: none; }
 }
 
 .media640 {
@@ -175,11 +172,8 @@ a {
     }
 }
 
-.media480 {
-    display: none;
 
-    @include breakpointmediaMinMax(319, 479) {
-        display: block;
-    }
+@include breakpointmedia(480, 'max-width') {
+    .media480-display { display: inline; }
+    .media480-no-display { display: none; }
 }
-

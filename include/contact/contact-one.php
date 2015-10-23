@@ -15,12 +15,12 @@
                 <p class="blockInfo__normalTwo">Телефоны/факсы:</p>
                 <div>
                     <p>
-                        <span class="blockInfo__normalThree blockInfo__100">+375 17</span>
+                        <span class="blockInfo__normalThree blockInfo__CMiddle">+375 17</span>
                         <span class="blockInfo__bigTwo">286 36 41, 286 36 42, 286 36 43,</span>
                     </p>
 
                     <p>
-                        <span class="blockInfo__normalTwo blockInfo__100">&nbsp;</span>
+                        <span class="blockInfo__normalTwo blockInfo__CMiddle">&nbsp;</span>
                         <span class="blockInfo__bigTwo">286 36 44</span>
                     </p>
                 </div>

@@ -13,9 +13,9 @@
 
                 <div class="userInfo__info userInfo_desktop">
                     <div class="userInfo__item">
-                        <div class="blockInfo__icon blockInfo__icon_one blockInfo__65"></div>
+                        <div class="blockInfo__icon blockInfo__icon_phone blockInfo__65"></div>
                         <div>
-                            <span class="blockInfo__small blockInfo__100">тел. моб. :</span>
+                            <span class="blockInfo__small blockInfo__CMiddle">тел. моб. :</span>
                             <span>
                                 <span class="blockInfo__small">+375 17</span>
                                 <span class="blockInfo__big blockInfo__big_size18 pl-12">286 36 41, 286 36 42</span>
@@ -26,7 +26,7 @@
                     <div class="userInfo__item">
                         <div class="blockInfo__icon blockInfo__icon_email blockInfo__65"></div>
                         <div>
-                            <span class="blockInfo__small blockInfo__100">e-mail :</span>
+                            <span class="blockInfo__small blockInfo__CMiddle">e-mail :</span>
                             <span class="blockInfo__big blockInfo__big_size18">plavsky@ftorotex.com</span>
                         </div>
                     </div>
@@ -36,9 +36,9 @@
 
         <div class="userInfo__info userInfo_mobile">
             <div class="userInfo__item">
-                <div class="blockInfo__icon blockInfo__icon_one blockInfo__65"></div>
+                <div class="blockInfo__icon blockInfo__icon_phone blockInfo__65"></div>
                 <div>
-                    <span class="blockInfo__small blockInfo__100">тел. моб. :</span>
+                    <span class="blockInfo__small blockInfo__CMiddle">тел. моб. :</span>
                     <span class="userInfo__phone">
                         <span class="blockInfo__small">+375 17</span>
                         <span class="tl blockInfo__big blockInfo__big_size18 pl-12">286 36 41<br> 286 36 42</span>
@@ -49,7 +49,7 @@
             <div class="userInfo__item">
                 <div class="blockInfo__icon blockInfo__icon_email blockInfo__65"></div>
                 <div>
-                    <span class="blockInfo__small blockInfo__100">e-mail :</span>
+                    <span class="blockInfo__small blockInfo__CMiddle">e-mail :</span>
                     <span class="blockInfo__big blockInfo__big_size18">plavsky@ftorotex.com</span>
                 </div>
             </div>

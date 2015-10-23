@@ -11,37 +11,37 @@
 
             <div class="blockInfo">
                 <div class="blockInfo__item">
-                    <div class="blockInfo__icon blockInfo__icon_one"></div>
+                    <div class="blockInfo__icon blockInfo__icon_phone"></div>
                     <div class="blockInfo__content">
                         <div class="blockInfo__wrapper">
                             <p>
-                                <span class="blockInfo__big blockInfo__big_size18 blockInfo__100">+375 17</span>
-                                <span class="blockInfo__big blockInfo__big_size18">286 36 41, 286 36 42,</span>
+                                <span class="blockInfo__big blockInfo__CMiddle">+375 17</span>
+                                <span class="blockInfo__big">286 36 41, 286 36 42,</span>
                             </p>
                             <p>
-                                <span class="blockInfo__normal blockInfo__100 pt-5">Телефон/Факс</span>
-                                <span class="blockInfo__big blockInfo__big_size18">286 36 41, 286 36 42,</span>
+                                <span class="blockInfo__small blockInfo__CMiddle"><span class="media480-no-display">Телефон/Факс</span></span>
+                                <span class="blockInfo__big">286 36 43, 286 36 44</span>
                             </p>
 
-                            <p class="media480">
-                                <span class="blockInfo__normal">Телефон/Факс. Работаем: с 8:30 до 17:00 </span>
+                            <p class="media480-display">
+                                <span class="blockInfo__small">Телефон/Факс. Работаем: с 8:30 до 17:00 </span>
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div class="blockInfo__item">
-                    <div class="blockInfo__icon blockInfo__icon_two"></div>
+                    <div class="blockInfo__icon blockInfo__icon_time"></div>
                     <div class="blockInfo__content">
                         <div class="blockInfo__wrapper">
                             <p>
                                 <span class="blockInfo__middle">Работаем:</span>
-                                <span class="blockInfo__big blockInfo__big_size18 media768">с 8:30 до 17:00</span>
+                                <span class="blockInfo__big media768-display">с 8:30 до 17:00</span>
                             </p>
 
                             <p>
-                                <span class="blockInfo__normal blockInfo__60 pt-5">Пн - Птн</span>
-                                <span class="blockInfo__big blockInfo__big_size18 media1200">с 8:30 до 17:00</span>
+                                <span class="blockInfo__CSmall blockInfo__small">Пн - Птн</span>
+                                <span class="blockInfo__big media768-no-display">с 8:30 до 17:00</span>
                             </p>
                         </div>
                     </div>

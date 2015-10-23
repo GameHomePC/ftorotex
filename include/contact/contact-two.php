@@ -13,7 +13,7 @@
             <div class="contactInfo__item">
                 <p class="blockInfo__normalTwo">Телефоны/факсы:</p>
                 <p>
-                    <span class="blockInfo__normalThree blockInfo__100">+375 17</span>
+                    <span class="blockInfo__normalThree blockInfo__CMiddle">+375 17</span>
                     <span class="blockInfo__bigTwo">509 68 71</span>
                 </p>
             </div>
@@ -24,7 +24,7 @@
             <div class="contactInfo__item">
                 <p class="blockInfo__normalTwo">Телефоны мобильный:</p>
                 <p>
-                    <span class="blockInfo__normalThree blockInfo__100">+375 44</span>
+                    <span class="blockInfo__normalThree blockInfo__CMiddle">+375 44</span>
                     <span class="blockInfo__bigTwo">797 09 43</span>
                 </p>
             </div>

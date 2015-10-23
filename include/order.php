@@ -7,7 +7,7 @@
 
             <div class="blockInfo">
                 <div class="blockInfo__item">
-                    <div class="blockInfo__icon blockInfo__icon_one"></div>
+                    <div class="blockInfo__icon blockInfo__icon_phone"></div>
 
                     <div class="blockInfo__content">
                         <div class="blockInfo__title">Позвоните нам или отправьте <br class="media768"> запрос</div>
