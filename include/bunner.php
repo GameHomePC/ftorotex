@@ -19,10 +19,10 @@
             <form>
                 <fieldset class="fieldset f_select">
                     <div class="group">
-                        <div class="coll-5">
+                        <div class="bunner__orderL">
                             <span class="formText">Мне нужно</span>
                         </div>
-                        <div class="coll-7">
+                        <div class="bunner__orderR">
                             <select class="select">
                                 <option>Заказать материал</option>
                                 <option>1</option>
@@ -39,15 +39,15 @@
                     <input type="text" placeholder="Представьтесь*" class="text-input">
                 </fieldset>
 
-                <fieldset class="fieldset">
+                <fieldset class="fieldset formType__icon formType__phone">
                     <input type="phone" placeholder="Ваш телефон* " class="text-input">
                 </fieldset>
 
-                <fieldset class="fieldset">
+                <fieldset class="fieldset formType__icon formType__compulsory">
                     <input type="email" placeholder="Ваш e-mail" class="text-input">
                 </fieldset>
 
-                <fieldset class="fieldset">
+                <fieldset class="fieldset formType__icon formType__compulsory">
                     <textarea placeholder="Текст сообщения" class="text-textarea"></textarea>
                 </fieldset>
 

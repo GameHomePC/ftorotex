@@ -171,7 +171,7 @@
 
     @include breakpointmedia(640, "max-width") { font-size: 18px; line-height: 20px; }
     @include breakpointmedia(550, "max-width") { font-size: 14px; }
-    @include breakpointmedia(480, "max-width") { font-size: 12px; letter-spacing: 0.4px; }
+    @include breakpointmedia(480, "max-width") { font-size: 11px; letter-spacing: 0.4px; }
 }
 
 .header__bottom {
@@ -271,7 +271,7 @@
         padding-left: 0;
     }
 
-    @include breakpointmedia(640, "max-width") { width: 33%; }
+    @include breakpointmedia(640, "max-width") { width: 26.5%; }
     @include breakpointmedia(480, "max-width") { width: 20%; }
 }
 

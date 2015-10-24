@@ -1,8 +1,11 @@
 .bunner {
     .wrapper {
-        padding: 55px 0 26px;
+        padding: 49px 0 26px;
+        height: 100%;
+        box-sizing: border-box;
 
-        @include breakpointmedia(768, "max-width") { padding: 36px 0 26px; }
+        @include breakpointmedia(960, "max-width") { padding: 54px 0 26px; }
+        @include breakpointmedia(768, "max-width") { padding: 36px 0 17px; }
 
         @include breakpointmedia(640, "max-width") {
             padding: 0;
@@ -27,8 +30,13 @@
 .bunner__icon {
     position: absolute;
     bottom: 0;
-    left: -65px;
-    @include sprite($user-icon-1);
+    left: -42px;
+    @include sprite($user-icon-1200);
+
+    @include breakpointmedia(960, "max-width") {
+        left: -65px;
+        @include sprite($user-icon-1);
+    }
 
     @include breakpointmedia(768, "max-width") {
         @include sprite($user-icon-1-768);
@@ -44,25 +52,26 @@
     float: left;
     box-sizing: border-box;
     width: 100%;
-    margin-right: -304px;
-    padding-right: 325px;
-    padding-left: 22%;
+    margin-right: -383px;
+    padding-right: 383px;
+    padding-left: 27.3%;
 
-    @include breakpointmedia(768, "max-width") {
-        margin-right: -265px;
-        padding-right: 265px;
+    @include breakpointmedia(960, "max-width") {
+        padding-left: 26%;
+        margin-right: -304px;
+        padding-right: 304px;
     }
 
-    @include breakpointmedia(700, "max-width") {
+    @include breakpointmedia(768, "max-width") {
+        padding-left: 21.3%;
         margin-right: -265px;
         padding-right: 265px;
-        padding-left: 8%;
     }
 
     @include breakpointmedia(640, "max-width") {
         float: none;
         margin-right: 0;
-        padding: 30px 12% 12px;
+        padding: 34px 6.4% 12px;
     }
 
     @include breakpointmedia(480, "max-width") {
@@ -73,21 +82,18 @@
 }
 
 .bunner__title {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     color: #c00202;
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     text-transform: uppercase;
-    letter-spacing: -0.7px;
 
-    @include breakpointmedia(768, "max-width") {
-        font-size: 20px;
-    }
-
+    @include breakpointmedia(960, "max-width") { font-size: 25px; }
+    @include breakpointmedia(768, "max-width") { font-size: 21px; margin-bottom: 15px; }
     @include breakpointmedia(640, "max-width") {
         text-align: center;
-        font-size: 26px;
-        margin-bottom: 8px;
+        font-size: 32px;
+        margin-bottom: 12px;
     }
 
     @include breakpointmedia(480, "max-width") {
@@ -97,18 +103,22 @@
 }
 
 .bunner__description {
-    font-size: 23px;
+    font-size: 26px;
     color: #333333;
-    line-height: 28px;
+    line-height: 30px;
+
+    @include breakpointmedia(960, "max-width") {
+        font-size: 23px;
+        line-height: 25px;
+    }
 
     @include breakpointmedia(768, "max-width") {
         font-size: 20px;
-        line-height: 25px;
     }
 
     @include breakpointmedia(640, "max-width") {
         text-align: center;
-        font-size: 24px;
+        font-size: 28px;
     }
 
     @include breakpointmedia(480, "max-width") {
@@ -119,48 +129,65 @@
 
 .bunner__list {
     margin-top: 30px;
-    padding-left: 97px;
+    padding-left: 93px;
     box-sizing: border-box;
 
+    @include breakpointmedia(960, "max-width") {
+        margin-top: 32px;
+        padding-left: 97px;
+    }
+
     @include breakpointmedia(768, "max-width") {
-        margin-top: 20px;
-        padding-left: 112px;
+        margin-top: 18px;
+        padding-left: 115px;
     }
 
     @include breakpointmedia(640, "max-width") {
         padding-left: 0;
-        margin-top: 40px;
+        margin-top: 52px;
     }
 
     @include breakpointmedia(480, "max-width") {
-        margin-top: 20px;
+        margin-top: 18px;
     }
 
     li {
         position: relative;
         display: block;
-        font-size: 18px;
+        font-size: 20px;
         color: #333333;
-        margin-bottom: 30px;
+        margin-bottom: 26px;
+        line-height: 24px;
+        letter-spacing: -0.3px;
+
+        @include breakpointmedia(960, "max-width") {
+            margin-bottom: 26px;
+            font-size: 20px;
+            line-height: 20px;
+            letter-spacing: -1.4px;
+        }
 
         @include breakpointmedia(768, "max-width") {
             margin-bottom: 14px;
-            font-size: 16px;
+            font-size: 18px;
             line-height: 18px;
+            padding-right: 10px;
         }
 
         @include breakpointmedia(640, "max-width") {
-            font-size: 20px;
-            line-height: 24px;
-            margin-bottom: 29px;
-            padding-left: 40px;
+            font-size: 26px;
+            line-height: 28px;
+            margin-bottom: 36px;
+            padding-left: 37px;
+            padding-right: 0;
         }
 
         @include breakpointmedia(480, "max-width") {
-            font-size: 16px;
+            font-size: 18px;
             line-height: 20px;
             margin-bottom: 18px;
-            padding-left: 36px;
+            padding-left: 34px;
+            letter-spacing: -1.2px;
         }
 
         &:last-of-type {
@@ -169,22 +196,35 @@
 
         &:before {
             position: absolute;
-            left: -30px;
-            top: 0;
-            @include sprite($star);
+            left: -36px;
+            top: 3px;
+            @include sprite($star-1200);
             content: "";
 
+            @include breakpointmedia(960, "max-width") {
+                left: -30px;
+                top: 0;
+                @include sprite($star);
+            }
+
+            @include breakpointmedia(768, "max-width") {
+                left: -31px;
+                top: 2px;
+            }
+
             @include breakpointmedia(640, "max-width") {
-                left: 10px;
+                left: -2px;
+                top: 6px;
+                @include sprite($star-640);
             }
         }
 
         &.bunner__indent {
             margin-bottom: 20px;
 
-            @include breakpointmedia(768, "max-width") {
-                margin-bottom: 16px;
-            }
+            @include breakpointmedia(768, "max-width") { margin-bottom: 16px; }
+            @include breakpointmedia(640, "max-width") { margin-bottom: 25px; }
+            @include breakpointmedia(480, "max-width") { margin-bottom: 14px; }
         }
     }
 }
@@ -192,33 +232,39 @@
 
 
 .bunner__link {
-    font-size: 18px;
+    font-size: 20px;
     color: #115694;
 
-    @include breakpointmedia(768, "max-width") {
-        font-size: 16px;
-    }
+    @include breakpointmedia(768, "max-width") { font-size: 18px; }
+    @include breakpointmedia(640, "max-width") { font-size: 26px; }
+    @include breakpointmedia(480, "max-width") { font-size: 18px; }
 }
 
 /* bunner__form */
 .bunner__form {
     position: relative;
     float: left;
-    width: 304px;
-    padding: 17px 15px 22px;
+    width: 383px;
+    padding: 20px 22px 22px;
     box-sizing: border-box;
     background: #205c9d;
     border-radius: 5px;
 
+    @include breakpointmedia(960, "max-width") {
+        width: 304px;
+        padding: 16px 15px 24px;
+    }
+
     @include breakpointmedia(768, "max-width") {
         font-size: 16px;
         width: 265px;
+        padding: 16px 9px 20px;
     }
 
     @include breakpointmedia(640, "max-width") {
         float: none;
         width: 100%;
-        padding: 24px 12%;
+        padding: 30px 6.3%;
         border-radius: 0;
 
         .coll-5 { width: 27%; }
@@ -234,6 +280,20 @@
         .coll-5 { width: 36%; }
         .coll-7 { width: 64%; }
     }
+}
+
+.bunner__orderL {
+    width: 40%;
+
+    @include breakpointmedia(640, "max-width") { width: 28%; }
+    @include breakpointmedia(480, "max-width") { width: 36%; }
+}
+
+.bunner__orderR {
+   width: 60%;
+
+    @include breakpointmedia(640, "max-width") { width: 72%; }
+    @include breakpointmedia(480, "max-width") { width: 64%; }
 }
 
 .bunner__formTitle {

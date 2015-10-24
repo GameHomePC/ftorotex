@@ -9,10 +9,14 @@ function Constructor() {
         this.cardNote__item = $(config.cardNote__item);
         this.cardNote__mainImages = $(config.cardNote__mainImages);
 
+        this.formType__icon = $(config.formType__icon);
+
         if(this.sliderClient.length) { this.getSliderClients(); }
         if(this.sliderAboutUs.length) { this.getSliderAboutUs(); }
         if(this.toggle.length && this.toggleContent.length) { this.getToggle(); }
         if(this.cardNote__item.length && this.cardNote__mainImages.length) { this.getToggleGallery(); }
+
+        if(this.formType__icon.length) { this.getFormFocus(); }
     };
 
     this.getSliderClients = function() {
@@ -73,6 +77,25 @@ function Constructor() {
             return false;
         });
     };
+
+    this.getFormFocus = function() {
+        this.formType__icon.on('click', function() {
+            var self = $(this);
+
+            self.children().focus();
+        });
+
+        this.formType__icon.children().on('keyup keydown', function() {
+            var self = $(this),
+                selfValue = self.val();
+
+            if(selfValue.length) {
+                self.parent().addClass('active');
+            } else {
+                self.parent().removeClass('active');
+            }
+        });
+    }
 }
 
 /* getMap */
@@ -196,3 +219,11 @@ function MobileMenu() {
         });
     };
 }
+
+$(function() {
+    var inputFocus = new Constructor();
+
+    inputFocus.initialize({
+        formType__icon: ".formType__icon"
+    })
+});

@@ -61,7 +61,7 @@ gulp.task('google-fonts', function () {
 gulp.task('sass', function () {
     gulp.src(conf.sass.libSass)
         .pipe(sass().on('error', sass.logError))
-        .pipe(postcss([ autoprefixer({ browsers: ['last 10 version'] }) ]))
+        .pipe(postcss([ autoprefixer({ browsers: ['last 100 version'] }) ]))
         .pipe(gulp.dest(conf.sass.css))
         .pipe(browserSync.reload({stream: true}));
 });
