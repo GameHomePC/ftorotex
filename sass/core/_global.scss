@@ -1,16 +1,18 @@
 .wrapper {
     position: relative;
     max-width: 1208px;
+    padding: 0 10px;
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 
-    @include breakpointmedia(960, 'max-width') {
-        max-width: 960px;
-    }
+    @include breakpointmedia(960, 'max-width') { max-width: 960px; }
+    @include breakpointmedia(640, 'max-width') { padding: 0; }
 }
 
 body {
+    position: relative;
+    overflow-x: hidden;
     font-family: $Roboto;
 }
 
@@ -151,10 +153,15 @@ a {
 .icon__download { @include sprite($download-icon); }
 
 
-.media1200 {
-    display: none;
+@include breakpointmedia(1200) {
+    .media1200-display { display: inline; }
+    .media1200-no-display { display: none; }
+}
 
-    @include breakpointmedia(1200) { display: inline-block; }
+.media960-display { display: none; }
+@include breakpointmedia(960, 'max-width') {
+    .media960-display { display: inline; }
+    .media960-no-display { display: none; }
 }
 
 .media768-display { display: none; }
@@ -175,4 +182,33 @@ a {
 @include breakpointmedia(480, 'max-width') {
     .media480-display { display: inline; }
     .media480-no-display { display: none; }
+}
+
+
+/* scrollUp */
+.scrollUp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 103px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 5px;
+    background: #5d87b4;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 0 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:before {
+        position: absolute;
+        right: 12px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        @include sprite($arrow-scroll);
+        content: "";
+    }
 }

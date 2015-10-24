@@ -3,8 +3,7 @@
     padding: 65px 0;
 
     @include breakpointmedia(768, "max-width") { padding: 55px 0; }
-
-    @include breakpointmedia(640, "max-width") { padding: 55px 12%; }
+    @include breakpointmedia(640, "max-width") { padding: 55px 6.3%; }
     @include breakpointmedia(480, "max-width") { padding: 26px 13px; }
 
 }

@@ -10,6 +10,8 @@ function Constructor() {
         this.cardNote__mainImages = $(config.cardNote__mainImages);
 
         this.formType__icon = $(config.formType__icon);
+        this.scrollUp = $(config.scrollUp);
+        this.menuMobile = $(config.menuMobile);
 
         if(this.sliderClient.length) { this.getSliderClients(); }
         if(this.sliderAboutUs.length) { this.getSliderAboutUs(); }
@@ -17,6 +19,8 @@ function Constructor() {
         if(this.cardNote__item.length && this.cardNote__mainImages.length) { this.getToggleGallery(); }
 
         if(this.formType__icon.length) { this.getFormFocus(); }
+        if(this.scrollUp.length) { this.getScrollTop(); }
+        if(this.menuMobile.length) { this.getMenuMobile(); }
     };
 
     this.getSliderClients = function() {
@@ -95,7 +99,56 @@ function Constructor() {
                 self.parent().removeClass('active');
             }
         });
-    }
+    };
+
+    this.getScrollTop = function() {
+        var _this = this,
+            windowScroll = $(window).scrollTop();
+
+        if(windowScroll >= 300) {
+            _this.scrollUp.show();
+        } else {
+            _this.scrollUp.hide();
+        }
+
+        $(window).on('scroll', function() {
+            var self = $(this),
+                selfScrollTop = self.scrollTop();
+
+            if(selfScrollTop >= 300) {
+                _this.scrollUp.fadeIn();
+            } else {
+                _this.scrollUp.fadeOut();
+            }
+        });
+
+        this.scrollUp.on('click', function() {
+            var self = $(this);
+
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1000)
+        });
+    };
+
+    this.getMenuMobile = function() {
+        var _this = this;
+
+        this.menuMobile.on('click', function() {
+            var self = $(this);
+
+            if(!self.hasClass('active')) {
+                self.addClass('active');
+
+                self.next('.headerMenu__mobileSub').slideDown(200);
+            } else {
+                self.removeClass('active');
+                self.next('.headerMenu__mobileSub').stop().slideUp(200);
+            }
+
+            return false;
+        })
+    };
 }
 
 /* getMap */
@@ -221,9 +274,10 @@ function MobileMenu() {
 }
 
 $(function() {
-    var inputFocus = new Constructor();
+    var mainJS = new Constructor();
 
-    inputFocus.initialize({
-        formType__icon: ".formType__icon"
+    mainJS.initialize({
+        formType__icon: ".formType__icon",
+        menuMobile: '#menuMobile'
     })
 });

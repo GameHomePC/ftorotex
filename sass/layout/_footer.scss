@@ -4,9 +4,10 @@
 
 .footer__top {
     background: #0f2a47;
-    @include clearfix;
 
     .wrapper {
+        @include clearfix;
+
         @include breakpointmedia(640, "max-width") {
             padding-bottom: 60px;
         }

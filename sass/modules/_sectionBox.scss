@@ -1,10 +1,18 @@
 .sectionBox {
     position: relative;
-    padding: 52px 0 45px;
+    padding: 63px 0 52px;
     box-sizing: border-box;
 
+    @include breakpointmedia(960, "max-width") {
+        padding: 63px 0 52px;
+    }
+
+    @include breakpointmedia(768, "max-width") {
+        padding: 56px 0 52px;
+    }
+
     @include breakpointmedia(640, "max-width") {
-        padding: 35px 7% 30px;
+        padding: 35px 6.3% 30px;
     }
 
     @include breakpointmedia(480, "max-width") {
@@ -25,17 +33,19 @@
 }
 
 .sectionBox__title {
-    font-size: 31px;
+    font-size: 37px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    letter-spacing: -1.3px;
 
-    @include breakpointmedia(768, "max-width") {
-        font-size: 28px;
-        letter-spacing: -1px;
+    @include breakpointmedia(960, "max-width") {
+        font-size: 31px;
+        letter-spacing: -0.5px;
     }
 
+    @include breakpointmedia(768, "max-width") { font-size: 28px; }
+    @include breakpointmedia(640, "max-width") { font-size: 35px; }
     @include breakpointmedia(480, "max-width") {
         font-size: 24px;
         line-height: 28px;
@@ -46,6 +56,10 @@
     font-weight: bold;
     color: #115694;
     letter-spacing: -0.8px;
+
+    @include breakpointmedia(960, "max-width") {
+        font-size: 35px;
+    }
 
     @include breakpointmedia(640, "max-width") {
         font-size: 26px;
@@ -63,6 +77,10 @@
 .sectionBox__content {
     margin-top: 53px;
     @include clearfix;
+
+    @include breakpointmedia(960, "max-width") {
+        margin-top: 53px;
+    }
 
     @include breakpointmedia(768, "max-width") {
         margin-top: 40px;

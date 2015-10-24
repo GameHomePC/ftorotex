@@ -217,12 +217,13 @@ input, textarea, select {
     @include breakpointmedia(640, "max-width") {
         height: 50px;
         padding: 0 55px 0 12px;
-        font-size: 14px;
+        font-size: 19px;
     }
 
     @include breakpointmedia(480, "max-width") {
         height: 35px;
-        padding: 0 5px;
+        font-size: 14px;
+        padding: 0 12px 0 5px;
     }
 }
 

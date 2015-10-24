@@ -174,12 +174,19 @@
 
             <ul class="headerMenu__mobile">
                 <li>
-                    <a class="headerMenu__link" href="#">Наша продукция</a>
+                    <a class="headerMenu__link headerMenu__link_text" href="#">Наша продукция</a>
                 </li>
                 <li>
-                    <a class="headerMenu__link" href="#">
+                    <a id="menuMobile" class="headerMenu__link" href="#">
                         <i class="icon icon__menu"></i>
                     </a>
+
+                    <ul class="headerMenu__mobileSub">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Статьи и материалы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
                 </li>
             </ul>
 

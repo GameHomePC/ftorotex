@@ -10,27 +10,27 @@
                     <div class="blockInfo__icon blockInfo__icon_phone"></div>
 
                     <div class="blockInfo__content">
-                        <div class="blockInfo__title">Позвоните нам или отправьте <br class="media768"> запрос</div>
+                        <div class="blockInfo__title">Позвоните нам или отправьте <br class="media960-no-display media768-display"> запрос</div>
                         <div class="blockInfo__description">
-                            Мы проконсультируем Вас по<br class="media768"> интересующим<br class="media1200">
-                            вопросам и подготовим <br class="media768">необходимые<br class="media1200">
+                            Мы проконсультируем Вас по <br class="media960-no-display media768-display"> интересующим<br class="media960-display media768-no-display">
+                            вопросам и подготовим <br class="media960-no-display media768-display">необходимые<br class="media960-display media768-no-display">
                             документы
                         </div>
 
                         <div class="blockInfo__phone">
                             <p>
-                                <span class="blockInfo__small blockInfo__80">+375 17</span>
+                                <span class="blockInfo__normal blockInfo__CSmallL3">+375 17</span>
                                 <span class="blockInfo__big">286 36 41, 286 36 42,</span>
                             </p>
 
                             <p>
-                                <span class="blockInfo__small blockInfo__80">&nbsp;</span>
+                                <span class="blockInfo__small blockInfo__CSmallL3">&nbsp;</span>
                                 <span class="blockInfo__big">286 36 43, 286 36 44</span>
                             </p>
 
                             <p>
-                                <span class="blockInfo__small blockInfo__80">&nbsp;</span>
-                                <span class="blockInfo__normal">Телефон / Факс</span>
+                                <span class="blockInfo__small blockInfo__CSmallL3">&nbsp;</span>
+                                <span class="blockInfo__small">Телефон / Факс</span>
                             </p>
                         </div>
                     </div>
@@ -52,13 +52,13 @@
                     <div class="blockInfo__content">
                         <div class="blockInfo__title">
                             Доставим товары<br>
-                            собственным<br>
-                            транспортом (IVECO<br>
+                            собственным <br class="media960-display media768-display">
+                            транспортом (IVECO<br class="media960-display media768-display">
                             1,5 тонны) по Беларуси
                         </div>
                         <div class="blockInfo__description">
-                            Согласуйте условия и сроки<br>
-                            доставки с нашими специалистами
+                            Согласуйте условия и сроки<br class="media960-display media768-display">
+                            доставки<br class="media960-no-display media768-no-display"> с нашими специалистами
                         </div>
                     </div>
                 </div>
@@ -72,15 +72,15 @@
                         <input type="text" placeholder="Представьтесь*" class="text-input">
                     </fieldset>
 
-                    <fieldset class="fieldset">
+                    <fieldset class="fieldset formType__icon formType__phone">
                         <input type="phone" placeholder="Ваш телефон* " class="text-input">
                     </fieldset>
 
-                    <fieldset class="fieldset">
+                    <fieldset class="fieldset formType__icon formType__compulsory">
                         <input type="email" placeholder="Ваш e-mail" class="text-input">
                     </fieldset>
 
-                    <fieldset class="fieldset">
+                    <fieldset class="fieldset formType__icon formType__compulsory">
                         <textarea placeholder="Текст сообщения" class="text-textarea"></textarea>
                     </fieldset>
 

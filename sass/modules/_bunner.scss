@@ -1,4 +1,9 @@
 .bunner {
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    @include breakpointmedia(640, "max-width") { padding: 0; }
+
     .wrapper {
         padding: 49px 0 26px;
         height: 100%;
@@ -6,10 +11,7 @@
 
         @include breakpointmedia(960, "max-width") { padding: 54px 0 26px; }
         @include breakpointmedia(768, "max-width") { padding: 36px 0 17px; }
-
-        @include breakpointmedia(640, "max-width") {
-            padding: 0;
-        }
+        @include breakpointmedia(640, "max-width") { padding: 0; }
     }
 }
 
@@ -297,14 +299,27 @@
 }
 
 .bunner__formTitle {
-    font-size: 18px;
+    font-size: 20px;
     color: #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     padding-top: 8px;
-    letter-spacing: 0.4px;
+
+    @include breakpointmedia(960, "max-width") {
+        font-size: 18px;
+        letter-spacing: 0.4px;
+        margin-bottom: 30px;
+    }
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 16px;
+        margin-bottom: 28px;
+        letter-spacing: 0.1px;
+    }
 
     @include breakpointmedia(640, "max-width") {
-        font-size: 21px;
+        font-size: 26px;
+        margin-bottom: 32px;
+        letter-spacing: -0.5px;
     }
 
     @include breakpointmedia(480, "max-width") {

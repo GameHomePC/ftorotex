@@ -5,35 +5,30 @@
 
 .blockInfo__item {
     @include clearfix;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     &:last-of-type { margin-bottom: 0; }
 
-    .media768 { padding-left: 12px }
-
-    @include breakpointmedia(768, "max-width") {
-        margin-bottom: 13px;
+    @include breakpointmedia(960, "max-width") {
+        margin-bottom: 20px;
 
         &:last-of-type {
             p:first-child { margin-bottom: 0; }
         }
     }
 
-    @include breakpointmedia(640, "max-width") {
-        margin-bottom: 35px;
-    }
-
-    @include breakpointmedia(480, "max-width") {
-        margin-bottom: 20px;
-    }
+    @include breakpointmedia(768, "max-width") { margin-bottom: 6px; }
+    @include breakpointmedia(640, "max-width") { margin-bottom: 50px; }
+    @include breakpointmedia(480, "max-width") { margin-bottom: 20px; }
 }
 
 .blockInfo__item__middle {
-    margin-bottom: 48px;
+    margin-bottom: 55px;
 
-    @include breakpointmedia(480, "max-width") {
-        margin-bottom: 30px;
-    }
+    @include breakpointmedia(960, "max-width") { margin-bottom: 48px; }
+    @include breakpointmedia(768, "max-width") { margin-bottom: 24px; }
+    @include breakpointmedia(640, "max-width") { margin-bottom: 55px; }
+    @include breakpointmedia(480, "max-width") { margin-bottom: 30px; }
 }
 
 .blockInfo__icon {
@@ -88,14 +83,18 @@
     @include breakpointmedia(640, "max-width") { @include sprite($time-icon-640); }
 }
 .blockInfo__icon_email:before {
-    @include sprite($email-icon);
+    @include sprite($email-icon-1200);
 
+    @include breakpointmedia(960, "max-width") { @include sprite($email-icon-960); }
     @include breakpointmedia(768, "max-width") { @include sprite($email-icon-768); }
+    @include breakpointmedia(640, "max-width") { @include sprite($email-icon-640); }
 }
 .blockInfo__icon_world:before {
-    @include sprite($world-icon);
+    @include sprite($world-icon-1200);
 
+    @include breakpointmedia(960, "max-width") { @include sprite($world-icon-960); }
     @include breakpointmedia(768, "max-width") { @include sprite($world-icon-768); }
+    @include breakpointmedia(640, "max-width") { @include sprite($world-icon-640); }
 }
 
 .blockInfo__icon_marker:before {
@@ -123,23 +122,31 @@
 }
 
 .blockInfo__title {
-    font-size: 21px;
+    font-size: 25px;
     font-weight: bold;
     color: #000000;
     margin-bottom: 14px;
     letter-spacing: -0.6px;
-    line-height: 24px;
+    line-height: 28px;
+
+    @include breakpointmedia(960, "max-width") {
+        font-size: 21px;
+        letter-spacing: 0;
+        margin-bottom: 12px;
+        line-height: 24px;
+    }
 
     @include breakpointmedia(768, "max-width") {
-        font-size: 18px;
+        font-size: 19px;
         letter-spacing: 0;
         margin-bottom: 8px;
     }
 
     @include breakpointmedia(640, "max-width") {
-        font-size: 20px;
+        font-size: 25px;
         letter-spacing: 0;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
+        line-height: 26px;
 
         br { display: none; }
     }
@@ -152,10 +159,15 @@
 }
 
 .blockInfo__description {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
     color: #000000;
-    line-height: 18px;
+    line-height: 22px;
+
+    @include breakpointmedia(960, "max-width") {
+        font-size: 16px;
+        line-height: 18px;
+    }
 
     @include breakpointmedia(768, "max-width") {
         font-size: 14px;
@@ -163,9 +175,10 @@
     }
 
     @include breakpointmedia(640, "max-width") {
-        font-size: 16px;
+        font-size: 19px;
         letter-spacing: 0;
         margin-bottom: 8px;
+        line-height: 22px;
     }
 
     @include breakpointmedia(480, "max-width") {
@@ -177,10 +190,30 @@
 
 .blockInfo__link {
     display: block;
-    font-size: 20px;
+    font-size: 23px;
     color: #5489c3;
     font-weight: bold;
-    margin-top: 8px;
+    margin-top: 14px;
+
+    @include breakpointmedia(960, "max-width") {
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    @include breakpointmedia(768, "max-width") {
+        font-size: 18px;
+        margin-top: 8px;
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        font-size: 24px;
+        margin-top: 16px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 18px;
+        margin-top: 10px;
+    }
 }
 
 .blockInfo__linkBig {
@@ -257,20 +290,13 @@
 }
 
 .blockInfo__normal {
-    font-size: 18px;
+    font-size: 20px;
     color: #333333;
 
-    @include breakpointmedia(768, "max-width") {
-        font-size: 16px;
-    }
-
-    @include breakpointmedia(640, "max-width") {
-        font-size: 24px;
-    }
-
-    @include breakpointmedia(480, "max-width") {
-        font-size: 14px;
-    }
+    @include breakpointmedia(960, "max-width") { font-size: 18px; }
+    @include breakpointmedia(768, "max-width") { font-size: 16px; }
+    @include breakpointmedia(640, "max-width") { font-size: 28px; }
+    @include breakpointmedia(480, "max-width") { font-size: 14px; }
 }
 
 .blockInfo__big {
@@ -402,25 +428,43 @@
 }
 
 /* 80 */
-.blockInfo__80 {
+.blockInfo__CSmallL3 {
     position: relative;
     float: left;
-    width: 80px;
+    width: 90px;
 
     & + * {
         float: left;
         width: 100%;
-        margin-left: -80px;
-        padding-left: 80px;
+        margin-left: -90px;
+        padding-left: 90px;
         box-sizing: border-box;
     }
 
-    @include breakpointmedia(640, "max-width") {
-        width: 100px;
+    @include breakpointmedia(960, "max-width") {
+        width: 80px;
 
         & + * {
-            margin-left: -100px;
-            padding-left: 100px;
+            margin-left: -80px;
+            padding-left: 80px;
+        }
+    }
+
+    @include breakpointmedia(768, "max-width") {
+        width: 70px;
+
+        & + * {
+            margin-left: -70px;
+            padding-left: 70px;
+        }
+    }
+
+    @include breakpointmedia(640, "max-width") {
+        width: 120px;
+
+        & + * {
+            margin-left: -120px;
+            padding-left: 120px;
         }
     }
 
