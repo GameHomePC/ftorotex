@@ -161,6 +161,7 @@ table {
 .wrapper {
   position: relative;
   max-width: 1208px;
+  padding: 0 20px;
   width: 100%;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -377,6 +378,9 @@ a {
   @media only screen and (max-width: 39.9375em) and (min-width: 29.9375em) {
     .media640 {
       display: inline-block; } }
+
+.media480-display {
+  display: none; }
 
 @media screen and (max-width: 30em) {
   .media480-display {
@@ -607,6 +611,8 @@ input, textarea, select {
   .header__top .blockInfo__item {
     float: left;
     margin-bottom: 0; }
+    .header__top .blockInfo__item .blockInfo__big {
+      white-space: pre; }
     .header__top .blockInfo__item:first-of-type {
       width: 63%; }
     .header__top .blockInfo__item:last-of-type {

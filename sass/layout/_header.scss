@@ -16,6 +16,7 @@
         width: 60.3%;
         box-sizing: border-box;
 
+
         @include breakpointmedia(960, "max-width") { width: 63%; }
 
         @include breakpointmedia(768, "max-width") {
@@ -33,6 +34,8 @@
     .blockInfo__item {
         float: left;
         margin-bottom: 0;
+
+        .blockInfo__big { white-space: pre; }
 
         &:first-of-type { width: 63%; }
         &:last-of-type { width: 37%; }
