@@ -47,7 +47,7 @@
     margin-top: 35px;
 
     @include breakpointmedia(640, "max-width") {
-        margin-top: 30px;
+        margin-top: 0;
     }
 
     @include breakpointmedia(480, "max-width") {
@@ -57,19 +57,19 @@
 
 .mobile__dropDown {
     display: none;
-    height: 45px;
-    line-height: 45px;
+    height: 55px;
+    line-height: 55px;
     background: #c00202;
-    padding: 0 7%;
+    padding: 0 6.3%;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     @include clearfix;
 
     &:before {
         float: left;
-        margin-top: 15px;
+        margin-top: 20px;
         @include sprite($arrow-cart);
-        margin-right: 10px;
+        margin-right: 18px;
         content: "";
     }
 
@@ -77,15 +77,23 @@
         display: block;
 
         & + div {
-            padding: 35px 7%;
+            padding: 40px 6.3%;
         }
     }
 
     @include breakpointmedia(480, "max-width") {
         padding: 0 13px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
 
         & + div {
-            padding: 13px;
+            padding: 18px 13px;
+        }
+
+        &:before {
+            margin-top: 12px;
+            margin-right: 12px;
         }
     }
 }
@@ -123,7 +131,7 @@
     }
 
     @include breakpointmedia(480, "max-width") {
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
 }
 
@@ -138,11 +146,11 @@
         float: none;
         width: 100%;
         height: auto;
-        padding-bottom: 18px;
+        padding-bottom: 25px;
     }
 
     @include breakpointmedia(480, "max-width") {
-        padding-bottom: 12px;
+        padding-bottom: 18px;
     }
 
     img {
@@ -161,18 +169,20 @@
 }
 
 .card__item {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     @include clearfix;
+
+    &:last-of-type { margin-bottom: 0; }
 
     @include breakpointmedia(640, "max-width") {
         margin-bottom: 8px;
 
         .card__doc {
-            width: 50%;
+            width: 57.5%;
 
             & + * {
-                margin-left: -50%;
-                padding-left: 50%;
+                margin-left: -57.5%;
+                padding-left: 57.5%;
             }
         }
     }
@@ -189,7 +199,7 @@
                 width: 100%;
                 margin-left: 0;
                 padding-left: 0;
-                margin-top: 10px;
+                margin-top: 4px;
             }
         }
 
@@ -202,6 +212,7 @@
 
             a {
                 font-size: 14px;
+                line-height: 20px;
             }
         }
     }
@@ -242,6 +253,10 @@
             &:last-of-type { border-right: none; }
 
             @include breakpointmedia(640, "max-width") {
+                padding: 13px 16px;
+            }
+
+            @include breakpointmedia(480, "max-width") {
                 font-size: 12px;
                 padding: 12px;
             }
@@ -265,6 +280,10 @@
             &:last-of-type { border-right: none; }
 
             @include breakpointmedia(640, "max-width") {
+                padding: 9px 16px;
+            }
+
+            @include breakpointmedia(480, "max-width") {
                 font-size: 12px;
                 padding: 5px 12px;
             }
@@ -280,7 +299,7 @@
 
 /* cardNote */
 .cardNote {
-    .blockInfo__380 + * {
+    .blockInfo__CBig + * {
         padding-left: 380px;
 
         @include breakpointmedia(640, "max-width") {
@@ -374,11 +393,7 @@
     margin-top: 30px;
 
     @include breakpointmedia(640, "max-width") {
-        margin-top: 20px;
-    }
-
-    @include breakpointmedia(480, "max-width") {
-        margin-top: 26px;
+        margin-top: 25px;
     }
 
     &:first-child { margin-top: 0; }
@@ -389,7 +404,7 @@
     margin-bottom: 10px;
 
     @include breakpointmedia(640, "max-width") {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 5px;
     }
 
@@ -407,12 +422,7 @@
 .cardServices__description {
     font-size: 15px;
     color: #333333;
-    line-height: 23px;
-
-    @include breakpointmedia(640, "max-width") {
-        font-size: 12px;
-        line-height: 20px;
-    }
+    line-height: 24px;
 
     @include breakpointmedia(480, "max-width") {
         font-size: 13px;

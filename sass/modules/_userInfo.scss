@@ -3,10 +3,10 @@
     background-size: cover;
 
     .sectionBox__content {
-        margin-top: 40px;
+        margin-top: 36px;
 
         @include breakpointmedia(640, "max-width") {
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
         @include breakpointmedia(480, "max-width") {
@@ -14,17 +14,34 @@
         }
     }
 
-    p.blockInfo__big {
-        margin-top: 7px;
+    .blockInfo__big {
+        font-size: 23px;
 
         @include breakpointmedia(480, "max-width") {
-            margin-top: 12px;
             line-height: 18px;
         }
     }
 
-    .blockInfo__65 + * {
+    .blockInfo__CSmallL1 + * {
         padding-top: 10px;
+    }
+
+    .blockInfo__CMiddle {
+        width: 95px;
+
+        & + * {
+            margin-left: -95px;
+            padding-left: 95px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            width: 70px;
+
+            & + * {
+                margin-left: -70px;
+                padding-left: 70px;
+            }
+        }
     }
 }
 
@@ -46,8 +63,7 @@
 
     @include breakpointmedia(480, "max-width") {
         & + * {
-            padding-left: 34%;
-
+            padding-left: 32%;
         }
     }
 
@@ -58,19 +74,25 @@
 }
 
 .userInfo__content {
+
+    & > .blockInfo__smallNormal {
+        margin-bottom: 8px;
+    }
+
     @include breakpointmedia(640, "max-width") {
-        .blockInfo__small { font-size: 13px; }
+        .blockInfo__smallNormal { font-size: 13px; }
+        .blockInfo__normalUser { font-size: 16px; }
         .blockInfo__big { font-size: 16px; letter-spacing: .5px; }
     }
 
     @include breakpointmedia(480, "max-width") {
-        .blockInfo__small { font-size: 12px; }
+        .blockInfo__smallNormal { font-size: 12px; }
         .blockInfo__big { font-size: 15px; letter-spacing: .5px; }
     }
 }
 
 .userInfo__info {
-    margin-top: 35px;
+    margin-top: 30px;
 
     @include breakpointmedia(640, "max-width") {
         margin-top: 25px;
@@ -83,7 +105,7 @@
 
     @include breakpointmedia(640, "max-width") {
         margin-bottom: 5px;
-        .blockInfo__65 {
+        .blockInfo__CSmallL1 {
             width: 13%;
 
             & + * {
@@ -95,16 +117,38 @@
     }
 
     @include breakpointmedia(480, "max-width") {
-        .blockInfo__65 {
-            width: 17%;
+        .blockInfo__CSmallL1 {
+            width: 15.3%;
 
             & + * {
-                margin-left: -17%;
-                padding-left: 17%;
+                margin-left: -15.3%;
+                padding-left: 15.3%;
                 padding-top: 8px;
             }
         }
+
+        .tl {
+            padding-left: 10px;
+            line-height: 18px;
+        }
     }
+
+    .blockInfo__big {
+        @include breakpointmedia(480, "max-width") {
+            font-size: 16px;
+        }
+    }
+
+    .blockInfo__small {
+        @include breakpointmedia(480, "max-width") {
+            font-size: 13px;
+            padding-top: 0;
+        }
+    }
+}
+
+.userInfo__phoneIndent {
+    padding-left: 10px;
 }
 
 .userInfo_desktop {

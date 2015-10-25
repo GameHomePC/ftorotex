@@ -108,6 +108,7 @@
     @include breakpointmedia(640, "max-width") {
         font-size: 16px;
         margin-bottom: 15px;
+        line-height: 18px;
     }
 }
 
@@ -118,7 +119,7 @@
 
     @include breakpointmedia(640, "max-width") {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 20px;
     }
 
     a {

@@ -11,7 +11,7 @@
         <div class="page__content">
             <div class="section">
                 <div class="card__content">
-                    <div class="card__images blockInfo__380">
+                    <div class="card__images blockInfo__CBig">
                         <img src="images/card-images-1.jpg" alt=""/>
                     </div>
 

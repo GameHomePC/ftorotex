@@ -289,6 +289,17 @@
     @include breakpointmedia(480, "max-width") { font-size: 11px; }
 }
 
+.blockInfo__smallNormal {
+    font-size: 18px;
+    font-weight: 300;
+    color: #333333;
+}
+
+.blockInfo__normalUser {
+    font-size: 20px;
+    color: #333333;
+}
+
 .blockInfo__normal {
     font-size: 20px;
     color: #333333;
@@ -389,22 +400,22 @@
 }
 
 /* 65 */
-.blockInfo__65 {
+.blockInfo__CSmallL1 {
     position: relative;
     float: left;
-    width: 65px;
+    width: 68px;
 
     & + * {
         float: left;
         width: 100%;
-        margin-left: -65px;
-        padding-left: 65px;
+        margin-left: -68px;
+        padding-left: 68px;
         box-sizing: border-box;
     }
 }
 
 /* 75 */
-.blockInfo__75 {
+.blockInfo__CSmallL2 {
     position: relative;
     float: left;
     width: 75px;
@@ -418,11 +429,20 @@
     }
 
     @include breakpointmedia(640, "max-width") {
-        width: 55px;
+        width: 65px;
 
         & + * {
-            margin-left: -55px;
-            padding-left: 55px;
+            margin-left: -65px;
+            padding-left: 65px;
+        }
+    }
+
+    @include breakpointmedia(480, "max-width") {
+        width: 60px;
+
+        & + * {
+            margin-left: -60px;
+            padding-left: 60px;
         }
     }
 }
@@ -530,22 +550,22 @@
 }
 
 /* 230 */
-.blockInfo__230 {
+.blockInfo__CMiddleBig {
     position: relative;
     float: left;
-    width: 230px;
+    width: 233px;
 
     & + * {
         float: left;
         width: 100%;
-        margin-left: -230px;
-        padding-left: 230px;
+        margin-left: -233px;
+        padding-left: 233px;
         box-sizing: border-box;
     }
 }
 
 /* 380 */
-.blockInfo__380 {
+.blockInfo__CBig {
     float: left;
     width: 380px;
 

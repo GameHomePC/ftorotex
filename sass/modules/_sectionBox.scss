@@ -24,7 +24,7 @@
     padding: 42px 0;
 
     @include breakpointmedia(640, "max-width") {
-        padding: 32px 7%;
+        padding: 50px 6.3%;
     }
 
     @include breakpointmedia(480, "max-width") {
@@ -52,19 +52,19 @@
     }
 }
 .sectionBox__title35 {
-    font-size: 35px;
+    font-size: 36px;
     font-weight: bold;
     color: #115694;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.5px;
 
     @include breakpointmedia(960, "max-width") {
         font-size: 35px;
     }
 
     @include breakpointmedia(640, "max-width") {
-        font-size: 26px;
+        font-size: 32px;
         text-align: center;
-        line-height: 32px;
+        line-height: 38px;
     }
 
     @include breakpointmedia(480, "max-width") {

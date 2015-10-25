@@ -29,20 +29,10 @@
                     </div>
                 </div>
 
-                <script>
-                    $(function() {
-                        var drop = new MobileMenu();
-
-                        drop.initialize({
-                            subMenuMobileStyle: ".submenu__mobileStyle .submenu__item"
-                        })
-                    });
-                </script>
-
                 <div class="articles__doc">
                     <div class="card__item">
-                        <div class="card__doc blockInfo__380 clear">
-                            <div class="blockInfo__75">
+                        <div class="card__doc blockInfo__CBig clear">
+                            <div class="blockInfo__CSmallL2">
                                 <i class="icon icon__word"></i>
                             </div>
                             <div class="textStyle">
@@ -59,8 +49,8 @@
                     </div>
 
                     <div class="card__item">
-                        <div class="card__doc blockInfo__380 clear">
-                            <div class="blockInfo__75">
+                        <div class="card__doc blockInfo__CBig clear">
+                            <div class="blockInfo__CSmallL2">
                                 <i class="icon icon__word"></i>
                             </div>
                             <div class="textStyle">
@@ -77,8 +67,8 @@
                     </div>
 
                     <div class="card__item">
-                        <div class="card__doc blockInfo__380 clear">
-                            <div class="blockInfo__75">
+                        <div class="card__doc blockInfo__CBig clear">
+                            <div class="blockInfo__CSmallL2">
                                 <i class="icon icon__word"></i>
                             </div>
                             <div class="textStyle">
@@ -95,8 +85,8 @@
                     </div>
 
                     <div class="card__item">
-                        <div class="card__doc blockInfo__380 clear">
-                            <div class="blockInfo__75">
+                        <div class="card__doc blockInfo__CBig clear">
+                            <div class="blockInfo__CSmallL2">
                                 <i class="icon icon__word"></i>
                             </div>
                             <div class="textStyle">
@@ -113,8 +103,8 @@
                     </div>
 
                     <div class="card__item">
-                        <div class="card__doc blockInfo__380 clear">
-                            <div class="blockInfo__75">
+                        <div class="card__doc blockInfo__CBig clear">
+                            <div class="blockInfo__CSmallL2">
                                 <i class="icon icon__word"></i>
                             </div>
                             <div class="textStyle">

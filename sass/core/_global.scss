@@ -18,7 +18,6 @@ body {
 
 
 a {
-    transition: all 0.2s ease;
     text-decoration: underline;
 
     &:hover { text-decoration: none; }
@@ -57,7 +56,7 @@ a {
     vertical-align: top;
 
     @include breakpointmedia(640, "max-width") {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     @include breakpointmedia(480, "max-width") {
@@ -69,7 +68,7 @@ a {
         line-height: 23px;
 
         @include breakpointmedia(640, "max-width") {
-            margin-bottom: 2px;
+            margin-bottom: 8px;
         }
 
         @include breakpointmedia(480, "max-width") {
@@ -83,6 +82,7 @@ a {
 
         @include breakpointmedia(640, "max-width") {
             padding-left: 20px;
+            margin-bottom: 8px;
         }
 
         @include breakpointmedia(480, "max-width") {
@@ -94,7 +94,7 @@ a {
             line-height: 23px;
 
             @include breakpointmedia(640, "max-width") {
-                line-height: 18px;
+                line-height: 22px;
             }
 
             &:before {
@@ -120,7 +120,7 @@ a {
         font-size: 15px;
         color: #333333;
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia(480, "max-width") {
             font-size: 12px;
         }
     }
@@ -129,8 +129,8 @@ a {
         font-size: 15px;
         color: #9f9f9f;
 
-        @include breakpointmedia(640, "max-width") {
-            font-size: 12px;
+        @include breakpointmedia(480, "max-width") {
+            font-size: 14px;
         }
     }
 }

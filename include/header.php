@@ -169,7 +169,7 @@
                 <li><a class="headerMenu__link" href="#">О компании</a></li>
                 <li><a class="headerMenu__link" href="#">Услуги</a></li>
                 <li><a class="headerMenu__link" href="#">Статьи и материалы</a></li>
-                <li><a class="headerMenu__link" href="#">Контакты</a></li>
+                <li><a class="headerMenu__link" href="contact.php">Контакты</a></li>
             </ul>
 
             <ul class="headerMenu__mobile">
@@ -185,7 +185,7 @@
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Услуги</a></li>
                         <li><a href="#">Статьи и материалы</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="contact.php">Контакты</a></li>
                     </ul>
                 </li>
             </ul>

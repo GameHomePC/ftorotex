@@ -29,7 +29,7 @@
         <div class="wrapper">
             <div class="mapInfo">
                 <ul class="mapInfo__top" id="mapInfoLink">
-                    <li class="active" data-region="220125, г. Минск, ул.Шафарнянская, 11, офис 47">
+                    <li class="active" data-region="53.94694828375402,27.682178499999985">
                         <i class="mapInfoLink__geo"></i>
                         <i class="mapInfoLink__info"></i>
                         <a class="mapInfoLink__link" href="#">Офис</a>
@@ -59,7 +59,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li data-region="220125, г. Минск, ул.Шафарнянская, 11, офис 47">
+                    <li data-region="53.671969347815114,25.770419499999942">
                         <i class="mapInfoLink__geo"></i>
                         <i class="mapInfoLink__info"></i>
                         <a class="mapInfoLink__link" href="#">Склад</a>
@@ -99,7 +99,16 @@
                 map.initialize({
                     map: "map",
                     mapInfoLink: "#mapInfoLink",
-                    mapInfoBlock: "#mapInfoBlock"
+                    mapInfoBlock: "#mapInfoBlock",
+                    center: [53.946949, 27.682178],
+                    type: 'coords',
+                    markers: [{
+                        coords: [53.94694828375402, 27.682178499999985],
+                        center: true
+                    },{
+                        coords: [53.671969347815114, 25.770419499999942],
+                        center: false
+                    }]
                 });
             });
         </script>

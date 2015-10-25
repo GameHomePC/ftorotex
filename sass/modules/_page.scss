@@ -1,12 +1,12 @@
 .page {
-    padding: 35px 0;
+    padding: 36px 0;
 
     @include breakpointmedia(640, "max-width") {
-        padding: 28px 0 0;
+        padding: 36px 0 0;
     }
 
     @include breakpointmedia(480, "max-width") {
-        padding: 16px 0 0;
+        padding: 18px 0 0;
     }
 }
 
@@ -22,15 +22,15 @@
     box-sizing: border-box;
 
     @include breakpointmedia(640, "max-width") {
-        padding: 0 7%;
+        padding: 0 6.3%;
         font-size: 26px;
-        margin-bottom: 30px;
+        margin-bottom: 42px;
     }
 
     @include breakpointmedia(480, "max-width") {
         font-size: 22px;
         padding: 0 13px;
-        margin-bottom: 16px;
+        margin-bottom: 22px;
     }
 }
 
@@ -39,20 +39,18 @@
     @include clearfix;
     padding: 180px 0;
 
-    @include breakpointmedia(640, "max-width") {
-        padding: 50px 0;
-    }
-
-    @include breakpointmedia(480, "max-width") {
-        padding: 12px 0;
-    }
+    @include breakpointmedia(960, "max-width") { padding: 70px 0; }
+    @include breakpointmedia(640, "max-width") { padding: 50px 6.3%; }
+    @include breakpointmedia(480, "max-width") { padding: 12px 13px; }
 }
 
 .page404__images {
     float: left;
     width: 50%;
     text-align: center;
+    box-sizing: border-box;
 
+    @include breakpointmedia(960, "max-width") { padding-right: 10px; }
     @include breakpointmedia(640, "max-width") {
         padding-top: 10px;
         width: 39%;
@@ -61,11 +59,10 @@
     @include breakpointmedia(480, "max-width") {
         width: 100%;
         padding-top: 0;
+        padding-right: 0;
     }
 
-    img {
-        max-width: 100%;
-    }
+    img { max-width: 100%; }
 }
 
 .page404__content {
@@ -76,9 +73,14 @@
     line-height: 40px;
     box-sizing: border-box;
 
+    @include breakpointmedia(960, "max-width") {
+        padding-left: 10px;
+        font-size: 22px;
+        line-height: 32px;
+    }
+
     @include breakpointmedia(640, "max-width") {
         width: 61%;
-        padding: 0 0 0 31px;
         font-size: 18px;
     }
 

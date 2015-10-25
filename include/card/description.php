@@ -1,6 +1,6 @@
 <div class="cardSpecifications">
     <div class="card__content">
-        <div class="card__images blockInfo__380">
+        <div class="card__images blockInfo__CBig">
             <img src="images/card-images-1.jpg" alt=""/>
         </div>
 
@@ -23,8 +23,8 @@
 
     <div class="card__list">
         <div class="card__item">
-            <div class="card__doc blockInfo__380 clear">
-                <div class="blockInfo__75">
+            <div class="card__doc blockInfo__CBig clear">
+                <div class="blockInfo__CSmallL2">
                     <i class="icon icon__word"></i>
                 </div>
                 <div class="textStyle">
@@ -41,8 +41,8 @@
         </div>
 
         <div class="card__item">
-            <div class="card__doc blockInfo__380 clear">
-                <div class="blockInfo__75">
+            <div class="card__doc blockInfo__CBig clear">
+                <div class="blockInfo__CSmallL2">
                     <i class="icon icon__exel"></i>
                 </div>
                 <div class="textStyle">
@@ -59,8 +59,8 @@
         </div>
 
         <div class="card__item">
-            <div class="card__doc blockInfo__380 clear">
-                <div class="blockInfo__75">
+            <div class="card__doc blockInfo__CBig clear">
+                <div class="blockInfo__CSmallL2">
                     <i class="icon icon__reader"></i>
                 </div>
                 <div class="textStyle">
@@ -77,8 +77,8 @@
         </div>
 
         <div class="card__item">
-            <div class="card__doc blockInfo__380 clear">
-                <div class="blockInfo__75">
+            <div class="card__doc blockInfo__CBig clear">
+                <div class="blockInfo__CSmallL2">
                     <i class="icon icon__reader"></i>
                 </div>
                 <div class="textStyle">
@@ -95,8 +95,44 @@
         </div>
 
         <div class="card__item">
-            <div class="card__doc blockInfo__380 clear">
-                <div class="blockInfo__75">
+            <div class="card__doc blockInfo__CBig clear">
+                <div class="blockInfo__CSmallL2">
+                    <i class="icon icon__reader"></i>
+                </div>
+                <div class="textStyle">
+                    <p>
+                        <a href="#">Основные конструкционные пластмассы QUADRANT</a>
+                        <span>468 кб</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="textStyle">
+                <p>Руководство по основным конструкционным пластикам производства "QUADRANT EPP", их применению и механической обработке</p>
+            </div>
+        </div>
+
+        <div class="card__item">
+            <div class="card__doc blockInfo__CBig clear">
+                <div class="blockInfo__CSmallL2">
+                    <i class="icon icon__reader"></i>
+                </div>
+                <div class="textStyle">
+                    <p>
+                        <a href="#">Основные конструкционные пластмассы QUADRANT</a>
+                        <span>468 кб</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="textStyle">
+                <p>Руководство по основным конструкционным пластикам производства "QUADRANT EPP", их применению и механической обработке</p>
+            </div>
+        </div>
+
+        <div class="card__item">
+            <div class="card__doc blockInfo__CBig clear">
+                <div class="blockInfo__CSmallL2">
                     <i class="icon icon__reader"></i>
                 </div>
                 <div class="textStyle">

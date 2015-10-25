@@ -24,5 +24,12 @@
 
     a {
         color: #115694;
+        border-bottom: 1px solid #115694;
+        text-decoration: none;
+        line-height: 14px;
+
+        &:hover {
+            border-bottom: none;
+        }
     }
 }

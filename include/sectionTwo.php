@@ -15,7 +15,16 @@
 
                         <ul class="list__box">
                             <li><a href="">Фторопласт</a></li>
-                            <li><a href="">Полиамид / капролон</a></li>
+                            <li>
+                                <a href="">Полиамид / капролон</a>
+                                <ul class="list__sub2">
+                                    <li><a href="">Полиэтилентерефталат</a></li>
+                                    <li><a href="">Полиэтилентерефталат</a></li>
+                                    <li><a href="">Полиэтилентерефталат</a></li>
+                                    <li><a href="">Полиэтилентерефталат</a></li>
+                                    <li><a href="">Полиэтилентерефталат</a></li>
+                                </ul>
+                            </li>
                             <li><a href="">Полиэтилентерефталат</a></li>
                             <li><a href="">Полиоксиметилен</a></li>
                             <li><a href="">Текстолит</a></li>
@@ -117,16 +126,6 @@
                         <a class="list__title">Бассейны из полипропилена</a>
                     </div>
                 </div>
-
-                <script>
-                    $(function() {
-                        var drop = new MobileMenu();
-
-                        drop.initialize({
-                            subMenuMobileStyle: ".submenu__mobileStyle .submenu__item"
-                        })
-                    });
-                </script>
 
                 <div class="newList">
                     <div class="newList__item">

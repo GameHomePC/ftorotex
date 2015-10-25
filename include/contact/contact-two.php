@@ -1,7 +1,7 @@
 <div class="contact">
     <div class="contact__left">
         <div class="contactInfo">
-            <div class="blockInfo__75 blockInfo__icon blockInfo__icon_marker"></div>
+            <div class="blockInfo__CSmallL2 blockInfo__icon blockInfo__icon_marker"></div>
             <div class="contactInfo__item">
                 <p class="blockInfo__normalTwo">Склад - оформление накладных и получение продукции:</p>
                 <p class="blockInfo__bigTwo">пос. Ждановичи, пер. Горный, 1 (100 метров от МКАД)</p>
@@ -9,7 +9,7 @@
         </div>
 
         <div class="contactInfo">
-            <div class="blockInfo__75 blockInfo__icon blockInfo__icon_phone2Contact"></div>
+            <div class="blockInfo__CSmallL2 blockInfo__icon blockInfo__icon_phone2Contact"></div>
             <div class="contactInfo__item">
                 <p class="blockInfo__normalTwo">Телефоны/факсы:</p>
                 <p>
@@ -20,7 +20,7 @@
         </div>
 
         <div class="contactInfo">
-            <div class="blockInfo__75 blockInfo__icon blockInfo__icon_phoneContact"></div>
+            <div class="blockInfo__CSmallL2 blockInfo__icon blockInfo__icon_phoneContact"></div>
             <div class="contactInfo__item">
                 <p class="blockInfo__normalTwo">Телефоны мобильный:</p>
                 <p>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="contactInfo">
-            <div class="blockInfo__75 blockInfo__icon blockInfo__icon_timeContact"></div>
+            <div class="blockInfo__CSmallL2 blockInfo__icon blockInfo__icon_timeContact"></div>
             <div class="contactInfo__item">
                 <p class="blockInfo__normalTwo">Работаем:</p>
                 <p class="blockInfo__bigTwo">с 8.30 до 17.00</p>
@@ -57,7 +57,13 @@
                     var map = new getMap();
 
                     map.initialize({
-                        map: 'mapTwo'
+                        map: 'mapTwo',
+                        center: [53.946949, 27.682178],
+                        type: 'coords',
+                        markers: [{
+                            coords: [53.671969347815114, 25.770419499999942],
+                            center: true
+                        }]
                     });
                 });
             </script>

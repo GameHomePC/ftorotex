@@ -1,7 +1,7 @@
 <div class="contact">
     <div class="contact__big">
         <div class="contactInfo">
-            <div class="blockInfo__75 blockInfo__icon blockInfo__icon_penContact"></div>
+            <div class="blockInfo__CSmallL2 blockInfo__icon blockInfo__icon_penContact"></div>
             <div class="contactInfo__item">
                 <p class="blockInfo__normalTwo">
                     ОДО “Фторотекс”, 220125, Республика Беларусь, г. Минск, ул. Шафарнянская, д. 11, оф. 47, УНП 101478436, ОКПО 37509520,<br>

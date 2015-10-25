@@ -157,6 +157,9 @@ function getMap() {
         this.mapID = config.map;
         this.mapInfoLink = $(config.mapInfoLink);
         this.mapInfoBlock = $(config.mapInfoBlock);
+        this.center = config.center;
+        this.markers = config.markers;
+        this.type = config.type || 'coords'; // coords, geocode
 
         if(this.mapID) { this.getMapMain(); }
         if(this.mapInfoLink.length || this.mapInfoBlock.length ) { this.getTab(); }
@@ -166,31 +169,104 @@ function getMap() {
         ymaps.ready(this.getMap.bind(this));
     };
 
+    this.addMarker = function(item){
+
+        var _this = this;
+        var itemCoords = item.coords;
+        var itemCenter = item.center;
+
+        switch(this.type){
+            case 'geocode':
+
+                var geocoder = ymaps.geocode(itemCoords, {
+                    results: 1
+                });
+
+                geocoder.then(function(res){
+                    var firstGeoObject = res.geoObjects.get(0),
+                        coords = firstGeoObject.geometry.getCoordinates(),
+                        bounds = firstGeoObject.properties.get('boundedBy');
+
+                    _this.map.geoObjects.add(firstGeoObject);
+
+                    if (itemCenter){
+                        _this.map.setCenter(coords, 17);
+                    }
+
+                });
+
+                break;
+            case 'coords':
+
+                var placemark = new ymaps.GeoObject({
+                    geometry: {
+                        type: "Point",
+                        coordinates: itemCoords
+                    }
+                });
+
+                _this.map.geoObjects.add(placemark);
+
+                if (itemCenter){
+                    _this.map.setCenter(itemCoords, 17);
+                }
+
+                break;
+        }
+
+
+
+    };
+
+    this.addMarkers = function(){
+
+        for (var i = 0; i < this.markers.length; i+=1){
+            this.addMarker(this.markers[i]);
+        }
+
+    };
+
     this.getMap = function() {
         var options = {
-            center: [53.946949, 27.682178],
+            center: this.center,
             zoom: 17,
             controls: []
         };
 
         var map = this.map = new ymaps.Map(this.mapID, options);
+
+        this.addMarkers();
     };
 
-    this.getMapGeo = function(geocode) {
+    this.getMapGeo = function(coords) {
         var _this = this;
 
-        ymaps.geocode(geocode, {
-            results: 1
-        }).then(function (res) {
-            var firstGeoObject = res.geoObjects.get(0),
-                coords = firstGeoObject.geometry.getCoordinates(),
-                bounds = firstGeoObject.properties.get('boundedBy');
+        switch (this.type){
+            case 'geocode':
 
-            _this.map.geoObjects.add(firstGeoObject);
-            _this.map.setBounds(bounds, {
-                checkZoomRange: true
-            });
-        });
+                ymaps.geocode(coords, {
+                    results: 1
+                }).then(function (res) {
+                    var firstGeoObject = res.geoObjects.get(0),
+                        coords = firstGeoObject.geometry.getCoordinates(),
+                        bounds = firstGeoObject.properties.get('boundedBy');
+
+                    _this.map.setCenter(coords, 17);
+                });
+
+                break;
+            case 'coords':
+
+                coords = coords.split(',');
+                coords[0] = Number(coords[0]);
+                coords[1] = Number(coords[1]);
+
+                _this.map.setCenter(coords, 17);
+
+                break;
+        }
+
+
     };
 
     this.getTab = function() {
@@ -247,8 +323,9 @@ function Section() {
 function MobileMenu() {
     this.initialize = function(config) {
         this.subMenuMobileStyle = $(config.subMenuMobileStyle);
+        this.list__box = $(config.list__box);
 
-        if(this.subMenuMobileStyle.length) {
+        if(this.subMenuMobileStyle.length && this.list__box.length) {
             this.getAccordion();
         }
     };
@@ -259,8 +336,6 @@ function MobileMenu() {
         this.subMenuMobileStyle.find('.list__title').on('click', function() {
             var self = $(this);
 
-            console.log(self)
-
             if(!self.parent().hasClass('active')) {
                 _this.subMenuMobileStyle.removeClass('active');
                 self.parent().addClass('active');
@@ -270,14 +345,36 @@ function MobileMenu() {
 
             return false;
         });
+
+        this.list__box.prev().on('click', function() {
+            var self = $(this);
+
+            if(!self.hasClass('active')) {
+                self.addClass('active');
+            } else {
+                self.removeClass('active');
+            }
+
+            return false;
+        })
     };
 }
 
 $(function() {
     var mainJS = new Constructor();
 
+    /* global */
     mainJS.initialize({
         formType__icon: ".formType__icon",
         menuMobile: '#menuMobile'
-    })
+    });
+
+    /* MobileMenu */
+    if(Modernizr.touch) {
+        var drop = new MobileMenu();
+        drop.initialize({
+            subMenuMobileStyle: ".submenu__mobileStyle .submenu__item",
+            list__box: '.list__sub2'
+        });
+    }
 });

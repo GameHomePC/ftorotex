@@ -1,6 +1,6 @@
 <div class="cardNote">
     <div class="cardNote__gallery">
-        <div class="cardNote__mainImages blockInfo__380">
+        <div class="cardNote__mainImages blockInfo__CBig">
             <img src="images/card-images-1.jpg" alt=""/>
         </div>
 

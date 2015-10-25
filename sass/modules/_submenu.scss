@@ -23,6 +23,9 @@
     &:nth-of-type(4n + 5) { clear: both; }
 }
 
+/* list__sub2 */
+.list__sub2 { display: none; }
+
 .submenu__mobileStyle {
     @include clearfix;
 
@@ -55,7 +58,8 @@
             font-weight: normal;
             color: #fff;
             background: #115694;
-            padding: 12px 7%;
+            padding: 12px 6.3%;
+            cursor: pointer;
 
             &:before {
                 position: relative;
@@ -68,47 +72,87 @@
 
             & + ul {
                 display: none;
-                //                    background: #ededed;
             }
 
-            &:hover {
-                color: #fff;
-            }
+            &:hover { color: #fff; }
         }
 
         .list__box {
             padding: 0;
 
-            li { margin: 0; }
+            & > li {
+                margin: 0;
 
-            a {
-                display: block;
-                line-height: 18px;
-                font-size: 15px;
-                color: #115694;
-                padding: 12px 11%;
-                text-decoration: none;
-                border-bottom: 1px solid #d5d5d5;
+                & > a {
+                    position: relative;
+                    display: block;
+                    line-height: 16px;
+                    font-size: 15px;
+                    color: #115694;
+                    padding: 12px 6.3%;
+                    text-decoration: none;
+                    border-bottom: 1px solid #d5d5d5;
 
-                &.list__link {
-                    font-size: 13px;
-                    color: #a3a3a3;
-                    margin-top: 0;
-                    background: #f5f5f5;
-                    padding: 12px 7%;
+                    &:hover { border-bottom: 1px solid #d5d5d5; }
+
+                    &.active {
+                        background: #ededed;
+                        font-weight: bold;
+
+                        &:before { transform: rotate(90deg); }
+
+                        & + .list__sub2 { display: block; }
+                    }
 
                     &:before {
+                        position: relative;
                         display: inline-block;
                         vertical-align: top;
-                        position: relative;
-                        left: auto;
-                        top: 3px;
+                        @include sprite($list-aroow-blue-icon);
                         margin-right: 10px;
-                        @include sprite($arrow-menu-all);
+                        content: "";
                     }
-                }
 
-                &.list__red { padding: 12px 7%; }
+                    &.list__link {
+                        font-size: 13px;
+                        color: #a3a3a3;
+                        margin-top: 0;
+                        background: #f5f5f5;
+                        padding: 12px 7%;
+
+                        &:before {
+                            display: inline-block;
+                            vertical-align: top;
+                            position: relative;
+                            left: auto;
+                            top: 3px;
+                            margin-right: 10px;
+                            @include sprite($arrow-menu-all);
+                        }
+                    }
+
+                    &.list__red { padding: 12px 7%; }
+                }
+            }
+        }
+
+        .list__sub2 {
+            display: none;
+            background: #ededed;
+
+            li {
+                margin-bottom: 0;
+            }
+
+            a {
+                position: relative;
+                display: block;
+                line-height: 16px;
+                font-size: 15px;
+                color: #115694;
+                padding: 12px 10.2%;
+                text-decoration: none;
+                border-bottom: 1px solid #d5d5d5;
             }
         }
     }
@@ -156,9 +200,21 @@
     }
 
     a {
+        display: inline;
+        position: relative;
         font-size: 14px;
         color: #115694;
         letter-spacing: 0.4px;
+        text-decoration: none;
+        border-bottom: 1px solid #115694;
+        line-height: 18px;
+
+
+        &:hover {
+            border-bottom: none;
+        }
+
+
 
         &.list__red {
             color: #c00202;
