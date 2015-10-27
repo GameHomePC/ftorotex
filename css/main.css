@@ -662,13 +662,22 @@ input, textarea, select {
   .header__top .blockInfo {
     float: left;
     padding-top: 31px;
-    width: 60.3%;
+    width: 680px;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box; }
+    @media screen and (max-width: 64.375em) {
+      .header__top .blockInfo {
+        width: 630px; } }
+    @media screen and (max-width: 61.25em) {
+      .header__top .blockInfo {
+        width: 590px; } }
     @media screen and (max-width: 60em) {
       .header__top .blockInfo {
-        width: 63%; } }
+        width: 540px; } }
+    @media screen and (max-width: 53.125em) {
+      .header__top .blockInfo {
+        width: 480px; } }
     @media screen and (max-width: 48em) {
       .header__top .blockInfo {
         width: 40.4%;
@@ -677,24 +686,47 @@ input, textarea, select {
       .header__top .blockInfo {
         width: 46.8%;
         padding-top: 20px; } }
+    @media screen and (max-width: 35em) {
+      .header__top .blockInfo {
+        width: 50%; } }
+    @media screen and (max-width: 32.5em) {
+      .header__top .blockInfo {
+        width: 55%; } }
     @media screen and (max-width: 30em) {
       .header__top .blockInfo {
         width: 100%;
         padding: 12px 22px 10px; } }
+  .header__top .blockInfo__item:last-of-type p:first-child {
+    margin-bottom: 11px; }
   .header__top .blockInfo__item {
     float: left;
     margin-bottom: 0; }
     .header__top .blockInfo__item .blockInfo__big {
       white-space: pre; }
     .header__top .blockInfo__item:first-of-type {
-      width: 63%; }
+      width: 400px; }
     .header__top .blockInfo__item:last-of-type {
-      width: 37%; }
+      width: 280px; }
+    @media screen and (max-width: 64.375em) {
+      .header__top .blockInfo__item:first-of-type {
+        width: 380px; }
+      .header__top .blockInfo__item:last-of-type {
+        width: 250px; } }
+    @media screen and (max-width: 61.25em) {
+      .header__top .blockInfo__item:first-of-type {
+        width: 340px; }
+      .header__top .blockInfo__item:last-of-type {
+        width: 250px; } }
     @media screen and (max-width: 60em) {
       .header__top .blockInfo__item:first-of-type {
-        width: 59.8%; }
+        width: 320px; }
       .header__top .blockInfo__item:last-of-type {
-        width: 40.2%; } }
+        width: 220px; } }
+    @media screen and (max-width: 53.125em) {
+      .header__top .blockInfo__item:first-of-type {
+        width: 280px; }
+      .header__top .blockInfo__item:last-of-type {
+        width: 200px; } }
     @media screen and (max-width: 48em) {
       .header__top .blockInfo__item:first-of-type, .header__top .blockInfo__item:last-of-type {
         width: 100%; }
@@ -717,31 +749,80 @@ input, textarea, select {
     @media screen and (max-width: 20em) {
       .header__top .blockInfo__item:first-of-type .media480 .blockInfo__normal {
         font-size: 12px; } }
+    .header__top .blockInfo__item .blockInfo__CMiddle {
+      width: 100px; }
+      .header__top .blockInfo__item .blockInfo__CMiddle + * {
+        margin-left: -100px;
+        padding-left: 100px; }
+      @media screen and (max-width: 53.125em) {
+        .header__top .blockInfo__item .blockInfo__CMiddle {
+          width: 80px; }
+          .header__top .blockInfo__item .blockInfo__CMiddle + * {
+            margin-left: -80px;
+            padding-left: 80px; } }
+    @media screen and (max-width: 64.375em) {
+      .header__top .blockInfo__item .blockInfo__big {
+        font-size: 16px; } }
+    @media screen and (max-width: 53.125em) {
+      .header__top .blockInfo__item .blockInfo__big {
+        font-size: 13px; } }
+    @media screen and (max-width: 53.125em) {
+      .header__top .blockInfo__item .blockInfo__small {
+        font-size: 9px; } }
+    @media screen and (max-width: 60em) {
+      .header__top .blockInfo__item .blockInfo__icon {
+        width: 50px; }
+        .header__top .blockInfo__item .blockInfo__icon + * {
+          margin-left: -50px;
+          padding-left: 50px; } }
 
 /* headerLogo */
 .headerLogo {
   float: left;
-  width: 39.7%;
+  width: 100%;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   padding-top: 21px;
-  padding-bottom: 22px; }
+  padding-bottom: 22px;
+  margin-right: -680px;
+  padding-right: 680px; }
+  @media screen and (max-width: 64.375em) {
+    .headerLogo {
+      margin-right: -630px;
+      padding-right: 630px; } }
+  @media screen and (max-width: 61.25em) {
+    .headerLogo {
+      margin-right: -590px;
+      padding-right: 590px; } }
+  @media screen and (max-width: 60em) {
+    .headerLogo {
+      margin-right: -540px;
+      padding-right: 540px; } }
+  @media screen and (max-width: 53.125em) {
+    .headerLogo {
+      margin-right: -480px;
+      padding-right: 480px; } }
   .headerLogo:after {
     content: ".";
     display: block;
     height: 0;
     clear: both;
     visibility: hidden; }
-  @media screen and (max-width: 60em) {
-    .headerLogo {
-      width: 37%; } }
   @media screen and (max-width: 48em) {
     .headerLogo {
+      margin-right: 0;
+      padding-right: 0;
       width: 59.6%; } }
   @media screen and (max-width: 40em) {
     .headerLogo {
       width: 53.2%; } }
+  @media screen and (max-width: 35em) {
+    .headerLogo {
+      width: 50%; } }
+  @media screen and (max-width: 32.5em) {
+    .headerLogo {
+      width: 45%; } }
   @media screen and (max-width: 30em) {
     .headerLogo {
       width: 100%;
@@ -809,15 +890,21 @@ input, textarea, select {
     .headerLogo__big {
       font-size: 21px;
       margin-bottom: 14px; } }
+  @media screen and (max-width: 50em) {
+    .headerLogo__big {
+      font-size: 18px; } }
   @media screen and (max-width: 48em) {
     .headerLogo__big {
       letter-spacing: -1.5px; } }
   @media screen and (max-width: 40em) {
     .headerLogo__big {
       font-size: 21px; } }
-  @media screen and (max-width: 34.375em) {
+  @media screen and (max-width: 35em) {
     .headerLogo__big {
       font-size: 18px; } }
+  @media screen and (max-width: 32.5em) {
+    .headerLogo__big {
+      font-size: 14px; } }
   @media screen and (max-width: 30em) {
     .headerLogo__big {
       font-size: 20px;
@@ -832,6 +919,9 @@ input, textarea, select {
     .headerLogo__small {
       font-size: 14px;
       letter-spacing: 0.2px; } }
+  @media screen and (max-width: 50em) {
+    .headerLogo__small {
+      font-size: 11px; } }
   @media screen and (max-width: 48em) {
     .headerLogo__small {
       font-size: 18px;
@@ -840,9 +930,14 @@ input, textarea, select {
     .headerLogo__small {
       font-size: 18px;
       line-height: 20px; } }
-  @media screen and (max-width: 34.375em) {
+  @media screen and (max-width: 35em) {
     .headerLogo__small {
-      font-size: 14px; } }
+      font-size: 14px;
+      padding-right: 10px; } }
+  @media screen and (max-width: 32.5em) {
+    .headerLogo__small {
+      font-size: 10px;
+      line-height: normal; } }
   @media screen and (max-width: 30em) {
     .headerLogo__small {
       font-size: 11px;
@@ -900,7 +995,6 @@ input, textarea, select {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
-  border-right: 1px solid #5f8cbc;
   letter-spacing: -0.6px; }
   @media screen and (max-width: 51.875em) {
     .headerMenu__link {
@@ -2020,6 +2114,9 @@ input, textarea, select {
       background-position: 0px -587px;
       width: 384px;
       height: 510px; } }
+  @media screen and (max-width: 53.75em) {
+    .bunner__icon {
+      left: -165px; } }
   @media screen and (max-width: 48em) {
     .bunner__icon {
       background-image: url("../images/sprite.png");
@@ -2039,18 +2136,26 @@ input, textarea, select {
           box-sizing: border-box;
   width: 100%;
   margin-right: -383px;
-  padding-right: 383px;
+  padding-right: 400px;
   padding-left: 27.3%; }
+  @media screen and (max-width: 75em) {
+    .bunner__content {
+      padding-left: 23%; } }
+  @media screen and (max-width: 72.5em) {
+    .bunner__content {
+      padding-left: 20%; } }
   @media screen and (max-width: 60em) {
     .bunner__content {
-      padding-left: 26%;
+      padding-left: 15%;
       margin-right: -304px;
-      padding-right: 304px; } }
+      padding-right: 324px; } }
+  @media screen and (max-width: 53.75em) {
+    .bunner__content {
+      padding-left: 10%; } }
   @media screen and (max-width: 48em) {
     .bunner__content {
-      padding-left: 21.3%;
       margin-right: -265px;
-      padding-right: 265px; } }
+      padding-right: 285px; } }
   @media screen and (max-width: 40em) {
     .bunner__content {
       float: none;
@@ -2068,13 +2173,31 @@ input, textarea, select {
   color: #c00202;
   margin-bottom: 19px;
   text-transform: uppercase; }
+  @media screen and (max-width: 68.75em) {
+    .bunner__title {
+      font-size: 26px; } }
+  @media screen and (max-width: 65em) {
+    .bunner__title {
+      font-size: 24px; } }
+  @media screen and (max-width: 62.5em) {
+    .bunner__title {
+      font-size: 22px; } }
   @media screen and (max-width: 60em) {
     .bunner__title {
       font-size: 25px; } }
+  @media screen and (max-width: 50.625em) {
+    .bunner__title {
+      font-size: 22px; } }
   @media screen and (max-width: 48em) {
     .bunner__title {
       font-size: 21px;
       margin-bottom: 15px; } }
+  @media screen and (max-width: 43.125em) {
+    .bunner__title {
+      font-size: 19px; } }
+  @media screen and (max-width: 41.875em) {
+    .bunner__title {
+      font-size: 17px; } }
   @media screen and (max-width: 40em) {
     .bunner__title {
       text-align: center;
@@ -2089,13 +2212,28 @@ input, textarea, select {
   font-size: 26px;
   color: #333333;
   line-height: 30px; }
+  @media screen and (max-width: 68.75em) {
+    .bunner__description {
+      font-size: 22px; } }
+  @media screen and (max-width: 65em) {
+    .bunner__description {
+      font-size: 19px; } }
   @media screen and (max-width: 60em) {
     .bunner__description {
-      font-size: 23px;
+      font-size: 22px;
       line-height: 25px; } }
+  @media screen and (max-width: 50.625em) {
+    .bunner__description {
+      font-size: 21px; } }
   @media screen and (max-width: 48em) {
     .bunner__description {
       font-size: 20px; } }
+  @media screen and (max-width: 43.125em) {
+    .bunner__description {
+      font-size: 18px; } }
+  @media screen and (max-width: 41.875em) {
+    .bunner__description {
+      font-size: 16px; } }
   @media screen and (max-width: 40em) {
     .bunner__description {
       text-align: center;
@@ -2119,6 +2257,9 @@ input, textarea, select {
     .bunner__list {
       margin-top: 18px;
       padding-left: 115px; } }
+  @media screen and (max-width: 43.125em) {
+    .bunner__list {
+      padding-left: 60px; } }
   @media screen and (max-width: 40em) {
     .bunner__list {
       padding-left: 0;
@@ -2146,6 +2287,9 @@ input, textarea, select {
         font-size: 18px;
         line-height: 18px;
         padding-right: 10px; } }
+    @media screen and (max-width: 41.875em) {
+      .bunner__list li {
+        font-size: 16px; } }
     @media screen and (max-width: 40em) {
       .bunner__list li {
         font-size: 26px;
@@ -2212,6 +2356,9 @@ input, textarea, select {
   @media screen and (max-width: 48em) {
     .bunner__link {
       font-size: 18px; } }
+  @media screen and (max-width: 41.875em) {
+    .bunner__link {
+      font-size: 16px; } }
   @media screen and (max-width: 40em) {
     .bunner__link {
       font-size: 26px; } }
@@ -2842,28 +2989,31 @@ input, textarea, select {
   .order .blockInfo {
     float: left;
     width: 100%;
-    margin-left: -383px;
-    padding-left: 383px;
+    margin-right: -383px;
+    padding-right: 650px;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box; }
+    @media screen and (max-width: 66.25em) {
+      .order .blockInfo {
+        padding-right: 550px; } }
     @media screen and (max-width: 60em) {
       .order .blockInfo {
-        margin-left: -304px;
-        padding-left: 304px; } }
+        margin-right: -304px;
+        padding-right: 304px; } }
     @media screen and (max-width: 48em) {
       .order .blockInfo {
-        margin-left: -265px;
-        padding-left: 265px; } }
+        margin-right: -265px;
+        padding-right: 265px; } }
     @media screen and (max-width: 40em) {
       .order .blockInfo {
         padding: 0 6.3% 34px 6.3%;
-        margin-left: 0;
+        margin-right: 0;
         float: none; } }
     @media screen and (max-width: 30em) {
       .order .blockInfo {
         padding: 0 13px 15px 13px;
-        margin-left: 0;
+        margin-right: 0;
         float: none; } }
   .order .blockInfo__big {
     font-size: 22px; }

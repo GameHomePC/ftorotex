@@ -32,29 +32,31 @@
     .blockInfo {
         float: left;
         width: 100%;
-        margin-left: -383px;
-        padding-left: 383px;
+        margin-right: -383px;
+        padding-right: 650px;
         box-sizing: border-box;
 
+        @include breakpointmedia(1060, "max-width") { padding-right: 550px; }
+
         @include breakpointmedia(960, "max-width") {
-            margin-left: -304px;
-            padding-left: 304px;
+            margin-right: -304px;
+            padding-right: 304px;
         }
 
         @include breakpointmedia(768, "max-width") {
-            margin-left: -265px;
-            padding-left: 265px;
+            margin-right: -265px;
+            padding-right: 265px;
         }
 
         @include breakpointmedia(640, "max-width") {
             padding: 0 6.3% 34px 6.3%;
-            margin-left: 0;
+            margin-right: 0;
             float: none;
         }
 
         @include breakpointmedia(480, "max-width") {
             padding: 0 13px 15px 13px;
-            margin-left: 0;
+            margin-right: 0;
             float: none;
         }
     }

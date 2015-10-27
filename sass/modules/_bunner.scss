@@ -40,6 +40,10 @@
         @include sprite($user-icon-1);
     }
 
+    @include breakpointmedia(860, "max-width") {
+        left: -165px;
+    }
+
     @include breakpointmedia(768, "max-width") {
         @include sprite($user-icon-1-768);
     }
@@ -55,19 +59,25 @@
     box-sizing: border-box;
     width: 100%;
     margin-right: -383px;
-    padding-right: 383px;
+    padding-right: 400px;
     padding-left: 27.3%;
 
+    @include breakpointmedia(1200, "max-width") { padding-left: 23%; }
+    @include breakpointmedia(1160, "max-width") { padding-left: 20%; }
+
     @include breakpointmedia(960, "max-width") {
-        padding-left: 26%;
+        padding-left: 15%;
         margin-right: -304px;
-        padding-right: 304px;
+        padding-right: 324px;
+    }
+
+    @include breakpointmedia(860, "max-width") {
+        padding-left: 10%;
     }
 
     @include breakpointmedia(768, "max-width") {
-        padding-left: 21.3%;
         margin-right: -265px;
-        padding-right: 265px;
+        padding-right: 285px;
     }
 
     @include breakpointmedia(640, "max-width") {
@@ -90,8 +100,14 @@
     margin-bottom: 19px;
     text-transform: uppercase;
 
+    @include breakpointmedia(1100, "max-width") { font-size: 26px; }
+    @include breakpointmedia(1040, "max-width") { font-size: 24px; }
+    @include breakpointmedia(1000, "max-width") { font-size: 22px; }
     @include breakpointmedia(960, "max-width") { font-size: 25px; }
+    @include breakpointmedia(810, "max-width") { font-size: 22px; }
     @include breakpointmedia(768, "max-width") { font-size: 21px; margin-bottom: 15px; }
+    @include breakpointmedia(690, "max-width") { font-size: 19px; }
+    @include breakpointmedia(670, "max-width") { font-size: 17px; }
     @include breakpointmedia(640, "max-width") {
         text-align: center;
         font-size: 32px;
@@ -109,14 +125,24 @@
     color: #333333;
     line-height: 30px;
 
+    @include breakpointmedia(1100, "max-width") { font-size: 22px; }
+    @include breakpointmedia(1040, "max-width") { font-size: 19px; }
+
     @include breakpointmedia(960, "max-width") {
-        font-size: 23px;
+        font-size: 22px;
         line-height: 25px;
+    }
+
+    @include breakpointmedia(810, "max-width") {
+        font-size: 21px;
     }
 
     @include breakpointmedia(768, "max-width") {
         font-size: 20px;
     }
+
+    @include breakpointmedia(690, "max-width") { font-size: 18px; }
+    @include breakpointmedia(670, "max-width") { font-size: 16px; }
 
     @include breakpointmedia(640, "max-width") {
         text-align: center;
@@ -142,6 +168,10 @@
     @include breakpointmedia(768, "max-width") {
         margin-top: 18px;
         padding-left: 115px;
+    }
+
+    @include breakpointmedia(690, "max-width") {
+        padding-left: 60px;
     }
 
     @include breakpointmedia(640, "max-width") {
@@ -175,6 +205,8 @@
             line-height: 18px;
             padding-right: 10px;
         }
+
+        @include breakpointmedia(670, "max-width") { font-size: 16px; }
 
         @include breakpointmedia(640, "max-width") {
             font-size: 26px;
@@ -238,6 +270,7 @@
     color: #115694;
 
     @include breakpointmedia(768, "max-width") { font-size: 18px; }
+    @include breakpointmedia(670, "max-width") { font-size: 16px; }
     @include breakpointmedia(640, "max-width") { font-size: 26px; }
     @include breakpointmedia(480, "max-width") { font-size: 18px; }
 }
