@@ -976,8 +976,6 @@ input, textarea, select {
     .headerMenu li:hover .submenu {
       visibility: visible;
       opacity: 1; }
-    .headerMenu li:first-child .headerMenu__link {
-      border-left: 1px solid #5f8cbc; }
 
 .headerMenu__link {
   display: block;
@@ -2108,7 +2106,7 @@ input, textarea, select {
   height: 566px; }
   @media screen and (max-width: 60em) {
     .bunner__icon {
-      left: -65px;
+      left: -105px;
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
       background-position: 0px -587px;
@@ -2119,6 +2117,7 @@ input, textarea, select {
       left: -165px; } }
   @media screen and (max-width: 48em) {
     .bunner__icon {
+      left: -130px;
       background-image: url("../images/sprite.png");
       background-repeat: no-repeat;
       background-position: -389px -587px;
@@ -3000,7 +2999,16 @@ input, textarea, select {
     @media screen and (max-width: 60em) {
       .order .blockInfo {
         margin-right: -304px;
-        padding-right: 304px; } }
+        padding-right: 545px; } }
+    @media screen and (max-width: 56.875em) {
+      .order .blockInfo {
+        padding-right: 495px; } }
+    @media screen and (max-width: 53.75em) {
+      .order .blockInfo {
+        padding-right: 445px; } }
+    @media screen and (max-width: 50em) {
+      .order .blockInfo {
+        padding-right: 405px; } }
     @media screen and (max-width: 48em) {
       .order .blockInfo {
         margin-right: -265px;
@@ -3058,6 +3066,9 @@ input, textarea, select {
       background-position: -879px 0px;
       width: 395px;
       height: 519px; } }
+  @media screen and (max-width: 48em) {
+    .order__icon {
+      left: 40px; } }
   @media screen and (max-width: 40em) {
     .order__icon {
       display: none; } }

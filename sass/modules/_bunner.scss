@@ -36,7 +36,7 @@
     @include sprite($user-icon-1200);
 
     @include breakpointmedia(960, "max-width") {
-        left: -65px;
+        left: -105px;
         @include sprite($user-icon-1);
     }
 
@@ -45,6 +45,7 @@
     }
 
     @include breakpointmedia(768, "max-width") {
+        left: -130px;
         @include sprite($user-icon-1-768);
     }
 

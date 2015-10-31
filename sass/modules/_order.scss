@@ -40,8 +40,12 @@
 
         @include breakpointmedia(960, "max-width") {
             margin-right: -304px;
-            padding-right: 304px;
+            padding-right: 545px;
         }
+
+        @include breakpointmedia(910, "max-width") { padding-right: 495px; }
+        @include breakpointmedia(860, "max-width") { padding-right: 445px; }
+        @include breakpointmedia(800, "max-width") { padding-right: 405px; }
 
         @include breakpointmedia(768, "max-width") {
             margin-right: -265px;
@@ -89,7 +93,6 @@
         @include sprite($user-icon-2);
     }
 
-    @include breakpointmedia(640, "max-width") {
-        display: none;
-    }
+    @include breakpointmedia(768, "max-width") { left: 40px; }
+    @include breakpointmedia(640, "max-width") { display: none; }
 }

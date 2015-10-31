@@ -86,7 +86,7 @@ gulp.task('browser-sync', function() {
 // watch
 // ==============
 gulp.task('watch', function() {
-    gulp.watch(conf.templatesPath).on('change', browserSync.reload);
+    //gulp.watch(conf.templatesPath).on('change', browserSync.reload);
     gulp.watch(conf.js.root).on('change', browserSync.reload);
     gulp.watch(conf.sass.watch, ['sass']);
     gulp.watch(conf.sprite.rootSprite, ['sprite']);
