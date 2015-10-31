@@ -268,14 +268,14 @@
 }
 
 .header__bottom {
-    background: linear-gradient(bottom, #165396, #598dc7);
+    background: linear-gradient(to top, #165396, #598dc7);
 
     .wrapper {
         display: table;
         width: 100%;
         padding: 0 10px 0 0;
 
-        @include breakpointmedia(640, "max-width") { padding: 0; }
+        @include breakpointmedia(960, "max-width") { padding: 0; }
     }
 }
 
@@ -388,20 +388,74 @@
 
 /* headerSearch */
 .headerSearch {
+    position: relative;
     display: table-cell;
     vertical-align: middle;
     width: 29%;
-    position: relative;
     box-sizing: border-box;
     padding-left: 40px;
 
+    form { display: block; }
+
     @include breakpointmedia(960, 'max-width') {
+        position: static;
         width: 74px;
         padding-left: 0;
     }
 
     @include breakpointmedia(640, "max-width") { width: 26.5%; }
     @include breakpointmedia(480, "max-width") { width: 20%; }
+}
+
+div.headerSearch__icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 57px;
+
+    &.active {
+        background: #205c9d;
+    }
+
+    @include breakpointmedia(960, 'max-width') {
+        position: relative;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    &:before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        @include sprite($search-icon-1200);
+        content: "";
+
+        @include breakpointmedia(960, 'max-width') {
+            @include sprite($search-icon);
+        }
+    }
+}
+
+.headerSearch__content {
+    @include breakpointmedia(960, "max-width") {
+        position: absolute;
+        display: none;
+        height: 62px;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #c0cfd9;
+        padding: 13px 15px;
+        box-sizing: border-box;
+        z-index: 10;
+    }
 }
 
 .headerSearch__input {
@@ -422,19 +476,34 @@
     }
 
     @include breakpointmedia(960, 'max-width') {
-        display: none;
+        float: left;
+        display: block;
+        background: #ffffff;
+        box-shadow: none;
+        margin-right: -80px;
+        padding-right: 80px;
     }
 }
 
-.headerSearch__icon {
+button.headerSearch__icon {
     position: absolute;
     top: 0;
     right: 0;
     width: 40px;
     height: 57px;
+    text-indent: -1000em;
 
     @include breakpointmedia(960, 'max-width') {
-        width: 100%;
+        position: relative;
+        float: left;
+        width: 80px;
+        height: 100%;
+        background: #115594;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        font-size: 16px;
+        font-weight: bold;
+        text-indent: 0;
     }
 
     &:before {
@@ -448,7 +517,7 @@
         content: "";
 
         @include breakpointmedia(960, 'max-width') {
-            @include sprite($search-icon);
+            display: none;
         }
     }
 }

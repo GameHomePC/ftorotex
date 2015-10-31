@@ -191,8 +191,13 @@
             </ul>
 
             <div class="headerSearch">
-                <input type="text" class="headerSearch__input" placeholder="Поиск">
-                <button class="headerSearch__icon button"></button>
+                <form>
+                    <div class="headerSearch__icon"></div>
+                    <div class="headerSearch__content">
+                        <input type="search" class="headerSearch__input" placeholder="Поиск" name="search">
+                        <button class="headerSearch__icon button">Поиск</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

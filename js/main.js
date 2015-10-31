@@ -12,6 +12,7 @@ function Constructor() {
         this.formType__icon = $(config.formType__icon);
         this.scrollUp = $(config.scrollUp);
         this.menuMobile = $(config.menuMobile);
+        this.headerSearch__icon = $(config.headerSearch__icon);
 
         if(this.sliderClient.length) { this.getSliderClients(); }
         if(this.sliderAboutUs.length) { this.getSliderAboutUs(); }
@@ -21,6 +22,7 @@ function Constructor() {
         if(this.formType__icon.length) { this.getFormFocus(); }
         if(this.scrollUp.length) { this.getScrollTop(); }
         if(this.menuMobile.length) { this.getMenuMobile(); }
+        if(this.headerSearch__icon.length) { this.getSearch(); }
     };
 
     this.getSliderClients = function() {
@@ -137,6 +139,10 @@ function Constructor() {
         this.menuMobile.on('click', function() {
             var self = $(this);
 
+            if(_this.headerSearch__icon.hasClass('active')) {
+                _this.headerSearch__icon.trigger('click');
+            }
+
             if(!self.hasClass('active')) {
                 self.addClass('active');
 
@@ -149,6 +155,28 @@ function Constructor() {
             return false;
         })
     };
+
+    this.getSearch = function() {
+        var _this = this;
+
+        this.headerSearch__icon.on('click', function() {
+            var self = $(this);
+
+            if(_this.menuMobile.hasClass('active')) {
+                _this.menuMobile.trigger('click');
+            }
+
+            if(!self.hasClass('active')) {
+                self.addClass('active');
+                self.next().slideDown(200);
+            } else {
+                self.removeClass('active');
+                self.next().slideUp(200);
+            }
+
+            return false;
+        })
+    }
 }
 
 /* getMap */
@@ -366,7 +394,8 @@ $(function() {
     /* global */
     mainJS.initialize({
         formType__icon: ".formType__icon",
-        menuMobile: '#menuMobile'
+        menuMobile: '#menuMobile',
+        headerSearch__icon: 'div.headerSearch__icon'
     });
 
     /* MobileMenu */
