@@ -32,6 +32,7 @@
 
             &:nth-of-type(odd) { padding-right: 13px; }
             &:nth-of-type(even) { padding-left: 13px; }
+            &:last-of-type { padding-bottom: 0; border-bottom: 0; }
         }
     }
 }

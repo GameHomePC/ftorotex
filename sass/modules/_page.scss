@@ -1,5 +1,5 @@
 .page {
-    padding: 36px 0;
+    padding: 36px 0 0;
 
     @include breakpointmedia(640, "max-width") {
         padding: 36px 0 0;
