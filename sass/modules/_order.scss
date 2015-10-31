@@ -87,12 +87,10 @@
     right: 0;
     margin: auto;
     @include sprite($user-icon-2-1200);
-
     @include breakpointmedia(960, "max-width") {
         left: -22px;
         @include sprite($user-icon-2);
     }
-
     @include breakpointmedia(768, "max-width") {
         @include sprite($user-icon-2-768);
         left: 40px;
