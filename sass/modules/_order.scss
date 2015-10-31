@@ -93,6 +93,9 @@
         @include sprite($user-icon-2);
     }
 
-    @include breakpointmedia(768, "max-width") { left: 40px; }
+    @include breakpointmedia(768, "max-width") {
+        @include sprite($user-icon-2-768);
+        left: 40px;
+    }
     @include breakpointmedia(640, "max-width") { display: none; }
 }
