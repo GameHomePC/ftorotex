@@ -6,6 +6,8 @@ var googleWebFonts = require('gulp-google-webfonts');
 var sass = require('gulp-sass');
 var spritesmith = require('gulp.spritesmith');
 var browserSync = require('browser-sync').create();
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
 
 var conf = {
     localServer: 'ftorotex.loc',
@@ -28,8 +30,27 @@ var conf = {
         rootSprite: "images/sprite/*.png",
         imagesSprite: "./images",
         cssSprite: "./sass/sprite"
+    },
+    images: {
+        rootImages: "images/**/**.*",
+        imagesImages: "./images"
     }
 };
+// ==============
+// optimizationImages
+// ==============
+gulp.task('optimizationImages', function () {
+    return gulp.src(conf.images.rootImages)
+        .pipe(imagemin({
+            progressive: true,
+            interlaced: true,
+            multipass: true,
+            optimizationLevel: 7,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest(conf.images.imagesImages));
+});
 
 // ==============
 // sprite
@@ -60,8 +81,12 @@ gulp.task('google-fonts', function () {
 // ==============
 gulp.task('sass', function () {
     gulp.src(conf.sass.libSass)
-        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.init())
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }).on('error', sass.logError))
         .pipe(postcss([ autoprefixer({ browsers: ['last 100 version'] }) ]))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(conf.sass.css))
         .pipe(browserSync.reload({stream: true}));
 });
