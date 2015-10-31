@@ -353,9 +353,8 @@ function MobileMenu() {
         this.subMenuMobileStyle = $(config.subMenuMobileStyle);
         this.list__box = $(config.list__box);
 
-        if(this.subMenuMobileStyle.length && this.list__box.length) {
-            this.getAccordion();
-        }
+        if(this.subMenuMobileStyle.length) { this.getAccordion(); }
+        if(this.list__box.length) { this.getAccordionListBox(); }
     };
 
     this.getAccordion = function() {
@@ -373,7 +372,9 @@ function MobileMenu() {
 
             return false;
         });
+    };
 
+    this.getAccordionListBox = function() {
         this.list__box.prev().on('click', function() {
             var self = $(this);
 

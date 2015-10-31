@@ -131,6 +131,7 @@ a {
 
         @include breakpointmedia(480, "max-width") {
             font-size: 14px;
+            white-space: pre;
         }
     }
 }

@@ -51,18 +51,20 @@
     box-sizing: border-box;
 
     @include breakpointmedia(960, "max-width") { padding-right: 10px; }
-    @include breakpointmedia(640, "max-width") {
-        padding-top: 10px;
-        width: 39%;
-    }
 
-    @include breakpointmedia(480, "max-width") {
+    @include breakpointmedia(640, "max-width") {
         width: 100%;
         padding-top: 0;
         padding-right: 0;
     }
 
-    img { max-width: 100%; }
+    img {
+        max-width: 100%;
+
+        @include breakpointmedia(480, 'max-width') {
+            max-width: 70%;
+        }
+    }
 }
 
 .page404__content {
@@ -80,15 +82,15 @@
     }
 
     @include breakpointmedia(640, "max-width") {
-        width: 61%;
-        font-size: 18px;
-    }
-
-    @include breakpointmedia(480, "max-width") {
         width: 100%;
         padding: 28px 0 0 0;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 28px;
+    }
+
+
+    @include breakpointmedia(480, "max-width") {
+        font-size: 14px;
     }
 
     a {
