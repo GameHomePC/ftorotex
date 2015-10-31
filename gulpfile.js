@@ -9,6 +9,7 @@ var spritesmith = require('gulp.spritesmith');
 var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var concat = require('gulp-concat');
 
 var conf = {
     localServer: 'ftorotex.loc',
@@ -35,8 +36,25 @@ var conf = {
     images: {
         rootImages: "images/**/**.*",
         imagesImages: "./images"
+    },
+    scripts: {
+        src: "./js/**/*.js",
+        dest: "./js"
     }
 };
+
+// ==============
+// scripts
+// ==============
+gulp.task('scripts', function() {
+    return gulp.src(conf.scripts.src)
+        .pipe(sourcemaps.init())
+        .pipe(concat('all.js'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(conf.scripts.dest))
+        .pipe(browserSync.reload({stream: true}));
+});
+
 // ==============
 // optimizationImages
 // ==============
@@ -113,15 +131,15 @@ gulp.task('browser-sync', function() {
 // ==============
 gulp.task('watch', function() {
     //gulp.watch(conf.templatesPath).on('change', browserSync.reload);
-    gulp.watch(conf.js.root).on('change', browserSync.reload);
     gulp.watch(conf.sass.watch, ['sass']);
     gulp.watch(conf.sprite.rootSprite, ['sprite']);
+    gulp.watch(conf.sprite.rootSprite, ['scripts']);
 });
 
 // ==============
 // default
 // ==============
-gulp.task('default', ['browser-sync', 'sass', 'watch', 'google-fonts', 'sprite']);
+gulp.task('default', ['browser-sync', 'sass', 'watch', 'google-fonts', 'sprite', 'scripts']);
 
 // ==============
 // build
