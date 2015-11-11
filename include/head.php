@@ -6,5 +6,5 @@
     <link rel="stylesheet" href="css/main.css">
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-    <script src="js/all.js"></script>
+    <script src="js/build/all.js"></script>
 </head>

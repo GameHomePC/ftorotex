@@ -10,6 +10,8 @@ var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
 var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var minifyCss = require('gulp-minify-css');
 
 var conf = {
     localServer: 'ftorotex.loc',
@@ -38,8 +40,8 @@ var conf = {
         imagesImages: "./images"
     },
     scripts: {
-        src: "./js/**/*.js",
-        dest: "./js"
+        src: ['./js/lib/*.js','./js/main.js'],
+        dest: "./js/build"
     }
 };
 
@@ -48,9 +50,10 @@ var conf = {
 // ==============
 gulp.task('scripts', function() {
     return gulp.src(conf.scripts.src)
-        .pipe(sourcemaps.init())
+        //.pipe(sourcemaps.init())
         .pipe(concat('all.js'))
-        .pipe(sourcemaps.write())
+        .pipe(uglify())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest(conf.scripts.dest))
         .pipe(browserSync.reload({stream: true}));
 });
@@ -100,12 +103,11 @@ gulp.task('google-fonts', function () {
 // ==============
 gulp.task('sass', function () {
     gulp.src(conf.sass.libSass)
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'compressed'
-        }).on('error', sass.logError))
+        //.pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
         .pipe(postcss([ autoprefixer({ browsers: ['last 100 version'] }) ]))
-        .pipe(sourcemaps.write())
+        .pipe(minifyCss())
+        //.pipe(sourcemaps.write())
         .pipe(gulp.dest(conf.sass.css))
         .pipe(browserSync.reload({stream: true}));
 });

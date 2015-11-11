@@ -41,11 +41,11 @@
     }
 
     @include breakpointmedia(860, "max-width") {
-        left: -165px;
+        left: -80px;
     }
 
     @include breakpointmedia(768, "max-width") {
-        left: -130px;
+        left: -80px;
         @include sprite($user-icon-1-768);
     }
 
@@ -73,12 +73,13 @@
     }
 
     @include breakpointmedia(860, "max-width") {
-        padding-left: 10%;
+        padding-left: 19.3%;
     }
 
     @include breakpointmedia(768, "max-width") {
         margin-right: -265px;
-        padding-right: 285px;
+        padding-left: 19.3%;
+        padding-right: 265px;
     }
 
     @include breakpointmedia(640, "max-width") {
@@ -106,6 +107,7 @@
     @include breakpointmedia(1000, "max-width") { font-size: 22px; }
     @include breakpointmedia(960, "max-width") { font-size: 25px; }
     @include breakpointmedia(810, "max-width") { font-size: 22px; }
+    @include breakpointmedia(860, "max-width") { font-size: 22px; }
     @include breakpointmedia(768, "max-width") { font-size: 21px; margin-bottom: 15px; }
     @include breakpointmedia(690, "max-width") { font-size: 19px; }
     @include breakpointmedia(670, "max-width") { font-size: 17px; }
