@@ -16,9 +16,11 @@
         width: 680px;
         box-sizing: border-box;
 
+        @include breakpointmedia(1100, "max-width") { width: 660px; }
         @include breakpointmedia(1030, "max-width") { width: 630px; }
         @include breakpointmedia(980, "max-width") { width: 590px; }
         @include breakpointmedia(960, "max-width") { width: 540px; }
+        @include breakpointmedia(900, "max-width") { width: 520px; }
         @include breakpointmedia(850, "max-width") { width: 480px; }
 
         @include breakpointmedia(768, "max-width") {
@@ -37,18 +39,25 @@
 
     .blockInfo__item:last-of-type p:first-child {
         margin-bottom: 11px;
+
+        @include breakpointmedia(768, "max-width") {
+            margin-bottom: 8px;
+        }
     }
 
     .blockInfo__item {
         float: left;
         margin-bottom: 0;
 
-
-
         .blockInfo__big { white-space: pre; }
 
         &:first-of-type { width: 400px; }
         &:last-of-type { width: 280px; }
+
+        @include breakpointmedia(1100, "max-width") {
+            &:first-of-type { width: 380px; }
+            &:last-of-type { width: 280px; }
+        }
 
         @include breakpointmedia(1030, "max-width") {
             &:first-of-type { width: 380px; }
@@ -61,8 +70,13 @@
         }
 
         @include breakpointmedia(960, "max-width") {
-            &:first-of-type { width: 320px; }
-            &:last-of-type { width: 220px; }
+            &:first-of-type { width: 345px; }
+            &:last-of-type { width: 195px; }
+        }
+
+        @include breakpointmedia(900, "max-width") {
+            &:first-of-type { width: 310px; }
+            &:last-of-type { width: 210px; }
         }
 
         @include breakpointmedia(850, "max-width") {
@@ -106,6 +120,15 @@
                 padding-left: 100px;
             }
 
+            @include breakpointmedia(960, "max-width") {
+                width: 92px;
+
+                & + * {
+                    margin-left: -92px;
+                    padding-left: 92px;
+                }
+            }
+
             @include breakpointmedia(850, "max-width") {
                 width: 80px;
 
@@ -114,19 +137,38 @@
                     padding-left: 80px;
                 }
             }
-        }
 
+            @include breakpointmedia(768, "max-width") {
+                width: 85px;
+
+                & + * {
+                    margin-left: -85px;
+                    padding-left: 85px;
+                }
+            }
+        }
 
         .blockInfo__big {
             @include breakpointmedia(1030, "max-width") { font-size: 16px; }
+            @include breakpointmedia(960, "max-width") { font-size: 18px; }
+            @include breakpointmedia(900, "max-width") { font-size: 16px; }
             @include breakpointmedia(850, "max-width") { font-size: 13px; }
+            @include breakpointmedia(768, "max-width") { font-size: 17px; }
         }
 
         .blockInfo__small {
             @include breakpointmedia(850, "max-width") { font-size: 9px; }
+            @include breakpointmedia(768, "max-width") { font-size: 11px; }
         }
 
         @include breakpointmedia(960, "max-width") {
+            .blockInfo__icon {
+                width: 50px;
+                & + * { margin-left: -50px; padding-left: 60px; }
+            }
+        }
+
+        @include breakpointmedia(900, "max-width") {
             .blockInfo__icon {
                 width: 50px;
                 & + * { margin-left: -50px; padding-left: 50px; }
@@ -142,8 +184,13 @@
     box-sizing: border-box;
     padding-top: 21px;
     padding-bottom: 22px;
-    margin-right: -680px;
-    padding-right: 680px;
+    margin-right: -700px;
+    padding-right: 700px;
+
+    @include breakpointmedia(1100, "max-width") {
+        margin-right: -660px;
+        padding-right: 660px;
+    }
 
     @include breakpointmedia(1030, "max-width") {
         margin-right: -630px;
@@ -156,8 +203,13 @@
     }
 
     @include breakpointmedia(960, "max-width") {
-        margin-right: -540px;
-        padding-right: 540px;
+        margin-right: -583px;
+        padding-right: 583px;
+    }
+
+    @include breakpointmedia(900, "max-width") {
+        margin-right: -520px;
+        padding-right: 520px;
     }
 
     @include breakpointmedia(850, "max-width") {
@@ -237,11 +289,11 @@
     color: #115694;
     margin-bottom: 13px;
     text-transform: uppercase;
-    letter-spacing: -0.9px;
+    letter-spacing: -0.2px;
 
     @include breakpointmedia(960, "max-width") { font-size: 21px; margin-bottom: 14px;  }
     @include breakpointmedia(800, "max-width") { font-size: 18px;  }
-    @include breakpointmedia(768, "max-width") { letter-spacing: -1.5px; }
+    @include breakpointmedia(768, "max-width") { font-size: 21px; letter-spacing: 0.4px; text-transform: none; }
     @include breakpointmedia(640, "max-width") { font-size: 21px; }
     @include breakpointmedia(560, "max-width") { font-size: 18px; }
     @include breakpointmedia(520, "max-width") { font-size: 14px; }
@@ -252,13 +304,12 @@
     font-size: 15px;
     font-weight: 500;
     color: #333333;
-    letter-spacing: 0.3px;
 
     @include breakpointmedia(960, "max-width") { font-size: 14px; letter-spacing: 0.2px; }
     @include breakpointmedia(800, "max-width") { font-size: 11px;  }
     @include breakpointmedia(768, "max-width") {
         font-size: 18px;
-        letter-spacing: 0.3px;
+        letter-spacing: -0.1px;
     }
 
     @include breakpointmedia(640, "max-width") { font-size: 18px; line-height: 20px; }
