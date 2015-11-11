@@ -2,8 +2,8 @@
     .sectionBox__title {
         color: #205c9d;
 
-        @include breakpointmedia(640, "max-width") {
-            font-size: 32px;
+        @include breakpointmedia($media768, "max-width") {
+            font-size: 35px;
         }
 
         @include breakpointmedia(480, "max-width") {
@@ -18,7 +18,7 @@
         display: block;
         height: 90px;
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             height: 75px;
         }
     }
@@ -29,8 +29,8 @@
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
 
-        @include breakpointmedia(640, "max-width") {
-            width: 50%;
+        @include breakpointmedia($media768, "max-width") {
+            width: 40%;
         }
     }
 }

@@ -20,7 +20,7 @@
         &:nth-of-type(even) { padding-left: 0; }
         &:first-of-type { margin-top: 0; }
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             padding: 0 7%;
 
             &:nth-of-type(odd) { padding-right: 7%; }
@@ -46,7 +46,7 @@
     &:nth-of-type(odd) { padding-right: 15px; }
     &:nth-of-type(even) { padding-left: 15px; }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         float: none;
         width: 100%;
         margin-top: 30px;
@@ -106,7 +106,7 @@
     color: #115694;
     margin-bottom: 20px;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         font-size: 16px;
         margin-bottom: 15px;
         line-height: 18px;
@@ -118,7 +118,7 @@
     line-height: 22px;
     color: #333333;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         font-size: 14px;
         line-height: 20px;
     }

@@ -5,7 +5,7 @@
 .header__top {
     background: #fff;
 
-    @include breakpointmedia(768, "max-width") { padding-bottom: 15px; }
+    @include breakpointmedia($media960, "max-width") { padding-bottom: 15px; }
     @include breakpointmedia(480, "max-width") { padding-bottom: 0; }
 
     .wrapper { @include clearfix; }
@@ -18,30 +18,27 @@
 
         @include breakpointmedia(1100, "max-width") { width: 660px; }
         @include breakpointmedia(1030, "max-width") { width: 630px; }
-        @include breakpointmedia(980, "max-width") { width: 590px; }
-        @include breakpointmedia(960, "max-width") { width: 540px; }
-        @include breakpointmedia(900, "max-width") { width: 520px; }
-        @include breakpointmedia(850, "max-width") { width: 480px; }
-
-        @include breakpointmedia(768, "max-width") {
+        @include breakpointmedia($media1024, "max-width") { width: 583px; }
+        @include breakpointmedia($media960, "max-width") {
             width: 40.4%;
             padding-top: 12px;
         }
-        @include breakpointmedia(640, "max-width") { width: 46.8%; padding-top: 20px; }
+        @include breakpointmedia(745, "max-width") { width: 46%; }
+        @include breakpointmedia($media768, "max-width") { width: 46.8%; padding-top: 20px; }
         @include breakpointmedia(560, "max-width") { width: 50%; }
         @include breakpointmedia(520, "max-width") { width: 55%; }
         @include breakpointmedia(480, "max-width") {
             width: 100%;
             padding: 12px 22px 10px;
         }
-
     }
 
     .blockInfo__item:last-of-type p:first-child {
         margin-bottom: 11px;
 
-        @include breakpointmedia(768, "max-width") {
-            margin-bottom: 8px;
+        @include breakpointmedia($media960, "max-width") {
+            margin-bottom: 0;
+            .blockInfo__middle { padding-top: 0; }
         }
     }
 
@@ -64,34 +61,36 @@
             &:last-of-type { width: 250px; }
         }
 
-        @include breakpointmedia(980, "max-width") {
-            &:first-of-type { width: 340px; }
-            &:last-of-type { width: 250px; }
-        }
-
-        @include breakpointmedia(960, "max-width") {
-            &:first-of-type { width: 345px; }
+        @include breakpointmedia($media1024, "max-width") {
+            &:first-of-type { width: 360px; }
             &:last-of-type { width: 195px; }
+
+            .blockInfo__icon {
+                width: 50px;
+                & + * { margin-left: -50px; padding-left: 60px; }
+            }
         }
 
-        @include breakpointmedia(900, "max-width") {
-            &:first-of-type { width: 310px; }
-            &:last-of-type { width: 210px; }
-        }
-
-        @include breakpointmedia(850, "max-width") {
-            &:first-of-type { width: 280px; }
-            &:last-of-type { width: 200px; }
-        }
-
-        @include breakpointmedia(768, "max-width") {
+        @include breakpointmedia($media960, "max-width") {
             &:first-of-type, &:last-of-type { width: 100%; }
             &:first-of-type { margin-bottom: 12px; }
+
+            .blockInfo__icon {
+                width: 47px;
+                & + * { margin-left: -47px; padding-left: 47px; }
+            }
 
             .media768-display { padding-left: 18px; }
         }
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia(900, "max-width") {
+            .blockInfo__icon {
+                width: 50px;
+                & + * { margin-left: -50px; padding-left: 50px; }
+            }
+        }
+
+        @include breakpointmedia($media768, "max-width") {
             &:first-of-type { margin-bottom: 9px; }
         }
 
@@ -120,7 +119,7 @@
                 padding-left: 100px;
             }
 
-            @include breakpointmedia(960, "max-width") {
+            @include breakpointmedia($media1024, "max-width") {
                 width: 92px;
 
                 & + * {
@@ -129,16 +128,7 @@
                 }
             }
 
-            @include breakpointmedia(850, "max-width") {
-                width: 80px;
-
-                & + * {
-                    margin-left: -80px;
-                    padding-left: 80px;
-                }
-            }
-
-            @include breakpointmedia(768, "max-width") {
+            @include breakpointmedia($media960, "max-width") {
                 width: 85px;
 
                 & + * {
@@ -150,29 +140,15 @@
 
         .blockInfo__big {
             @include breakpointmedia(1030, "max-width") { font-size: 16px; }
-            @include breakpointmedia(960, "max-width") { font-size: 18px; }
-            @include breakpointmedia(900, "max-width") { font-size: 16px; }
-            @include breakpointmedia(850, "max-width") { font-size: 13px; }
-            @include breakpointmedia(768, "max-width") { font-size: 17px; }
+            @include breakpointmedia($media1024, "max-width") { font-size: 18px; }
+            @include breakpointmedia($media960, "max-width") { font-size: 17px; }
+            @include breakpointmedia($media768, "max-width") { font-size: 16px; }
+            @include breakpointmedia(610, "max-width") { font-size: 15px; }
+            @include breakpointmedia(600, "max-width") { font-size: 14px; }
         }
 
         .blockInfo__small {
-            @include breakpointmedia(850, "max-width") { font-size: 9px; }
-            @include breakpointmedia(768, "max-width") { font-size: 11px; }
-        }
-
-        @include breakpointmedia(960, "max-width") {
-            .blockInfo__icon {
-                width: 50px;
-                & + * { margin-left: -50px; padding-left: 60px; }
-            }
-        }
-
-        @include breakpointmedia(900, "max-width") {
-            .blockInfo__icon {
-                width: 50px;
-                & + * { margin-left: -50px; padding-left: 50px; }
-            }
+            @include breakpointmedia($media960, "max-width") { font-size: 11px; }
         }
     }
 }
@@ -186,6 +162,7 @@
     padding-bottom: 22px;
     margin-right: -700px;
     padding-right: 700px;
+    @include clearfix;
 
     @include breakpointmedia(1100, "max-width") {
         margin-right: -660px;
@@ -197,35 +174,18 @@
         padding-right: 630px;
     }
 
-    @include breakpointmedia(980, "max-width") {
-        margin-right: -590px;
-        padding-right: 590px;
-    }
-
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         margin-right: -583px;
         padding-right: 583px;
     }
 
-    @include breakpointmedia(900, "max-width") {
-        margin-right: -520px;
-        padding-right: 520px;
-    }
-
-    @include breakpointmedia(850, "max-width") {
-        margin-right: -480px;
-        padding-right: 480px;
-    }
-
-
-    @include clearfix;
-
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         margin-right: 0;
         padding-right: 0;
         width: 59.6%;
     }
-    @include breakpointmedia(640, "max-width") { width: 53.2%; }
+
+    @include breakpointmedia($media768, "max-width") { width: 53.2%; }
     @include breakpointmedia(560, "max-width") { width: 50%; }
     @include breakpointmedia(520, "max-width") { width: 45%; }
     @include breakpointmedia(480, "max-width") {
@@ -244,11 +204,11 @@
         padding-left: 9px;
         box-sizing: border-box;
 
-        @include breakpointmedia(960, "max-width") {
+        @include breakpointmedia($media1024, "max-width") {
             padding-left: 0;
             width: 88px;
         }
-        @include breakpointmedia(768, "max-width") { width: 90px; }
+        @include breakpointmedia($media960, "max-width") { width: 90px; }
         @include breakpointmedia(480, "max-width") { width: 57px; }
     }
     
@@ -263,18 +223,18 @@
     width: 100%;
     box-sizing: border-box;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         padding-left: 105px;
         padding-top: 8px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         margin-left: -90px;
         padding-left: 102px;
         padding-top: 3px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         padding-top: 0;
     }
 
@@ -291,12 +251,12 @@
     text-transform: uppercase;
     letter-spacing: -0.2px;
 
-    @include breakpointmedia(960, "max-width") { font-size: 21px; margin-bottom: 14px;  }
-    @include breakpointmedia(800, "max-width") { font-size: 18px;  }
-    @include breakpointmedia(768, "max-width") { font-size: 21px; letter-spacing: 0.4px; text-transform: none; }
-    @include breakpointmedia(640, "max-width") { font-size: 21px; }
-    @include breakpointmedia(560, "max-width") { font-size: 18px; }
+    @include breakpointmedia($media1024, "max-width") { font-size: 21px; margin-bottom: 14px;  }
+    @include breakpointmedia($media960, "max-width") { font-size: 21px; letter-spacing: 0.4px; text-transform: none; }
+    @include breakpointmedia($media768, "max-width") { font-size: 21px; }
+    @include breakpointmedia(600, "max-width") { font-size: 18px; }
     @include breakpointmedia(520, "max-width") { font-size: 14px; }
+    @include breakpointmedia(500, "max-width") { font-size: 12px; }
     @include breakpointmedia(480, "max-width") { font-size: 20px; margin-bottom: 5px; }
 }
 
@@ -305,15 +265,13 @@
     font-weight: 500;
     color: #333333;
 
-    @include breakpointmedia(960, "max-width") { font-size: 14px; letter-spacing: 0.2px; }
-    @include breakpointmedia(800, "max-width") { font-size: 11px;  }
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media1024, "max-width") { font-size: 14px; letter-spacing: 0.2px; }
+    @include breakpointmedia($media960, "max-width") {
         font-size: 18px;
         letter-spacing: -0.1px;
     }
-
-    @include breakpointmedia(640, "max-width") { font-size: 18px; line-height: 20px; }
-    @include breakpointmedia(560, "max-width") { font-size: 14px; padding-right: 10px; }
+    @include breakpointmedia($media768, "max-width") { font-size: 18px; line-height: 20px; }
+    @include breakpointmedia(600, "max-width") { font-size: 14px; line-height: 20px; }
     @include breakpointmedia(520, "max-width") { font-size: 10px; line-height: normal; }
     @include breakpointmedia(480, "max-width") { font-size: 11px; letter-spacing: 0.4px; }
 }
@@ -326,7 +284,7 @@
         width: 100%;
         padding: 0 10px 0 0;
 
-        @include breakpointmedia(960, "max-width") { padding: 0; }
+        @include breakpointmedia($media1024, "max-width") { padding: 0; }
     }
 }
 
@@ -338,7 +296,7 @@
     box-sizing: border-box;
     z-index: 10;
 
-    @include breakpointmedia(640, "max-width") { display: none; }
+    @include breakpointmedia($media768, "max-width") { display: none; }
 
     li {
         display: table-cell;
@@ -369,16 +327,15 @@
     text-decoration: none;
     letter-spacing: -0.6px;
 
-    @include breakpointmedia(830, 'max-width') { font-size: 16px;  }
+    @include breakpointmedia($media960, "max-width") { border: none; padding: 0 10px; }
+    @include breakpointmedia($media768, "max-width") { font-size: 17px; border-right: 1px solid #5f8cbc; }
     @include breakpointmedia(700, 'max-width') { font-size: 15px;  }
-    @include breakpointmedia(768, "max-width") { border: none; padding: 0 10px; }
-    @include breakpointmedia(640, "max-width") { font-size: 17px; border-right: 1px solid #5f8cbc; }
 }
 
 .headerMenu__mobile {
     display: none;
     width: 100%;
-    @include breakpointmedia(640, "max-width") { display: table; }
+    @include breakpointmedia($media768, "max-width") { display: table; }
 
     & > li {
         float: left;
@@ -448,13 +405,13 @@
 
     form { display: block; }
 
-    @include breakpointmedia(960, 'max-width') {
+    @include breakpointmedia($media1024, 'max-width') {
         position: static;
         width: 74px;
         padding-left: 0;
     }
 
-    @include breakpointmedia(640, "max-width") { width: 26.5%; }
+    @include breakpointmedia($media768, "max-width") { width: 26.5%; }
     @include breakpointmedia(480, "max-width") { width: 20%; }
 }
 
@@ -470,7 +427,7 @@ div.headerSearch__icon {
         background: #205c9d;
     }
 
-    @include breakpointmedia(960, 'max-width') {
+    @include breakpointmedia($media1024, 'max-width') {
         position: relative;
         display: block;
         width: 100%;
@@ -487,14 +444,14 @@ div.headerSearch__icon {
         @include sprite($search-icon-1200);
         content: "";
 
-        @include breakpointmedia(960, 'max-width') {
+        @include breakpointmedia($media1024, 'max-width') {
             @include sprite($search-icon);
         }
     }
 }
 
 .headerSearch__content {
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         position: absolute;
         display: none;
         height: 62px;
@@ -526,7 +483,7 @@ div.headerSearch__icon {
         color: #45688f;
     }
 
-    @include breakpointmedia(960, 'max-width') {
+    @include breakpointmedia($media1024, 'max-width') {
         float: left;
         display: block;
         background: #ffffff;
@@ -545,7 +502,7 @@ button.headerSearch__icon {
     height: 57px;
     text-indent: -1000em;
 
-    @include breakpointmedia(960, 'max-width') {
+    @include breakpointmedia($media1024, 'max-width') {
         position: relative;
         float: left;
         width: 80px;
@@ -568,7 +525,7 @@ button.headerSearch__icon {
         @include sprite($search-icon-1200);
         content: "";
 
-        @include breakpointmedia(960, 'max-width') {
+        @include breakpointmedia($media1024, 'max-width') {
             display: none;
         }
     }

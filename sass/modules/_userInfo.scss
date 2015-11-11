@@ -5,7 +5,7 @@
     .sectionBox__content {
         margin-top: 36px;
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             margin-top: 40px;
         }
 
@@ -52,7 +52,7 @@
         margin-left: -180px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         width: 25%;
 
         & + * {
@@ -79,7 +79,7 @@
         margin-bottom: 8px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         .blockInfo__smallNormal { font-size: 13px; }
         .blockInfo__normalUser { font-size: 16px; }
         .blockInfo__big { font-size: 16px; letter-spacing: .5px; }
@@ -94,7 +94,7 @@
 .userInfo__info {
     margin-top: 30px;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         margin-top: 25px;
     }
 }
@@ -103,7 +103,7 @@
     @include clearfix;
     margin-bottom: 20px;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         margin-bottom: 5px;
         .blockInfo__CSmallL1 {
             width: 13%;
@@ -191,7 +191,7 @@
     background: url("../images/bg-1.jpg") center center repeat;
     box-shadow: inset 0 0 15px 2px rgba(0, 0, 0, 0.1);
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         .sectionBox__title35 {
             text-align: left;
         }
@@ -200,7 +200,7 @@
     .sectionBox__content {
         margin-top: 35px;
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             margin-top: 24px;
         }
 
@@ -213,7 +213,7 @@
 .seeAlso__item {
     margin-top: 25px;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         margin-top: 40px;
     }
 
@@ -230,7 +230,7 @@
     margin-bottom: 18px;
     letter-spacing: 0.5px;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         font-size: 15px;
         margin-bottom: 14px;
     }
@@ -250,7 +250,7 @@
     line-height: 23px;
     letter-spacing: 0.5px;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         font-size: 12px;
         line-height: 18px;
     }

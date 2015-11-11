@@ -3,11 +3,11 @@
     background-size: cover;
     padding: 34px 0;
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         padding: 30px 0;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         display: block;
         padding: 40px 0;
     }
@@ -23,7 +23,7 @@
     width: 100%;
     box-sizing: border-box;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         padding: 0 7%;
     }
 
@@ -43,15 +43,15 @@
     &:nth-of-type(3) { padding-left: 70px; }
     &:nth-of-type(4) { padding-left: 62px; }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         &:nth-of-type(4) { padding-left: 25px; }
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         width: 50%;
         margin-bottom: 29px;
         &:nth-of-type(2) { padding-left: 10%; }
-        &:nth-of-type(3) { padding-left: 0px; }
+        &:nth-of-type(3) { padding-left: 0; }
         &:nth-of-type(4) { padding-left: 10%; }
     }
 
@@ -66,11 +66,11 @@
         display: block;
         margin-bottom: 12px;
 
-        @include breakpointmedia(768, "max-width") {
+        @include breakpointmedia($media960, "max-width") {
             margin-bottom: 10px;
         }
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             margin-bottom: 29px;
         }
 
@@ -85,12 +85,12 @@
         font-size: 15px;
         color: #0f2a47;
 
-        @include breakpointmedia(768, "max-width") {
+        @include breakpointmedia($media960, "max-width") {
             font-size: 14px;
         }
 
-        @include breakpointmedia(640, "max-width") {
-            font-size: 16px;
+        @include breakpointmedia($media768, "max-width") {
+            font-size: 20px;
         }
 
         @include breakpointmedia(480, "max-width") {

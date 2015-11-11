@@ -17,7 +17,7 @@
     font-size: 0;
     margin-top: 30px;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         text-align: center;
     }
 }
@@ -25,7 +25,7 @@
 .paginationSelect {
     float: left;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         display: none;
     }
 
@@ -58,7 +58,7 @@
     float: right;
     @include clearfix;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         float: none;
         display: inline-block;
     }
@@ -143,7 +143,7 @@
 
 /* articles__doc */
 .articles__doc {
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         padding: 20px 7%;
     }
 

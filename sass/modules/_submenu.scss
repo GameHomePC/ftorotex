@@ -29,7 +29,7 @@
 .submenu__mobileStyle {
     @include clearfix;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         border-top: 1px solid #d5d5d5;
 
         .submenu__item {

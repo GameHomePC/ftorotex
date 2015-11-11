@@ -28,7 +28,7 @@ function Constructor() {
     this.getSliderClients = function() {
         this.sliderClient.owlCarousel({
             items: 4,
-            itemsCustom: [[0, 3], [400, 3], [640, 3], [700, 4], [1000, 4], [1200, 4], [1600, 4]],
+            itemsCustom: [[0, 3], [400, 3], [640, 3], [768, 3], [1000, 4], [1200, 4], [1600, 4]],
             autoPlay: false,
             dragBeforeAnimFinish: false,
             mouseDrag: false,

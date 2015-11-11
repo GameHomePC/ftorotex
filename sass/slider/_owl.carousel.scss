@@ -22,9 +22,9 @@
         background: #ddebeb;
         border-radius: 10px;
 
-        @include breakpointmedia(768, "max-width") {
-            width: 35px;
-            height: 35px;
+        @include breakpointmedia($media960, "max-width") {
+            width: 46px;
+            height: 46px;
             border-radius: 6px;
         }
 

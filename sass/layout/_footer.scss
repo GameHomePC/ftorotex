@@ -8,8 +8,8 @@
     .wrapper {
         @include clearfix;
 
-        @include breakpointmedia(640, "max-width") {
-            padding-bottom: 60px;
+        @include breakpointmedia($media768, "max-width") {
+            padding-bottom: 78px;
         }
 
         @include breakpointmedia(480, "max-width") {
@@ -26,7 +26,7 @@
 .footerItem__left {
     width: 25%;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         float: none;
         position: absolute;
         bottom: 0;
@@ -48,9 +48,8 @@
         color: #c3daea;
         line-height: 56px;
 
-        @include breakpointmedia(768, "max-width") { font-size: 12px; }
-        @include breakpointmedia(660, "max-width") { font-size: 10px; }
-        @include breakpointmedia(640, "max-width") { font-size: 12px; }
+        @include breakpointmedia($media960, "max-width") { font-size: 12px; }
+        @include breakpointmedia($media768, "max-width") { font-size: 16px; }
 
         @include breakpointmedia(480, "max-width") {
             font-size: 12px;
@@ -63,7 +62,7 @@
     box-sizing: border-box;
     text-align: center;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         float: none;
         width: 100%;
         text-align: center;
@@ -79,7 +78,7 @@
     width: 25%;
     text-align: right;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         float: none;
         position: absolute;
         bottom: 0;
@@ -103,9 +102,8 @@
         color: #c3daea;
         line-height: 56px;
 
-        @include breakpointmedia(768, "max-width") { font-size: 12px; }
-        @include breakpointmedia(660, "max-width") { font-size: 10px; }
-        @include breakpointmedia(640, "max-width") { font-size: 12px; }
+        @include breakpointmedia($media960, "max-width") { font-size: 12px; }
+        @include breakpointmedia($media768, "max-width") { font-size: 16px; }
 
         @include breakpointmedia(480, "max-width") {
             line-height: normal;
@@ -114,13 +112,8 @@
     }
 
     a {
-        font-size: 14px;
         font-style: normal;
         color: #5489c3;
-
-        @include breakpointmedia(768, "max-width") { font-size: 12px; }
-        @include breakpointmedia(660, "max-width") { font-size: 10px; }
-        @include breakpointmedia(640, "max-width") { font-size: 12px; }
     }
 }
 
@@ -129,7 +122,7 @@
     vertical-align: top;
     @include clearfix;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         display: block;
         @include core-justify();
     }
@@ -137,7 +130,7 @@
     li {
         float: left;
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             display: inline-block;
             float: none;
         }
@@ -161,17 +154,10 @@
 
         @include breakpointmedia(900, "max-width") { font-size: 12px; }
         @include breakpointmedia(790, "max-width") { font-size: 11px; }
-        @include breakpointmedia(739, "max-width") { font-size: 10px; }
-        @include breakpointmedia(690, "max-width") { font-size: 9px; }
-
-        @include breakpointmedia(640, "max-width") {
-            font-size: 16px;
-            line-height: 65px;
+        @include breakpointmedia($media768, "max-width") {
+            font-size: 20px;
+            line-height: 78px;
             padding: 0;
-        }
-
-        @include breakpointmedia(640, "max-width") {
-            font-size: 14px;
         }
 
         @include breakpointmedia(480, "max-width") {
@@ -195,7 +181,7 @@
         left: 0;
         right: 0;
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             width: 85%;
             max-width: 100%;
         }
@@ -206,8 +192,8 @@
     width: 100%;
     height: 535px;
 
-    @include breakpointmedia(960, "max-width") { height: 500px; }
-    @include breakpointmedia(768, "max-width") { height: 435px; }
+    @include breakpointmedia($media1024, "max-width") { height: 500px; }
+    @include breakpointmedia($media960, "max-width") { height: 435px; }
 }
 
 .footerB__line {
@@ -229,17 +215,17 @@
     margin-top: 88px;
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         margin-top: 80px;
         max-width: 440px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         margin-top: 73px;
         max-width: 394px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         max-width: 100%;
         margin: 20px 0 0;
         border-radius: 5px;
@@ -252,7 +238,7 @@
     border-bottom: 1px solid #dbdbdb;
     box-sizing: border-box;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         padding: 0;
         border-bottom: none;
     }
@@ -283,7 +269,7 @@
             }
         }
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             float: none;
             display: block;
             margin: 0;
@@ -314,23 +300,23 @@
     border-bottom: 4px solid transparent;
     z-index: 10;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         font-size: 14px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         height: 43px;
         line-height: 43px;
         padding: 0 3px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         padding: 0 20px;
         border: none;
         font-weight: bold;
-        font-size: 14px;
-        height: 40px;
-        line-height: 40px;
+        font-size: 18px;
+        height: 50px;
+        line-height: 50px;
 
         &:before {
             position: absolute;
@@ -363,7 +349,7 @@
 
     &.active { display: block; }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         position: relative;
         border-top: 1px solid #dbdbdb;
     }
@@ -372,11 +358,11 @@
 .mapInfo__content {
     padding: 34px 19px;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         padding: 28px 19px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         padding: 26px 13px;
     }
 
@@ -386,14 +372,22 @@
         line-height: 18px;
         color: #000000;
 
-        @include breakpointmedia(960, "max-width") {
+        @include breakpointmedia($media1024, "max-width") {
             font-size: 14px;
             margin-top: 11px;
         }
 
-        @include breakpointmedia(768, "max-width") {
+        @include breakpointmedia($media960, "max-width") {
             font-size: 13px;
             margin-top: 7px;
+        }
+
+        @include breakpointmedia($media768, "max-width") {
+            font-size: 16px;
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            font-size: 13px;
         }
     }
 
@@ -408,7 +402,15 @@
     font-weight: bold;
     color: #c00202;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
+        font-size: 15px;
+    }
+
+    @include breakpointmedia($media768, "max-width") {
+        font-size: 18px;
+    }
+
+    @include breakpointmedia(480, "max-width") {
         font-size: 15px;
     }
 }

@@ -6,8 +6,8 @@
     margin: 0 auto;
     box-sizing: border-box;
 
-    @include breakpointmedia(960, 'max-width') { max-width: 960px; }
-    @include breakpointmedia(640, 'max-width') { padding: 0; }
+    @include breakpointmedia($media1024, 'max-width') { max-width: 960px; }
+    @include breakpointmedia($media768, 'max-width') { padding: 0; }
 }
 
 body {
@@ -55,7 +55,7 @@ a {
     color: #333333;
     vertical-align: top;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         font-size: 15px;
     }
 
@@ -67,7 +67,7 @@ a {
         margin-bottom: 5px;
         line-height: 23px;
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             margin-bottom: 8px;
         }
 
@@ -80,7 +80,7 @@ a {
     ul.typeOne {
         padding-left: 22px;
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             padding-left: 20px;
             margin-bottom: 8px;
         }
@@ -93,7 +93,7 @@ a {
             position: relative;
             line-height: 23px;
 
-            @include breakpointmedia(640, "max-width") {
+            @include breakpointmedia($media768, "max-width") {
                 line-height: 22px;
             }
 
@@ -107,7 +107,7 @@ a {
                 border-radius: 50%;
                 content: "";
 
-                @include breakpointmedia(640, "max-width") {
+                @include breakpointmedia($media768, "max-width") {
                     left: -18px;
                     width: 3px;
                     height: 3px;
@@ -160,13 +160,13 @@ a {
 }
 
 .media960-display { display: none; }
-@include breakpointmedia(960, 'max-width') {
+@include breakpointmedia($media1024, 'max-width') {
     .media960-display { display: inline; }
     .media960-no-display { display: none; }
 }
 
 .media768-display { display: none; }
-@include breakpointmedia(768, 'max-width') {
+@include breakpointmedia($media960, 'max-width') {
     .media768-display { display: inline; }
     .media768-no-display { display: none; }
 }

@@ -2,7 +2,7 @@
     @include clearfix;
     margin-bottom: 30px;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         display: none;
     }
 

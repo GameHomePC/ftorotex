@@ -2,17 +2,17 @@
     font-size: 0;
     margin-bottom: 13px;
 
-    @include breakpointmedia(960, "max-width") { margin-bottom: 12px; }
-    @include breakpointmedia(768, "max-width") { margin-bottom: 10px; }
-    @include breakpointmedia(640, "max-width") { margin-bottom: 16px; }
+    @include breakpointmedia($media1024, "max-width") { margin-bottom: 12px; }
+    @include breakpointmedia($media960, "max-width") { margin-bottom: 10px; }
+    @include breakpointmedia($media768, "max-width") { margin-bottom: 16px; }
     @include breakpointmedia(480, "max-width") { margin-bottom: 12px; }
     
     &.f_select {
         margin-bottom: 24px;
 
-        @include breakpointmedia(960, "max-width") { margin-bottom: 22px; }
-        @include breakpointmedia(768, "max-width") { margin-bottom: 17px; }
-        @include breakpointmedia(640, "max-width") { margin-bottom: 30px; }
+        @include breakpointmedia($media1024, "max-width") { margin-bottom: 22px; }
+        @include breakpointmedia($media960, "max-width") { margin-bottom: 17px; }
+        @include breakpointmedia($media768, "max-width") { margin-bottom: 30px; }
         @include breakpointmedia(480, "max-width") { margin-bottom: 20px; }
     }
     
@@ -27,15 +27,15 @@
     color: #ffffff;
     line-height: 34px;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         font-size: 18px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         font-size: 16px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         font-size: 25px;
         line-height: 42px;
     }
@@ -50,7 +50,7 @@
 .button-set {
     margin-top: 22px;
 
-    @include breakpointmedia(960, "max-width") { margin-top: 20px; }
+    @include breakpointmedia($media1024, "max-width") { margin-top: 20px; }
     @include breakpointmedia(480, "max-width") { margin-top: 16px; }
 }
 
@@ -72,18 +72,18 @@
         height: 75px;
         border-radius: 3px;
 
-        @include breakpointmedia(960, "max-width") {
+        @include breakpointmedia($media1024, "max-width") {
             font-size: 16px;
             height: 65px;
         }
 
-        @include breakpointmedia(768, "max-width") {
+        @include breakpointmedia($media960, "max-width") {
             font-size: 16px;
             height: 58px;
             letter-spacing: -1.2px;
         }
 
-        @include breakpointmedia(640, "max-width") {
+        @include breakpointmedia($media768, "max-width") {
             font-size: 24px;
             height: 80px;
         }
@@ -113,18 +113,18 @@ input, textarea, select {
     color: #333333;
     letter-spacing: -0.4px;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         height: 38px;
         padding: 0 9px;
         font-size: 16px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         height: 35px;
         font-size: 15px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         height: 58px;
         padding: 0 16px;
         font-size: 22px;
@@ -154,19 +154,19 @@ input, textarea, select {
     resize: none;
     letter-spacing: -0.2px;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         height: 112px;
         padding: 10px;
         font-size: 15px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         height: 100px;
         padding: 8px;
         font-size: 14px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         height: 122px;
         padding: 15px;
         font-size: 22px;
@@ -200,13 +200,13 @@ input, textarea, select {
     padding-right: 40px;
     letter-spacing: -0.4px;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         height: 35px;
         font-size: 13px;
         padding-right: 35px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         height: 32px;
         font-size: 12px;
         letter-spacing: -0.5px;
@@ -214,7 +214,7 @@ input, textarea, select {
         padding-left: 3px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         height: 50px;
         padding: 0 55px 0 12px;
         font-size: 19px;
@@ -246,9 +246,9 @@ input, textarea, select {
         color: #8e8a8a;
         height: 20px;
 
-        @include breakpointmedia(960, "max-width") { font-size: 15px; right: 7px; }
-        @include breakpointmedia(768, "max-width") { font-size: 14px; right: 5px; top: 10px; }
-        @include breakpointmedia(640, "max-width") { font-size: 21px; right: 20px; top: 18px; }
+        @include breakpointmedia($media1024, "max-width") { font-size: 15px; right: 7px; }
+        @include breakpointmedia($media960, "max-width") { font-size: 14px; right: 5px; top: 10px; }
+        @include breakpointmedia($media768, "max-width") { font-size: 21px; right: 20px; top: 18px; }
         @include breakpointmedia(480, "max-width") { font-size: 16px; right: 14px; top: 10px; }
     }
 }

@@ -3,15 +3,15 @@
     padding: 63px 0 52px;
     box-sizing: border-box;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         padding: 63px 0 52px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         padding: 56px 0 52px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         padding: 35px 6.3% 30px;
     }
 
@@ -23,7 +23,7 @@
 .sectionBoxMin {
     padding: 42px 0;
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         padding: 50px 6.3%;
     }
 
@@ -39,13 +39,13 @@
     text-transform: uppercase;
     letter-spacing: -1.3px;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         font-size: 31px;
         letter-spacing: -0.5px;
     }
 
-    @include breakpointmedia(768, "max-width") { font-size: 28px; }
-    @include breakpointmedia(640, "max-width") { font-size: 35px; }
+    @include breakpointmedia($media960, "max-width") { font-size: 28px; }
+    @include breakpointmedia($media768, "max-width") { font-size: 35px; }
     @include breakpointmedia(480, "max-width") {
         font-size: 24px;
         line-height: 28px;
@@ -57,11 +57,11 @@
     color: #115694;
     letter-spacing: -0.5px;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         font-size: 35px;
     }
 
-    @include breakpointmedia(640, "max-width") {
+    @include breakpointmedia($media768, "max-width") {
         font-size: 32px;
         text-align: center;
         line-height: 38px;
@@ -78,16 +78,16 @@
     margin-top: 53px;
     @include clearfix;
 
-    @include breakpointmedia(960, "max-width") {
+    @include breakpointmedia($media1024, "max-width") {
         margin-top: 53px;
     }
 
-    @include breakpointmedia(768, "max-width") {
+    @include breakpointmedia($media960, "max-width") {
         margin-top: 40px;
     }
 
-    @include breakpointmedia(640, "max-width") {
-        margin-top: 30px;
+    @include breakpointmedia($media768, "max-width") {
+        margin-top: 36px;
     }
 
     @include breakpointmedia(480, "max-width") {
