@@ -331,6 +331,11 @@
     }
 
     @include breakpointmedia(480, "max-width") {
+        font-size: 14px;
+        padding: 0 15px;
+        height: 31px;
+        line-height: 31px;
+
         &:before {
             display: none;
         }
@@ -366,6 +371,10 @@
         padding: 26px 13px;
     }
 
+    @include breakpointmedia(480, "max-width") {
+        padding: 14px 13px 22px;
+    }
+
     p {
         margin-top: 15px;
         font-size: 16px;
@@ -387,7 +396,8 @@
         }
 
         @include breakpointmedia(480, "max-width") {
-            font-size: 13px;
+            font-size: 11px;
+            line-height: 13px;
         }
     }
 
@@ -411,23 +421,24 @@
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
 .mapInfoLink__geo {
     display: none;
+
     @include breakpointmedia(480, "max-width") {
         position: absolute;
         top: 0;
         right: 48px;
-        height: 40px;
+        height: 31px;
         display: block;
         padding: 0 10px;
         z-index: 10;
         &:before {
             display: block;
-            margin-top: 8px;
+            margin-top: 4px;
             @include sprite($marker-footer);
             content: "";
         }
@@ -440,13 +451,13 @@
         position: absolute;
         top: 0;
         right: 5px;
-        height: 40px;
+        height: 31px;
         display: block;
         padding: 0 10px;
         z-index: 10;
         &:before {
             display: block;
-            margin-top: 9px;
+            margin-top: 5px;
             @include sprite($info-footer);
             content: "";
         }

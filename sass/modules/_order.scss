@@ -13,7 +13,7 @@
         @include breakpointmedia($media768, "max-width") { letter-spacing: 0.5px; }
 
         @include breakpointmedia(480, "max-width") {
-
+            letter-spacing: -0.5px;
         }
     }
 

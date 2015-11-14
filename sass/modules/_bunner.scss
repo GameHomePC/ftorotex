@@ -106,11 +106,7 @@
     @include breakpointmedia(1040, "max-width") { font-size: 24px; }
     @include breakpointmedia(1000, "max-width") { font-size: 22px; }
     @include breakpointmedia($media1024, "max-width") { font-size: 25px; }
-    @include breakpointmedia(810, "max-width") { font-size: 22px; }
-    @include breakpointmedia(860, "max-width") { font-size: 22px; }
     @include breakpointmedia($media960, "max-width") { font-size: 21px; margin-bottom: 15px; }
-    @include breakpointmedia(690, "max-width") { font-size: 19px; }
-    @include breakpointmedia(670, "max-width") { font-size: 17px; }
     @include breakpointmedia($media768, "max-width") {
         text-align: center;
         font-size: 32px;

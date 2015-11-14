@@ -28,7 +28,8 @@
         }
 
         @include breakpointmedia(480, "max-width") {
-            font-size: 16px;
+            font-size: 17px;
+            line-height: 24px;
         }
     }
 }
@@ -69,6 +70,7 @@
         @include breakpointmedia(480, "max-width") {
             padding-bottom: 16px;
             padding-right: 18px;
+            font-size: 16px;
         }
 
         &:hover { color: #c00202; }

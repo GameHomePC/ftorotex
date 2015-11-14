@@ -29,8 +29,10 @@
         }
 
         @include breakpointmedia(480, "max-width") {
+            width: 34px;
+            height: 34px;
             top: auto;
-            bottom: -45px;
+            bottom: -48px;
         }
 
         &:before {
