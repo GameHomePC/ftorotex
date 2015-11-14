@@ -48,7 +48,7 @@
     @include breakpointmedia($media768, "max-width") { font-size: 35px; }
     @include breakpointmedia(480, "max-width") {
         font-size: 28px;
-        line-height: 28px;
+        line-height: 34px;
     }
 }
 .sectionBox__title35 {
@@ -68,8 +68,8 @@
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 21px;
+        line-height: 27px;
     }
 }
 

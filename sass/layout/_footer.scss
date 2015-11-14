@@ -331,10 +331,10 @@
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 14px;
+        font-size: 16px;
         padding: 0 15px;
-        height: 31px;
-        line-height: 31px;
+        height: 37px;
+        line-height: 39px;
 
         &:before {
             display: none;
@@ -432,13 +432,13 @@
         position: absolute;
         top: 0;
         right: 48px;
-        height: 31px;
+        height: 37px;
         display: block;
         padding: 0 10px;
         z-index: 10;
         &:before {
             display: block;
-            margin-top: 4px;
+            margin-top: 9px;
             @include sprite($marker-footer);
             content: "";
         }
@@ -447,17 +447,18 @@
 
 .mapInfoLink__info {
     display: none;
+
     @include breakpointmedia(480, "max-width") {
         position: absolute;
         top: 0;
         right: 5px;
-        height: 31px;
+        height: 37px;
         display: block;
         padding: 0 10px;
         z-index: 10;
         &:before {
             display: block;
-            margin-top: 5px;
+            margin-top: 10px;
             @include sprite($info-footer);
             content: "";
         }

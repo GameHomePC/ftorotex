@@ -2,6 +2,14 @@
     background: url("../images/bunner-images-fiwe.jpg") center center;
     background-size: cover;
 
+    &.sectionBoxMin {
+        padding: 42px 0 26px;
+
+        @include breakpointmedia(480, "max-width") {
+            padding: 18px 13px 21px;
+        }
+    }
+
     .sectionBox__content {
         margin-top: 36px;
 
@@ -10,7 +18,7 @@
         }
 
         @include breakpointmedia(480, "max-width") {
-            margin-top: 20px;
+            margin-top: 22px;
         }
     }
 
@@ -34,12 +42,21 @@
             padding-left: 95px;
         }
 
-        @include breakpointmedia(480, "max-width") {
-            width: 70px;
+        @include breakpointmedia($media768, "max-width") {
+            width: 88px;
 
             & + * {
-                margin-left: -70px;
-                padding-left: 70px;
+                margin-left: -88px;
+                padding-left: 88px;
+            }
+        }
+
+        @include breakpointmedia(480, "max-width") {
+            width: 75px;
+
+            & + * {
+                margin-left: -75px;
+                padding-left: 75px;
             }
         }
     }
@@ -63,7 +80,8 @@
 
     @include breakpointmedia(480, "max-width") {
         & + * {
-            padding-left: 32%;
+            padding-left: 33%;
+            padding-top: 4px;
         }
     }
 
@@ -80,14 +98,14 @@
     }
 
     @include breakpointmedia($media768, "max-width") {
-        .blockInfo__smallNormal { font-size: 13px; }
-        .blockInfo__normalUser { font-size: 16px; }
-        .blockInfo__big { font-size: 16px; letter-spacing: .5px; }
+        .blockInfo__smallNormal { font-size: 16px; line-height: 18px; }
+        .blockInfo__normalUser { font-size: 17px; }
+        .blockInfo__big { font-size: 20px; letter-spacing: .5px; }
     }
 
     @include breakpointmedia(480, "max-width") {
-        .blockInfo__smallNormal { font-size: 12px; }
-        .blockInfo__big { font-size: 15px; letter-spacing: .5px; }
+        .blockInfo__smallNormal { font-size: 14px; }
+        .blockInfo__big { font-size: 17px; letter-spacing: .5px; line-height: 22px; }
     }
 }
 
@@ -95,7 +113,7 @@
     margin-top: 30px;
 
     @include breakpointmedia($media768, "max-width") {
-        margin-top: 25px;
+
     }
 }
 
@@ -104,26 +122,26 @@
     margin-bottom: 20px;
 
     @include breakpointmedia($media768, "max-width") {
-        margin-bottom: 5px;
+
         .blockInfo__CSmallL1 {
             width: 13%;
 
             & + * {
                 margin-left: -13%;
-                padding-left: 13%;
-                padding-top: 8px;
+                padding-left: 14%;
+                padding-top: 4px;
             }
         }
     }
 
     @include breakpointmedia(480, "max-width") {
         .blockInfo__CSmallL1 {
-            width: 15.3%;
+            width: 17%;
 
             & + * {
-                margin-left: -15.3%;
-                padding-left: 15.3%;
-                padding-top: 8px;
+                margin-left: -17%;
+                padding-left: 17%;
+                padding-top: 10px;
             }
         }
 
@@ -135,13 +153,15 @@
 
     .blockInfo__big {
         @include breakpointmedia(480, "max-width") {
-            font-size: 16px;
+            margin-top: -5px;
+            font-size: 18px;
+            line-height: 24px;
         }
     }
 
     .blockInfo__small {
         @include breakpointmedia(480, "max-width") {
-            font-size: 13px;
+            font-size: 15px;
             padding-top: 0;
         }
     }
@@ -162,7 +182,7 @@
 
     @include breakpointmedia(480, "max-width") {
         display: block;
-        margin-top: 20px;
+        margin-top: 27px;
 
         .userInfo__item {
             margin-bottom: 10px;
@@ -201,7 +221,7 @@
         margin-top: 35px;
 
         @include breakpointmedia($media768, "max-width") {
-            margin-top: 24px;
+            margin-top: 30px;
         }
 
         @include breakpointmedia(480, "max-width") {
@@ -231,12 +251,12 @@
     letter-spacing: 0.5px;
 
     @include breakpointmedia($media768, "max-width") {
-        font-size: 15px;
-        margin-bottom: 14px;
+        font-size: 18px;
+        margin-bottom: 18px;
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 16px;
+
     }
 
     a {
@@ -251,13 +271,12 @@
     letter-spacing: 0.5px;
 
     @include breakpointmedia($media768, "max-width") {
-        font-size: 12px;
-        line-height: 18px;
+        line-height: 22px;
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 13px;
-        line-height: 21px;
+        font-size: 14px;
+        line-height: 23px;
     }
 
     a {

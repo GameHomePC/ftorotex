@@ -19,7 +19,7 @@
 
     @include breakpointmedia($media960, "max-width") { margin-bottom: 6px; }
     @include breakpointmedia($media768, "max-width") { margin-bottom: 50px; }
-    @include breakpointmedia(480, "max-width") { margin-bottom: 20px; }
+    @include breakpointmedia(480, "max-width") { margin-bottom: 24px; }
 }
 
 .blockInfo__item__middle {
@@ -152,8 +152,8 @@
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 17px;
-        margin-bottom: 8px;
+        font-size: 20px;
+        margin-bottom: 14px;
         line-height: 22px;
     }
 }
@@ -182,9 +182,9 @@
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 14px;
+        font-size: 15px;
         margin-bottom: 8px;
-        line-height: 16px;
+        line-height: 18px;
     }
 }
 
@@ -307,7 +307,7 @@
     @include breakpointmedia($media1024, "max-width") { font-size: 18px; }
     @include breakpointmedia($media960, "max-width") { font-size: 16px; }
     @include breakpointmedia($media768, "max-width") { font-size: 28px; }
-    @include breakpointmedia(480, "max-width") { font-size: 14px; }
+    @include breakpointmedia(480, "max-width") { font-size: 15px; }
 }
 
 .blockInfo__big {
@@ -489,11 +489,11 @@
     }
 
     @include breakpointmedia(480, "max-width") {
-        width: 60px;
+        width: 70px;
 
         & + * {
-            margin-left: -60px;
-            padding-left: 60px;
+            margin-left: -70px;
+            padding-left: 70px;
         }
     }
 }

@@ -17,7 +17,7 @@
                         <div>
                             <span class="blockInfo__smallNormal blockInfo__CMiddle">тел. моб. :</span>
                             <span>
-                                <span class="blockInfo__normalUser">+375 17</span>
+                                <span class="blockInfo__normalUser ">+375 17</span>
                                 <span class="blockInfo__big userInfo__phoneIndent">286 36 41, 286 36 42</span>
                             </span>
                         </div>

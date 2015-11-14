@@ -71,7 +71,7 @@
         @include breakpointmedia($media1024, "max-width") { font-size: 20px; }
         @include breakpointmedia($media960, "max-width") { font-size: 18px; }
         @include breakpointmedia($media768, "max-width") { font-size: 28px; }
-        @include breakpointmedia(480, "max-width") { font-size: 18px; white-space: pre; }
+        @include breakpointmedia(480, "max-width") { font-size: 20px; white-space: pre; }
     }
 
     .blockInfo__small {
