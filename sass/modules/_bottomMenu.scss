@@ -1,7 +1,7 @@
 .bottomMenu {
     background: url("../images/bunner-images-four.jpg") center center no-repeat;
     background-size: cover;
-    padding: 34px 0;
+    padding: 40px 0;
 
     @include breakpointmedia($media960, "max-width") {
         padding: 30px 0;
@@ -39,9 +39,9 @@
     box-sizing: border-box;
     text-align: left;
 
-    &:nth-of-type(2) { padding-left: 35px; }
-    &:nth-of-type(3) { padding-left: 70px; }
-    &:nth-of-type(4) { padding-left: 62px; }
+    &:nth-of-type(2) { padding-left: 15px; }
+    &:nth-of-type(3) { padding-left: 30px; }
+    &:nth-of-type(4) { padding-left: 45px; }
 
     @include breakpointmedia($media960, "max-width") {
         &:nth-of-type(4) { padding-left: 25px; }
@@ -64,7 +64,7 @@
 
     li {
         display: block;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
 
         @include breakpointmedia($media960, "max-width") {
             margin-bottom: 10px;
@@ -82,7 +82,7 @@
     }
 
     a {
-        font-size: 15px;
+        font-size: 16px;
         color: #0f2a47;
 
         @include breakpointmedia($media960, "max-width") {

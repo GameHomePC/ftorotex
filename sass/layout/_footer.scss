@@ -44,9 +44,9 @@
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
         color: #c3daea;
-        line-height: 56px;
+        line-height: 68px;
 
         @include breakpointmedia($media960, "max-width") { font-size: 12px; }
         @include breakpointmedia($media768, "max-width") { font-size: 16px; }
@@ -60,7 +60,7 @@
 .footerItem__middle {
     width: 50%;
     box-sizing: border-box;
-    text-align: center;
+    padding-left: 6px;
 
     @include breakpointmedia($media768, "max-width") {
         float: none;
@@ -97,10 +97,10 @@
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
         font-style: italic;
         color: #c3daea;
-        line-height: 56px;
+        line-height: 68px;
 
         @include breakpointmedia($media960, "max-width") { font-size: 12px; }
         @include breakpointmedia($media768, "max-width") { font-size: 16px; }
@@ -143,11 +143,11 @@
 
     a {
         display: block;
-        font-size: 14px;
+        font-size: 16px;
         color: #73aff0;
-        height: 56px;
-        line-height: 56px;
-        padding: 0 10px;
+        height: 68px;
+        line-height: 68px;
+        padding: 0 12px;
         box-sizing: border-box;
 
         &:hover { color: #c00202; }
