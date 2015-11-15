@@ -227,7 +227,7 @@
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 
@@ -333,11 +333,11 @@
     color: #333333;
 
     @include breakpointmedia($media768, "max-width") {
-        font-size: 19px;
+
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 
@@ -346,11 +346,11 @@
     color: #000000;
 
     @include breakpointmedia($media768, "max-width") {
-        font-size: 15px;
+
     }
 
     @include breakpointmedia(480, "max-width") {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 
@@ -359,7 +359,7 @@
     color: #333333;
 
     @include breakpointmedia($media768, "max-width") {
-        font-size: 18px;
+
     }
 
     @include breakpointmedia(480, "max-width") {
