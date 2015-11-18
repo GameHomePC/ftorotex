@@ -40,6 +40,7 @@ var conf = {
         imagesImages: "./images"
     },
     scripts: {
+        watch: './js/**/*.js',
         src: ['./js/lib/*.js','./js/main.js'],
         dest: "./js/build"
     }
@@ -135,7 +136,7 @@ gulp.task('watch', function() {
     //gulp.watch(conf.templatesPath).on('change', browserSync.reload);
     gulp.watch(conf.sass.watch, ['sass']);
     gulp.watch(conf.sprite.rootSprite, ['sprite']);
-    gulp.watch(conf.sprite.rootSprite, ['scripts']);
+    //gulp.watch(conf.scripts.watch, ['scripts']);
 });
 
 // ==============
