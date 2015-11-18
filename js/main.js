@@ -360,32 +360,40 @@ function MobileMenu() {
     this.getAccordion = function() {
         var _this = this;
 
-        this.subMenuMobileStyle.find('.list__title').on('click', function() {
+        this.subMenuMobileStyle.find('.list__title').each(function() {
             var self = $(this);
 
-            if(!self.parent().hasClass('active')) {
-                _this.subMenuMobileStyle.removeClass('active');
-                self.parent().addClass('active');
-            } else {
-                self.parent().removeClass('active');
-            }
+            if(self.next().length) {
+                self.on('click', function () {
+                    var selfMain = $(this);
 
-            return false;
+                    if (!selfMain.parent().hasClass('active')) {
+                        _this.subMenuMobileStyle.removeClass('active');
+                        selfMain.parent().addClass('active');
+                    } else {
+                        selfMain.parent().removeClass('active');
+                    }
+
+                    return false;
+                });
+            } else {
+                self.addClass('active-link');
+            }
         });
     };
 
     this.getAccordionListBox = function() {
-        this.list__box.prev().on('click', function() {
-            var self = $(this);
+        if(this.list__box.prev().length) {
+            this.list__box.prev().each(function() {
+                var self = $(this);
 
-            if(!self.hasClass('active')) {
-                self.addClass('active');
-            } else {
-                self.removeClass('active');
-            }
-
-            return false;
-        })
+                if(!self.hasClass('active')) {
+                    self.addClass('active');
+                } else {
+                    self.removeClass('active');
+                }
+            })
+        }
     };
 }
 

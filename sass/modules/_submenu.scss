@@ -45,7 +45,10 @@
 
                 .list__title {
                     font-weight: bold;
-                    &:before { transform: rotate(180deg); }
+
+                    &:before {
+                        transform: rotate(180deg);
+                    }
                 }
             }
         }
@@ -60,6 +63,10 @@
             background: #115694;
             padding: 12px 6.3%;
             cursor: pointer;
+
+            &.active-link {
+                &:before { display: none; }
+            }
 
             &:before {
                 position: relative;
@@ -87,9 +94,9 @@
                     position: relative;
                     display: block;
                     line-height: 16px;
-                    font-size: 15px;
+                    font-size: 14px;
                     color: #115694;
-                    padding: 12px 6.3%;
+                    padding: 12px 31px;
                     text-decoration: none;
                     border-bottom: 1px solid #d5d5d5;
 
@@ -98,8 +105,6 @@
                     &.active {
                         background: #ededed;
                         font-weight: bold;
-
-                        &:before { transform: rotate(90deg); }
 
                         & + .list__sub2 { display: block; }
                     }
@@ -148,9 +153,9 @@
                 position: relative;
                 display: block;
                 line-height: 16px;
-                font-size: 15px;
+                font-size: 14px;
                 color: #115694;
-                padding: 12px 10.2%;
+                padding: 12px 6.3% 12px 57px;
                 text-decoration: none;
                 border-bottom: 1px solid #d5d5d5;
             }

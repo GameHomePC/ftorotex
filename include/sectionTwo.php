@@ -1,7 +1,7 @@
 <div class="page">
     <div class="wrapper">
         <ul class="breadcrumbs">
-            <li><a href="">Главная</a></li>
+            <li><a href="#">Главная</a></li>
             <li>Продукция</li>
         </ul>
 
@@ -14,116 +14,116 @@
                         <a href="#" class="list__title active">Конструкционные пластмассы</a>
 
                         <ul class="list__box">
-                            <li><a href="">Фторопласт</a></li>
+                            <li><a href="#">Фторопласт</a></li>
                             <li>
-                                <a href="">Полиамид / капролон</a>
+                                <a href="#">Полиамид / капролон</a>
                                 <ul class="list__sub2">
-                                    <li><a href="">Полиэтилентерефталат</a></li>
-                                    <li><a href="">Полиэтилентерефталат</a></li>
-                                    <li><a href="">Полиэтилентерефталат</a></li>
-                                    <li><a href="">Полиэтилентерефталат</a></li>
-                                    <li><a href="">Полиэтилентерефталат</a></li>
+                                    <li><a href="#">Полиэтилентерефталат</a></li>
+                                    <li><a href="#">Полиэтилентерефталат</a></li>
+                                    <li><a href="#">Полиэтилентерефталат</a></li>
+                                    <li><a href="#">Полиэтилентерефталат</a></li>
+                                    <li><a href="#">Полиэтилентерефталат</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Полиэтилентерефталат</a></li>
-                            <li><a href="">Полиоксиметилен</a></li>
-                            <li><a href="">Текстолит</a></li>
-                            <li><a href="">Поликарбонат</a></li>
+                            <li><a href="#">Полиэтилентерефталат</a></li>
+                            <li><a href="#">Полиоксиметилен</a></li>
+                            <li><a href="#">Текстолит</a></li>
+                            <li><a href="#">Поликарбонат</a></li>
                         </ul>
                     </div>
 
                     <div class="submenu__item">
-                        <a class="list__title">Усовершенствованные пластики</a>
+                        <a href="#" class="list__title">Усовершенствованные пластики</a>
 
                         <ul class="list__box">
 
-                            <li><a href="">Полибензоимидазо (PBI)</a></li>
-                            <li><a href="">Полиамид-имид (PAI)</a></li>
-                            <li><a href="">Полиэфирэфиркетон (PEEK)</a></li>
-                            <li><a href="">Полифенилсульфон (PPSU)</a></li>
-                            <li><a href="">Полиэфиримид (PEI)</a></li>
-                            <li><a href="">Полисульфон (PSU)</a></li>
-                            <li><a href="">Полифенилен сульфид (PPS)</a></li>
-                            <li><a href="">ПВДФ (PVDF)</a></li>
-                            <li><a href="">Semitron (рассеивание статического электричества)</a></li>
+                            <li><a href="#">Полибензоимидазо (PBI)</a></li>
+                            <li><a href="#">Полиамид-имид (PAI)</a></li>
+                            <li><a href="#">Полиэфирэфиркетон (PEEK)</a></li>
+                            <li><a href="#">Полифенилсульфон (PPSU)</a></li>
+                            <li><a href="#">Полиэфиримид (PEI)</a></li>
+                            <li><a href="#">Полисульфон (PSU)</a></li>
+                            <li><a href="#">Полифенилен сульфид (PPS)</a></li>
+                            <li><a href="#">ПВДФ (PVDF)</a></li>
+                            <li><a href="#">Semitron (рассеивание статического электричества)</a></li>
                         </ul>
                     </div>
 
                     <div class="submenu__item">
-                        <a class="list__title">Резинотехнические изделия</a>
+                        <a href="#" class="list__title">Резинотехнические изделия</a>
 
                         <ul class="list__box">
 
-                            <li><a href="">Техпластины резиновые</a></li>
-                            <li><a href="">Рукава резиновые</a></li>
-                            <li><a href="">Ленты конвейерные</a></li>
-                            <li><a href="">Полотно мембранное</a></li>
-                            <li><a href="">Силиконовая резина</a></li>
-                            <li><a href="">Резиновые смеси невулкани-</a></li>
-                            <li><a href="">зированные (сырая резина)</a></li>
+                            <li><a href="#">Техпластины резиновые</a></li>
+                            <li><a href="#">Рукава резиновые</a></li>
+                            <li><a href="#">Ленты конвейерные</a></li>
+                            <li><a href="#">Полотно мембранное</a></li>
+                            <li><a href="#">Силиконовая резина</a></li>
+                            <li><a href="#">Резиновые смеси невулкани-</a></li>
+                            <li><a href="#">зированные (сырая резина)</a></li>
                         </ul>
                     </div>
 
                     <div class="submenu__item">
-                        <a class="list__title">Листовые термопласты</a>
+                        <a href="#" class="list__title">Листовые термопласты</a>
 
                         <ul class="list__box">
-                            <li><a href="">Полипропилен</a></li>
-                            <li><a href="">Полиэтилен</a></li>
-                            <li><a href="">ПВХ (винипласт)</a></li>
-                            <li><a href="">АБС-пластик</a></li>
+                            <li><a href="#">Полипропилен</a></li>
+                            <li><a href="#">Полиэтилен</a></li>
+                            <li><a href="#">ПВХ (винипласт)</a></li>
+                            <li><a href="#">АБС-пластик</a></li>
                         </ul>
                     </div>
 
                     <div class="submenu__item">
-                        <a class="list__title">Материалы для печатных плат</a>
+                        <a href="#" class="list__title">Материалы для печатных плат</a>
 
                         <ul class="list__box">
-                            <li><a href="">Стеклотекстолит фольгированный</a></li>
-                            <li><a href="">Фоторезист</a></li>
-                            <li><a href="">Маска защитная</a></li>
-                            <li><a href="">Электроды паяльные</a></li>
+                            <li><a href="#">Стеклотекстолит фольгированный</a></li>
+                            <li><a href="#">Фоторезист</a></li>
+                            <li><a href="#">Маска защитная</a></li>
+                            <li><a href="#">Электроды паяльные</a></li>
                         </ul>
                     </div>
 
                     <div class="submenu__item">
-                        <a class="list__title">Технические пленки и ткани</a>
+                        <a href="#" class="list__title">Технические пленки и ткани</a>
 
                         <ul class="list__box">
-                            <li><a href="">ПЭТ-пленки</a></li>
-                            <li><a href="">Фторстеклоткани и</a></li>
-                            <li><a href="">силиконовые стеклоткани</a></li>
+                            <li><a href="#">ПЭТ-пленки</a></li>
+                            <li><a href="#">Фторстеклоткани и</a></li>
+                            <li><a href="#">силиконовые стеклоткани</a></li>
                         </ul>
                     </div>
 
                     <div class="submenu__item">
-                        <a class="list__title">Полимерное сырье в гранулах</a>
+                        <a href="#" class="list__title">Полимерное сырье в гранулах</a>
 
                         <ul class="list__box">
-                            <li><a href="">Пластины ПВХ кабельные</a></li>
-                            <li><a href="">Пластины ПВХ обувные</a></li>
-                            <li><a href="">Пластины ПВХ прочие</a></li>
-                            <li><a href="">Полиметилметакрилат (ПММА)</a></li>
+                            <li><a href="#">Пластины ПВХ кабельные</a></li>
+                            <li><a href="#">Пластины ПВХ обувные</a></li>
+                            <li><a href="#">Пластины ПВХ прочие</a></li>
+                            <li><a href="#">Полиметилметакрилат (ПММА)</a></li>
                         </ul>
                     </div>
 
                     <div class="submenu__item">
-                        <a class="list__title">Электроизоляция</a>
+                        <a href="#" class="list__title">Электроизоляция</a>
 
                         <ul class="list__box">
-                            <li><a href="">Текстолит</a></li>
-                            <li><a href="">Стеклотекстолит</a></li>
-                            <li><a href="">Гетинакс</a></li>
-                            <li><a href="">Изолента</a></li>
+                            <li><a href="#">Текстолит</a></li>
+                            <li><a href="#">Стеклотекстолит</a></li>
+                            <li><a href="#">Гетинакс</a></li>
+                            <li><a href="#">Изолента</a></li>
                         </ul>
                     </div>
 
                     <div class="submenu__item">
-                        <a class="list__title">Ленточные ПВХ-завесы</a>
+                        <a href="#" class="list__title">Ленточные ПВХ-завесы</a>
                     </div>
 
                     <div class="submenu__item">
-                        <a class="list__title">Бассейны из полипропилена</a>
+                        <a href="#" class="list__title">Бассейны из полипропилена</a>
                     </div>
                 </div>
 
