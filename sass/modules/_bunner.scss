@@ -33,24 +33,11 @@
     position: absolute;
     bottom: 0;
     left: -42px;
-    @include sprite($user-icon-1200);
+    font-size: 0;
+    width: 35%;
 
-    @include breakpointmedia($media1024, "max-width") {
-        left: -105px;
-        @include sprite($user-icon-1);
-    }
-
-    @include breakpointmedia(860, "max-width") {
-        left: -80px;
-    }
-
-    @include breakpointmedia($media960, "max-width") {
-        left: -80px;
-        @include sprite($user-icon-1-768);
-    }
-
-    @include breakpointmedia($media768, "max-width") {
-        display: none;
+    img {
+        width: 100%;
     }
 }
 
@@ -67,18 +54,18 @@
     @include breakpointmedia(1160, "max-width") { padding-left: 20%; }
 
     @include breakpointmedia($media1024, "max-width") {
-        padding-left: 15%;
+        padding-left: 18%;
         margin-right: -304px;
         padding-right: 324px;
     }
 
     @include breakpointmedia(860, "max-width") {
-        padding-left: 19.3%;
+        padding-left: 15%;
     }
 
     @include breakpointmedia($media960, "max-width") {
         margin-right: -265px;
-        padding-left: 19.3%;
+        //padding-left: 19.3%;
         padding-right: 265px;
     }
 

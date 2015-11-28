@@ -408,11 +408,9 @@ $(function() {
     });
 
     /* MobileMenu */
-    if(Modernizr.touch) {
-        var drop = new MobileMenu();
-        drop.initialize({
-            subMenuMobileStyle: ".submenu__mobileStyle .submenu__item",
-            list__box: '.list__sub2'
-        });
-    }
+    var drop = new MobileMenu();
+    drop.initialize({
+        subMenuMobileStyle: ".submenu__mobileStyle .submenu__item",
+        list__box: '.list__sub2'
+    });
 });

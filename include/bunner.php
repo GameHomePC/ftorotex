@@ -1,6 +1,8 @@
 <div class="bunner bunner_images">
     <div class="wrapper">
-        <i class="bunner__icon"></i>
+        <i class="bunner__icon">
+            <img src="../images/sprite/user-icon-1200.png" alt="">
+        </i>
 
         <div class="bunner__content">
             <h3 class="bunner__title">Мы - эксперты в пластиках.</h3>
